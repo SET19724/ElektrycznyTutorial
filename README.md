@@ -118,7 +118,7 @@ Bot zapyta o UID wklejamy ze schowka swój unikalny numer
 
 ![](screeny/17.png)
 
-Bot potrzebuje trochę czasu teraz czekam może potrwać od 1minuty do kilku dni zależnie od kolejki
+Bot potrzebuje trochę czasu teraz czekamy może potrwać od 1 minuty do kilku dni zależnie od kolejki którą musi bot przetworzyć
 
 ![](screeny/18.png)
 
@@ -126,7 +126,6 @@ Pobieramy przygotowany plik pod naszą hulajnogę naciskając na 3kropki
 
 ![](screeny/9.png)
 
-Bot może potrzebować od kilku minut do kilku dni (zależnie od kolejki).
 
 Po otrzymaniu plików kliknij trzy kropki i wybierz **"Download"**
 
@@ -364,7 +363,7 @@ Rozwiń sekcję **Throttle** — tu ustawisz prędkość i ilość amperów dla 
 Jeśli posiadasz **nowszy silnik trzeciej generacji (Gen 3)** w hulajnodze G30, koniecznie zaznacz opcję **"New motor"** w zakładce `Motor config/Motor settings`.
 
 🔍 **Nie jesteś pewien, którą wersję silnika masz?**  
-Porównaj numer seryjny silnika (Motor Serial Number – SN) z poniższą tabelą:
+Porównaj numer seryjny silnika który znajduje się na silniku przy kodzie QR (Motor Serial Number – SN) z poniższą tabelą:
 
 | Numer seryjny silnika (SN)   | Generacja          | Modele                            |
 |------------------------------|--------------------|-----------------------------------|
