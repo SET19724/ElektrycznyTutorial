@@ -408,8 +408,8 @@ Domyślny rozmiar kół w modelach g30 Max to **10"**, ale ustaw:
 
 ### ⚙️ Silnik
 
-- Ustaw **Motor frequency**: `20 kHz` lub `24 kHz`  
-  (dla G2 i F2 nie ma tej opcji)
+- Dla G30 Ustaw **Motor frequency**: `20 kHz` lub `24 kHz`  
+  (dla G2 i F2 nie ma tej opcji nic nie rób)
 
 ---
 
