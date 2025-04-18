@@ -377,6 +377,7 @@ Porównaj numer seryjny silnika który znajduje się na silniku przy kodzie QR (
 > ✅ **Wniosek:** Jeśli twój numer silnika zawiera `PCAH`, `PAAH`, `PADH` lub `PADJ`, **masz silnik Gen 3** i musisz zaznaczyć odpowiednią opcję w konfiguracji!
 Inaczej będą dziwne dźwięki + koło nie będzie jeździć
 
+![](screeny/silnik.png)
 ---
 
 
