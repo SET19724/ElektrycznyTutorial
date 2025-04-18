@@ -6,7 +6,7 @@
 > Niniejszy materiał został stworzony wyłącznie w celach edukacyjnych.  
 > Autor nie ponosi odpowiedzialności za jakiekolwiek uszkodzenia sprzętu, błędne użycie instrukcji czy skutki wynikające z modyfikacji opisanych w tym dokumencie.  
 >  
-> Wszystkie czynności wykonujesz na **! WŁASNE RYZYKO !**.  
+> Wszystkie czynności wykonujesz na **! WŁASNE RYZYKO I ODPOWIEDZIALNOŚĆ !**.  
 >  
 > Jest to jedynie tłumaczenie i opracowanie ogólnodostępnych informacji w języku polskim.
 
@@ -33,7 +33,16 @@
 ## ⚙️ Proces odblokowania
 
 ### 1. Pobierz aplikację ScooterHacking Utility
-👉 [https://utility.cfw.sh](https://utility.cfw.sh)
+👉 PLATFORMA ANDROID [https://utility.cfw.sh](https://utility.cfw.sh)
+
+⚠️ **Co jeśli nie mam androida tylko Iphone ?**  
+>Możesz użyć projektu Luna który znajduje sie na https://luna.cfw.sh obecnie poradnik pokazuje tylko jak zrobić to na android ale zasada działania jest taka sama.
+Różni się tylko interfejs
+
+
+
+
+
 
 - Po uruchomieniu aplikacji wybierz swoją hulajnogę.
   *(Włącz hulajnogę oraz Bluetooth w telefonie)*
@@ -152,17 +161,17 @@ Masz dwie opcje:
 
 - 🌍 [Zmień numer seryjny by:](#zmiana-regionu--poprzez-numer-seryjny)
 
-  - Zdjąć ograniczenia prędkości
+  - Zmienić ograniczenia prędkości
   - Odblokować tempomat
 
 Jak zmienicie oprogramowanie na alternatywne warto korzystać z aplikacji NineDash
  https://play.google.com/store/apps/details?id=adriandp.ninedash
 
-Nie wiadomo czy aplikacja nie wymusi automatycznej aktualizacji która ponownie zablokuje możliwości dla zaawansowanych użytkowników
+Nie wiadomo czy aplikacja nie wymusi automatycznej aktualizacji która ponownie zablokuje możliwości zmian dla zaawansowanych użytkowników
 
 
   > ⚠️ **Uwaga prawna**  
-> Zdjęcie ograniczeń prędkości może naruszać lokalne przepisy dotyczące poruszania się hulajnogą elektryczną po drogach publicznych.  
+> Zmiana ograniczeń prędkości może naruszać lokalne przepisy dotyczące poruszania się hulajnogą elektryczną po drogach publicznych.  
 >  
 > Tak zmodyfikowany pojazd może być użytkowany **wyłącznie na terenie prywatnym i na własną odpowiedzialność**.  
 >  
