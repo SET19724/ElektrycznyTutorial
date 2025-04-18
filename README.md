@@ -25,12 +25,22 @@
 
 ---
 
-## 🔓 Wersje firmware
-- Obecnie nie ma ograniczeń co do wersji firmware jeśli masz 1.8.1 powinno zadziałać.
+## 🔓 Obsługiwane wersje firmware
+
+Obecnie **nie ma ograniczeń** dotyczących wersji firmware.  
+Nawet jeśli masz wersję **1.8.1**, metoda powinna zadziałać bez problemu.
+
+---
+
+📽️ **Poradnik wideo**  
+Ten poradnik oparty jest w dużej mierze na materiale z YouTube od użytkownika [Mc Kuc](https://www.youtube.com/@McKuc), który pokazuje krok po kroku nową metodę odblokowania:
+
+[![Zobacz poradnik na YouTube](https://img.youtube.com/vi/WXCJJVfrrk0/hqdefault.jpg)](https://www.youtube.com/watch?v=WXCJJVfrrk0)
 
 ---
 
 ## ⚙️ Proces odblokowania
+
 
 ### 1. Pobierz aplikację ScooterHacking Utility
 👉 PLATFORMA ANDROID [https://utility.cfw.sh](https://utility.cfw.sh)
@@ -250,6 +260,8 @@ Jeśli zmienisz **pozycje 6–9** w numerze seryjnym na `1111`, np.:N4GSD1111C01
 
 
 ## 📊 F2 / F2 Plus / F2 Pro (sortowane wg SPORT prędkości)
+
+Tabele jaką znalazłem z oryginalnymi wartościami według numeru
 
 | Prefix SN | ECO prędkość | ECO prąd | DRIVE prędkość | DRIVE prąd | SPORT prędkość | SPORT prąd | Model    | Czujnik temp. silnika (E41) |
 |-----------|---------------|-----------|----------------|------------|----------------|------------|----------|-----------------------------|
