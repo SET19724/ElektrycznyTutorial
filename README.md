@@ -81,7 +81,7 @@ W skrócie:
 2. Zaznacz **"I understand"**
 3. Wybierz model hulajnogi
 4. Wklej skopiowany UID
-   > **Uwaga:** dokładność UID jest kluczowa — jedna pomyłka = nie odblokujesz
+   > **Uwaga !:** dokładność UID jest kluczowa — jedna pomyłka = nie odblokujesz
 5. Poczekaj na wygenerowanie plików
 6. Pobierz pliki
 
@@ -307,7 +307,7 @@ Rozwiń sekcję **Throttle** — tu ustawisz prędkość i ilość amperów dla 
 
 ![](screeny/28.png)
 
-🔸 **Uwaga**: Screen pokazuje tylko wygląd menu — nie kopiuj tych ustawień.
+> ⚠️ **Uwaga !**: ! Screen pokazuje tylko wygląd menu — nie kopiuj tych ustawień. !
 
 ### 📋 Parametry do ustawienia:
 
@@ -511,3 +511,8 @@ Tutaj możesz ustawić, po jakim czasie hulajnoga ma się automatycznie wyłącz
 - https://wiki.scooterhacking.org/doku.php?id=nbmax  
 - https://rollerplausch.com/threads/f2-series-informationen-firmware-hardware-tuning.11004/
 - https://rollerplausch.com/threads/shfw-anleitung-2025-scooterhacking-utility-ninebot-xiaomi-e-scooter-tuning.3753/
+
+>License/Licencja:CC BY-NC-SA 4.0
+Dodanie licencji która zakazuje użytku komercyjnego CC BY-NC-SA 4.0
+- 
+>Wiedza jest dla każdego a nie januszy interesu co będą na tym zarabiać
