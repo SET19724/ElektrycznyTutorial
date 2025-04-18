@@ -555,15 +555,3 @@ Tutaj możesz ustawić, po jakim czasie hulajnoga ma się automatycznie wyłącz
 Dodanie licencji która zakazuje użytku komercyjnego CC BY-NC-SA 4.0
 - Wiedza jest dla każdego a nie januszy interesu co będą na tym zarabiać
 ---
-
-
-![](screeny/32.png)
-
-
-## 📚 Źródła:
-
-- https://www.youtube.com/watch?v=WXCJJVfrrk0  
-- https://github.com/lekrsu/shfw-walkthrough  
-- https://wiki.scooterhacking.org/doku.php?id=nbmax  
-- https://rollerplausch.com/threads/f2-series-informationen-firmware-hardware-tuning.11004/
-- https://rollerplausch.com/threads/shfw-anleitung-2025-scooterhacking-utility-ninebot-xiaomi-e-scooter-tuning.3753/
