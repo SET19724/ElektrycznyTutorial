@@ -6,7 +6,7 @@
 > Niniejszy materiał został stworzony wyłącznie w celach edukacyjnych.  
 > Autor nie ponosi odpowiedzialności za jakiekolwiek uszkodzenia sprzętu, błędne użycie instrukcji czy skutki wynikające z modyfikacji opisanych w tym dokumencie.  
 >  
-> Wszystkie czynności wykonujesz na **! WŁASNE RYZYKO I ODPOWIEDZIALNOŚĆ !**.  
+> Wszystkie czynności wykonujesz na **! WŁASNE RYZYKO !**.  
 >  
 > Jest to jedynie tłumaczenie i opracowanie ogólnodostępnych informacji w języku polskim.
 
@@ -25,34 +25,15 @@
 
 ---
 
-## 🔓 Obsługiwane wersje firmware
-
-Obecnie **nie ma ograniczeń** dotyczących wersji firmware.  
-Nawet jeśli masz wersję **1.8.1**, metoda powinna zadziałać bez problemu.
-
----
-
-📽️ **Poradnik wideo**  
-Ten poradnik oparty jest w dużej mierze na materiale z YouTube od użytkownika [Mc Kuc](https://www.youtube.com/@McKuc), który pokazuje krok po kroku nową metodę odblokowania:
-
-[![Zobacz poradnik na YouTube](https://img.youtube.com/vi/WXCJJVfrrk0/hqdefault.jpg)](https://www.youtube.com/watch?v=WXCJJVfrrk0)
+## 🔓 Wersje firmware
+- Obecnie nie ma ograniczeń co do wersji firmware jeśli masz 1.8.1 powinno zadziałać.
 
 ---
 
 ## ⚙️ Proces odblokowania
 
-
-### 1. Pobierz aplikację ScooterHacking Utility
-👉 PLATFORMA ANDROID [https://utility.cfw.sh](https://utility.cfw.sh)
-
-⚠️ **Co jeśli nie mam androida tylko Iphone ?**  
->Możesz użyć projektu Luna który znajduje sie na https://luna.cfw.sh obecnie poradnik pokazuje tylko jak zrobić to na android ale zasada działania jest taka sama.
-Różni się tylko interfejs
-
-
-
-
-
+### 1. Pobierz aplikację ScooterHacking Utility(Android)
+👉 [https://utility.cfw.sh](https://utility.cfw.sh)
 
 - Po uruchomieniu aplikacji wybierz swoją hulajnogę.
   *(Włącz hulajnogę oraz Bluetooth w telefonie)*
@@ -118,7 +99,7 @@ Bot zapyta o UID wklejamy ze schowka swój unikalny numer
 
 ![](screeny/17.png)
 
-Bot potrzebuje trochę czasu teraz czekamy może potrwać od 1 minuty do kilku dni zależnie od kolejki którą musi bot przetworzyć
+Bot potrzebuje trochę czasu teraz czekam może potrwać od 1minuty do kilku dni zależnie od kolejki
 
 ![](screeny/18.png)
 
@@ -126,6 +107,7 @@ Pobieramy przygotowany plik pod naszą hulajnogę naciskając na 3kropki
 
 ![](screeny/9.png)
 
+Bot może potrzebować od kilku minut do kilku dni (zależnie od kolejki).
 
 Po otrzymaniu plików kliknij trzy kropki i wybierz **"Download"**
 
@@ -146,6 +128,7 @@ Po otrzymaniu plików kliknij trzy kropki i wybierz **"Download"**
    ![](screeny/11.png)
 
 > ⚠️ Nie oddalaj się od hulajnogi i jej nie wyłączaj – możesz ją uceglić! W takim wypadku pomoże tylko programator ST-LINK.
+ZNACZENIE Uceglić – doprowadzić urządzenie (np. hulajnogę) do stanu, w którym nie reaguje na włączenie, nie uruchamia się, nie da się go normalnie naprawić ani przywrócić bez specjalistycznego sprzętu (np. ST-LINK, UART itp.).
 
 ![](screeny/12.png)
 
@@ -170,17 +153,17 @@ Masz dwie opcje:
 
 - 🌍 [Zmień numer seryjny by:](#zmiana-regionu--poprzez-numer-seryjny)
 
-  - Zmienić ograniczenia prędkości
+  - Zdjąć ograniczenia prędkości
   - Odblokować tempomat
 
 Jak zmienicie oprogramowanie na alternatywne warto korzystać z aplikacji NineDash
  https://play.google.com/store/apps/details?id=adriandp.ninedash
 
-Nie wiadomo czy aplikacja nie wymusi automatycznej aktualizacji która ponownie zablokuje możliwości zmian dla zaawansowanych użytkowników
+Nie wiadomo czy aplikacja nie wymusi automatycznej aktualizacji która ponownie zablokuje możliwości dla zaawansowanych użytkowników
 
 
   > ⚠️ **Uwaga prawna**  
-> Zmiana ograniczeń prędkości może naruszać lokalne przepisy dotyczące poruszania się hulajnogą elektryczną po drogach publicznych.  
+> Zdjęcie ograniczeń prędkości może naruszać lokalne przepisy dotyczące poruszania się hulajnogą elektryczną po drogach publicznych.  
 >  
 > Tak zmodyfikowany pojazd może być użytkowany **wyłącznie na terenie prywatnym i na własną odpowiedzialność**.  
 >  
@@ -257,29 +240,7 @@ Jeśli zmienisz **pozycje 6–9** w numerze seryjnym na `1111`, np.:N4GSD1111C01
 
 ---
 
-
-## 📊 F2 / F2 Plus / F2 Pro (sortowane wg SPORT prędkości)
-
-Tabele jaką znalazłem z oryginalnymi wartościami według numeru
-
-| Prefix SN | ECO prędkość | ECO prąd | DRIVE prędkość | DRIVE prąd | SPORT prędkość | SPORT prąd | Model    | Czujnik temp. silnika (E41) |
-|-----------|---------------|-----------|----------------|------------|----------------|------------|----------|-----------------------------|
-| NAGK      | 15 km/h       | 9 A       | 20 km/h        | 18 A       | 22 km/h        | 26 A       | F2 Plus  | Nie                         |
-| NAGE      | 15 km/h       | 9 A       | 20 km/h        | 18 A       | 22 km/h        | 24 A       | F2       | Nie                         |
-| NAGU      | 15 km/h       | 9 A       | 20 km/h        | 18 A       | 25 km/h        | 28 A       | F2 Pro   | Tak                         |
-| NAGT      | 12 km/h       | 9 A       | 20 km/h        | 18 A       | 25 km/h        | 28 A       | F2 Pro   | Tak                         |
-| NAGD      | 15 km/h       | 9 A       | 20 km/h        | 18 A       | 25 km/h        | 24 A       | F2       | Nie                         |
-| NAGC      | 12 km/h       | 9 A       | 20 km/h        | 18 A       | 25 km/h        | 24 A       | F2       | Nie                         |
-| NAGJ      | 15 km/h       | 9 A       | 20 km/h        | 18 A       | 25 km/h        | 26 A       | F2 Plus  | Nie                         |
-| NAGB      | 15 km/h       | 9 A       | 25 km/h        | 18 A       | 30 km/h        | 24 A       | F2       | Nie                         |
-| NAGF      | 15 km/h       | 9 A       | 25 km/h        | 18 A       | 30 km/h        | 26 A       | F2 Plus  | Nie                         |
-| NAGG      | 15 km/h       | 9 A       | 25 km/h        | 18 A       | 30 km/h        | 26 A       | F2 Plus  | Nie                         |
-| NAGA      | 15 km/h       | 9 A       | 25 km/h        | 18 A       | 30 km/h        | 24 A       | F2       | Nie                         |
-| NAGH      | 12 km/h       | 9 A       | 20 km/h        | 18 A       | 26 km/h        | 26 A       | F2 Plus  | Nie                         |
-| NAGS      | 15 km/h       | 9 A       | 25 km/h        | 18 A       | 32 km/h        | 28 A       | F2 Pro   | Tak                         |
-| NAGR      | 15 km/h       | 9 A       | 25 km/h        | 20 A       | 32 km/h        | 28 A       | F2 Pro   | Tak                         |
-
-
+## 🧪 F2 – WKRÓTCE DOSTĘPNE
 
 ---
 
@@ -363,7 +324,7 @@ Rozwiń sekcję **Throttle** — tu ustawisz prędkość i ilość amperów dla 
 Jeśli posiadasz **nowszy silnik trzeciej generacji (Gen 3)** w hulajnodze G30, koniecznie zaznacz opcję **"New motor"** w zakładce `Motor config/Motor settings`.
 
 🔍 **Nie jesteś pewien, którą wersję silnika masz?**  
-Porównaj numer seryjny silnika który znajduje się na silniku przy kodzie QR (Motor Serial Number – SN) z poniższą tabelą:
+Porównaj numer seryjny silnika (Motor Serial Number – SN) z poniższą tabelą:
 
 | Numer seryjny silnika (SN)   | Generacja          | Modele                            |
 |------------------------------|--------------------|-----------------------------------|
@@ -448,8 +409,8 @@ Domyślny rozmiar kół w modelach g30 Max to **10"**, ale ustaw:
 
 ### ⚙️ Silnik
 
-- Ustaw **Motor frequency**: `20 kHz` lub `24 kHz`  
-  (dla G2 i F2 nie ma tej opcji)
+- Dla G30 Ustaw **Motor frequency**: `20 kHz` lub `24 kHz`  
+  (dla G2 i F2 nie ma tej opcji nic nie rób)
 
 ---
 
@@ -458,10 +419,95 @@ Domyślny rozmiar kół w modelach g30 Max to **10"**, ale ustaw:
 Niektóre nowe G30 z nowszym BMS mają ograniczenie prądu baterii do **28A**  
 → przez co będą miały gorsze osiągi niż starsze modele (z limitem **40A**)
 
+###  Prędkość startu / Start bez odpychania
+- Jest to prędkość gdy odpychasz się i dopiero hulajnoga reaguje na przycisk od gazu
+-Domyślnie jest ustawione na 5km/h
+-Możesz zmienić według tego jak ci pasuje
+-Jeśli chcesz ruszać bez odpychania zmieniasz na 0km/h
+
+
+![](screeny/31.png)
+
+---
+
+## 🛠️ Ustawienia tempomatu (Cruise Control)
+
+![](screeny/32.png)
+
+Funkcja **Cruise Control** (tempomat) oferuje cztery tryby działania:
+
+- **Off** – tempomat wyłączony  
+- **Time** – tempomat włącza się po określonym czasie (ustawianym przez użytkownika)  
+- **Single tap** – tempomat aktywuje się po jednokrotnym naciśnięciu manetki gazu  
+- **Double tap** – tempomat aktywuje się po dwukrotnym szybkim naciśnięciu manetki gazu  (trzeba wyczuć czasem do połowy wciskam żeby łapało)(tą opcję polecam)
+
+---
+
+### 🔄 Zmiana prędkości tempomatu za pomocą manetki(Opcja Increase/decrease CC speed with throttle:):
+
+- Wciśnięcie manetki **poniżej 30% przez 0,75 sekundy** → prędkość zmniejsza się o **1 km/h**
+- Wciśnięcie manetki **powyżej 50% przez 0,75 sekundy** → prędkość zwiększa się o **1 km/h**
+
+> ✅ Działa tylko w trybie **Speed-based** (opartym na prędkości)
+
+W trybie **Speed-based CC w trybie DPC**, tempomat utrzymuje prędkość również w trybie opartym na mocy.
+
+- Najlepszym wytłumaczeniem tego jest gdy naciśniesz lekko na gaz i przytrzymasz zmniejsza prędkość o 1 ustawioną na tempomacie
+- Gdy wcisniesz do samego końca zwiększa lub powyżej 50% zakresu prędkość o 1 w górę
+- Tak długo jak trzymasz słyszysz piknięcie i zmienia zadaną Prędkość
+- Aby wyłączyć tempomat po prostu ciągniemy lekko za hamulec i to dezaktywuje
+
+
+
+## 🔊 Dźwięki aktywacji i dezaktywacji tempomatu
+
+Możesz wybrać, jaki sygnał dźwiękowy będzie odtwarzany przy **włączeniu** i **wyłączeniu** tempomatu:
+
+| Ustawienie     | Opis                                      |
+|----------------|-------------------------------------------|
+| **None**       | Brak jakiegokolwiek dźwięku               |
+| **Single**     | Krótkie pojedyncze „piknięcie”   (Tą opcję polecam)         |
+| **Long**       | Dłuższy sygnał dźwiękowy                  |
+| **Double**     | Podwójne krótkie „piknięcia”              |
+| **Extra long** | Bardzo długi, ciągły sygnał dźwiękowy     |
+
+---
+
+## 💡 Ustawienia oświetlenia (Light Mode)
+
+Oświetlenie hulajnogi może być dostosowane do własnych preferencji.  
+Dostępne są następujące tryby działania światła hamowania (światło tylne):
+
+| Tryb       | Opis                                                                 |
+|------------|----------------------------------------------------------------------|
+| **Default**  | Światło hamowania **miga**, gdy naciskasz hamulec, z ustawioną częstotliwością migania *(Brake light flash speed)*. |
+| **Static**   | Światło hamowania jest **połączone z przednim światłem** – jeśli włączysz przednie światło, tylne również świeci. |
+| **Reversed** | Światło hamowania **miga**, dopóki nie naciśniesz hamulca – wtedy **gaśnie**. |
+| **Strobe**   | Tworzy **efekt stroboskopowy** światła hamowania, z ustawioną częstotliwością migania. |
+| **German**   | Tylne światło jest **zawsze włączone**, a tylko przednie można włączać i wyłączać. |
+| **Car**      | Światło hamowania działa jak w samochodzie – zapala się **tylko w momencie nacisku hamulca** (jak w modelu Max G2). |
+
+> 🛠️ Ustawienie częstotliwości migania znajdziesz pod parametrem **Brake light flash speed**
+
+---
+
+## ⚙️ System Settings / Ustawienia systemu
+
+### 🕒 Shutdown Time Settings
+
+Tutaj możesz ustawić, po jakim czasie hulajnoga ma się automatycznie wyłączyć:
+
+- **Auto-shutdown delay** – opóźnienie automatycznego wyłączenia podczas normalnego użytkowania - Czyli kiedy zostawiasz ją włączoną po jakim czasie sama się wyłączy
+- **Auto-shutdown delay when locked** – opóźnienie automatycznego wyłączenia, gdy hulajnoga jest **zablokowana** -Czyli kiedy zostawiasz ją włączoną i aktywujesz blokadę(żeby nikt jej nie ruszał) po jakim czasie sama się wyłączy (Tutaj zalecam ustawić na MAX)--Pamiętaj że po określonym czasie ona sama się odblokuje i ktoś może sobię włączyć i odjechać brum brum sadcat ;)
+
+
+![](screeny/33.png)
+
 
 ## 📚 Źródła:
 
 - https://www.youtube.com/watch?v=WXCJJVfrrk0  
 - https://github.com/lekrsu/shfw-walkthrough  
 - https://wiki.scooterhacking.org/doku.php?id=nbmax  
--https://rollerplausch.com/threads/f2-series-informationen-firmware-hardware-tuning.11004/
+- https://rollerplausch.com/threads/f2-series-informationen-firmware-hardware-tuning.11004/
+- https://rollerplausch.com/threads/shfw-anleitung-2025-scooterhacking-utility-ninebot-xiaomi-e-scooter-tuning.3753/
