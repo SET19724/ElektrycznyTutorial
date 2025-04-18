@@ -514,5 +514,4 @@ Tutaj możesz ustawić, po jakim czasie hulajnoga ma się automatycznie wyłącz
 
 >License/Licencja:CC BY-NC-SA 4.0
 Dodanie licencji która zakazuje użytku komercyjnego CC BY-NC-SA 4.0
-- 
->Wiedza jest dla każdego a nie januszy interesu co będą na tym zarabiać
+- Wiedza jest dla każdego a nie januszy interesu co będą na tym zarabiać
