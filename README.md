@@ -32,7 +32,7 @@
 
 ## ⚙️ Proces odblokowania
 
-### 1. Pobierz aplikację ScooterHacking Utility
+### 1. Pobierz aplikację ScooterHacking Utility(Android)
 👉 [https://utility.cfw.sh](https://utility.cfw.sh)
 
 - Po uruchomieniu aplikacji wybierz swoją hulajnogę.
