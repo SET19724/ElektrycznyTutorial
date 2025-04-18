@@ -32,7 +32,7 @@
 
 ## ⚙️ Proces odblokowania
 
-### 1. Pobierz aplikację ScooterHacking Utility(Android)
+### 1. Pobierz aplikację ScooterHacking Utility
 👉 [https://utility.cfw.sh](https://utility.cfw.sh)
 
 - Po uruchomieniu aplikacji wybierz swoją hulajnogę.
@@ -239,7 +239,27 @@ Jeśli zmienisz **pozycje 6–9** w numerze seryjnym na `1111`, np.:N4GSD1111C01
 
 ---
 
-## 🧪 F2 – WKRÓTCE DOSTĘPNE
+
+## 📊 F2 / F2 Plus / F2 Pro (sortowane wg SPORT prędkości)
+
+| Prefix SN | ECO prędkość | ECO prąd | DRIVE prędkość | DRIVE prąd | SPORT prędkość | SPORT prąd | Model    | Czujnik temp. silnika (E41) |
+|-----------|---------------|-----------|----------------|------------|----------------|------------|----------|-----------------------------|
+| NAGK      | 15 km/h       | 9 A       | 20 km/h        | 18 A       | 22 km/h        | 26 A       | F2 Plus  | Nie                         |
+| NAGE      | 15 km/h       | 9 A       | 20 km/h        | 18 A       | 22 km/h        | 24 A       | F2       | Nie                         |
+| NAGU      | 15 km/h       | 9 A       | 20 km/h        | 18 A       | 25 km/h        | 28 A       | F2 Pro   | Tak                         |
+| NAGT      | 12 km/h       | 9 A       | 20 km/h        | 18 A       | 25 km/h        | 28 A       | F2 Pro   | Tak                         |
+| NAGD      | 15 km/h       | 9 A       | 20 km/h        | 18 A       | 25 km/h        | 24 A       | F2       | Nie                         |
+| NAGC      | 12 km/h       | 9 A       | 20 km/h        | 18 A       | 25 km/h        | 24 A       | F2       | Nie                         |
+| NAGJ      | 15 km/h       | 9 A       | 20 km/h        | 18 A       | 25 km/h        | 26 A       | F2 Plus  | Nie                         |
+| NAGB      | 15 km/h       | 9 A       | 25 km/h        | 18 A       | 30 km/h        | 24 A       | F2       | Nie                         |
+| NAGF      | 15 km/h       | 9 A       | 25 km/h        | 18 A       | 30 km/h        | 26 A       | F2 Plus  | Nie                         |
+| NAGG      | 15 km/h       | 9 A       | 25 km/h        | 18 A       | 30 km/h        | 26 A       | F2 Plus  | Nie                         |
+| NAGA      | 15 km/h       | 9 A       | 25 km/h        | 18 A       | 30 km/h        | 24 A       | F2       | Nie                         |
+| NAGH      | 12 km/h       | 9 A       | 20 km/h        | 18 A       | 26 km/h        | 26 A       | F2 Plus  | Nie                         |
+| NAGS      | 15 km/h       | 9 A       | 25 km/h        | 18 A       | 32 km/h        | 28 A       | F2 Pro   | Tak                         |
+| NAGR      | 15 km/h       | 9 A       | 25 km/h        | 20 A       | 32 km/h        | 28 A       | F2 Pro   | Tak                         |
+
+
 
 ---
 
@@ -408,8 +428,8 @@ Domyślny rozmiar kół w modelach g30 Max to **10"**, ale ustaw:
 
 ### ⚙️ Silnik
 
-- Dla G30 Ustaw **Motor frequency**: `20 kHz` lub `24 kHz`  
-  (dla G2 i F2 nie ma tej opcji nic nie rób)
+- Ustaw **Motor frequency**: `20 kHz` lub `24 kHz`  
+  (dla G2 i F2 nie ma tej opcji)
 
 ---
 
@@ -424,3 +444,4 @@ Niektóre nowe G30 z nowszym BMS mają ograniczenie prądu baterii do **28A**
 - https://www.youtube.com/watch?v=WXCJJVfrrk0  
 - https://github.com/lekrsu/shfw-walkthrough  
 - https://wiki.scooterhacking.org/doku.php?id=nbmax  
+-https://rollerplausch.com/threads/f2-series-informationen-firmware-hardware-tuning.11004/
