@@ -30,7 +30,8 @@
 - Ninebot  E45  
 
 *Dane oparte na opisie z filmu.*
-
+>W przypadku modeli F20,F25,F30,F40 -Jest problemos.
+>Musisz po wgraniu shfw użyć starej wersji aplikacji 2.5 do konfiguracji inaczej źle będą wskakiwać ustawienia
 ---
 ## 📚 Spis treści
 
@@ -71,7 +72,9 @@ Nawet jeśli masz wersję **1.8.1**, metoda powinna zadziałać bez problemu.
 ---
 
 <a name="dolacz-do-naszego-discorda"></a>
-## 🎉 Dołącz do naszego Discorda!
+
+
+## 🎉 Dołącz do Discorda!
 
 Zapraszam na **kanał Discord poświęcony hulajnogom Ninebot**!  
 Fajnie było by stworzyć aktywną, **polską społeczność**, która wspiera się wzajemnie w tematach:
@@ -86,6 +89,8 @@ Fajnie było by stworzyć aktywną, **polską społeczność**, która wspiera s
 👉 [https://discord.gg/k69Y4wBfxM](https://discord.gg/k69Y4wBfxM)
 
 *Im nas więcej, tym lepiej – razem łatwiej rozwiązywać problemy i rozwijać pasję!*
+
+<center><img src="screeny/logoodgpt.png" width="200" height="200"></center>
 
 ---
 
