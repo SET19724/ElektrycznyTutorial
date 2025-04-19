@@ -1,5 +1,7 @@
 # 🔧 Odblokowanie hulajnogi Ninebot – wersja BETA
-**Aktualizacja:** 18.04.2025
+**Aktualizacja:** 19.04.2025
+// Opracowanie stworzone w 2dni może zawierać błedy jeśli widzisz błąd daj znać ;)
+
 
 > ⚠️ **Zastrzeżenie prawne**  
 >  
@@ -13,6 +15,7 @@
 
 ---
 
+<a name="obslugiwane-modele"></a>
 ## 📌 Obsługiwane modele
 
 - Ninebot Max G2  
@@ -29,12 +32,37 @@
 *Dane oparte na opisie z filmu.*
 
 ---
+## 📚 Spis treści
+
+- 🔧 [Obsługiwane modele](#obslugiwane-modele)
+- 🔓 [Obsługiwane wersje firmware](#obsługiwane-wersje-firmware)
+- 🎉 [Dołącz do Discorda](#dolacz-do-naszego-discorda)
+- 📽️ [Poradnik wideo od Mc Kuc](#poradnik-wideo)
+- ⚙️ [Proces odblokowania](#proces-odblokowania)
+- 🎯 [Co teraz po odlokowaniu?](#co-teraz)
+- 🌍 [Zmiana regionu – poprzez numer seryjny](#zmiana-regionu-przez-numer-seryjny)
+- 🛴 [Lista prefixów numerów seryjnych](#lista-prefixow-numerow-seryjnych)
+- ✨ [Złoty numer seryjny G30](#zloty-numer-seryjny)
+- 📊 [F2 / F2 Plus / F2 Pro – prędkości](#f2-f2-plus-f2-pro-sport-predkosci)
+- ℹ️ [Dodatkowe info](#dodatkowe-info)
+- 🔁 [Jak zmienić region?](#jak-zmienic-region)
+- 🚀 [Jak wgrać SHFW (Custom Firmware)](#jak-wgrac-shfw-custom-firmware)
+- ⚙️ [Ustawianie SHFW](#ustawianie-shfw)
+- 🧠 [WAŻNE jeśli masz Silnik nowej generacji G30 WAŻNE](#silnik-gen3-g30)
+- ✅ [Zalecane ustawienia SHFW wg poradnika od lekrsu](#zalecane-ustawienia-lekrsu)
+- 📚 [Źródła](#zrodla)
+
+
+
+
+---
 
 ## ❓ Czy potrzebuję programatora ST-LINK?
 **Nie!** Jest to najnowsza metoda, która nie wymaga użycia ST-LINKa.
 
 ---
 
+<a name="obsługiwane-wersje-firmware"></a>
 ## 🔓 Obsługiwane wersje firmware
 
 Obecnie **nie ma ograniczeń** dotyczących wersji firmware.  
@@ -42,13 +70,34 @@ Nawet jeśli masz wersję **1.8.1**, metoda powinna zadziałać bez problemu.
 
 ---
 
-📽️ **Poradnik wideo**  
+<a name="dolacz-do-naszego-discorda"></a>
+## 🎉 Dołącz do naszego Discorda!
+
+Zapraszam na **kanał Discord poświęcony hulajnogom Ninebot**!  
+Fajnie było by stworzyć aktywną, **polską społeczność**, która wspiera się wzajemnie w tematach:
+
+- 🔧 Modyfikacje i naprawy  
+- 🚀 Odblokowywanie prędkości  
+- 🛠️ Diagnostyka  
+- ❓ Pytania techniczne i porady  
+- 💬 Luźne rozmowy i dzielenie się doświadczeniem  
+
+**Dołącz już teraz:**  
+👉 [https://discord.gg/k69Y4wBfxM](https://discord.gg/k69Y4wBfxM)
+
+*Im nas więcej, tym lepiej – razem łatwiej rozwiązywać problemy i rozwijać pasję!*
+
+---
+
+<a name="poradnik-wideo"></a>
+## 📽️ **Poradnik wideo**  
 Ten poradnik oparty jest w dużej mierze na materiale z YouTube od użytkownika [Mc Kuc](https://www.youtube.com/@McKuc), który pokazuje krok po kroku nową metodę odblokowania:
 
 [![Zobacz poradnik na YouTube](https://img.youtube.com/vi/WXCJJVfrrk0/hqdefault.jpg)](https://www.youtube.com/watch?v=WXCJJVfrrk0)
 
 ---
 
+<a name="proces-odblokowania"></a>
 ## ⚙️ Proces odblokowania
 
 
@@ -169,6 +218,7 @@ Hulajnoga wyda sygnał dźwiękowy „bi-bip”.
 
 ---
 
+<a name="co-teraz"></a>
 ## 🎯 Co teraz?
 
 Masz dwie opcje:
@@ -199,6 +249,8 @@ Nie wiadomo czy aplikacja nie wymusi automatycznej aktualizacji która ponownie 
 
 ---
 
+
+<a name="zmiana-regionu-przez-numer-seryjny"></a>
 ## 🌍 Zmiana regionu – poprzez numer seryjny
 
 ### Przykład numeru seryjnego (G30):
@@ -230,6 +282,7 @@ N4GSD1939C0123
 
 ---
 
+<a name="lista-prefixow-numerow-seryjnych"></a>
 ## 🛴 Lista prefixów numerów seryjnych
 
 ### G2:
@@ -255,9 +308,9 @@ N4GSD1939C0123
 | N4YC     | Seat Mó                      | 20 km/h   |
 | NTG1     | Audi EKS                     | 20 km/h   |
 
----
 
-## ✨ Złoty numer seryjny
+<a name="zloty-numer-seryjny"></a>
+>## ✨ Złoty numer seryjny
 
 Jeśli zmienisz **pozycje 6–9** w numerze seryjnym na `1111`, np.:N4GSD1111C0123
 
@@ -268,7 +321,7 @@ Jeśli zmienisz **pozycje 6–9** w numerze seryjnym na `1111`, np.:N4GSD1111C01
 
 ---
 
-
+<a name="f2-f2-plus-f2-pro-sport-predkosci"></a>
 ## 📊 F2 / F2 Plus / F2 Pro (sortowane wg SPORT prędkości)
 
 Tabele jaką znalazłem z oryginalnymi wartościami według numeru
@@ -294,6 +347,7 @@ Tabele jaką znalazłem z oryginalnymi wartościami według numeru
 
 ---
 
+<a name="dodatkowe-info"></a>
 ## ℹ️ Dodatkowe info
 
 **Oznaczenia:**
@@ -306,6 +360,7 @@ Tabele jaką znalazłem z oryginalnymi wartościami według numeru
 
 ---
 
+<a name="jak-zmienic-region"></a>
 ## 🔁 Jak zmienić region?
 
 1. Otwórz aplikację **ScooterHacking Utility**  
@@ -325,6 +380,7 @@ Tabele jaką znalazłem z oryginalnymi wartościami według numeru
 
 ---
 
+<a name="jak-wgrac-shfw-custom-firmware"></a>
 ## 🚀 Jak wgrać SHFW (Custom Firmware)
 
 ![](screeny/22.png)  
@@ -345,6 +401,7 @@ Dla pewności warto jeszcze raz powtórzyć proces flashowania.
 
 ---
 
+<a name="ustawianie-shfw"></a>
 ## ⚙️ Ustawianie SHFW
 
 > Jeśli tego nie zrobisz, hulajnoga **nie będzie jeździć**, ponieważ nie ma domyślnych ustawień!
@@ -369,6 +426,7 @@ Rozwiń sekcję **Throttle** — tu ustawisz prędkość i ilość amperów dla 
 ℹ️ Po kliknięciu ikonki `i` przy każdej opcji wyświetli się szczegółowy opis w języku angielskim.
 
 
+<a name="silnik-gen3-g30"></a>
 ## 🧠 WAŻNE Silnik nowej generacji model G30 WAŻNE !
 
 Jeśli posiadasz **nowszy silnik trzeciej generacji (Gen 3)** w hulajnodze G30, koniecznie zaznacz opcję **"New motor"** w zakładce `Motor config/Motor settings`.
@@ -393,6 +451,7 @@ Inaczej będą dziwne dźwięki + koło nie będzie jeździć
 
 ---
 
+<a name="zalecane-ustawienia-lekrsu"></a>
 ## ✅ Zalecane ustawienia wg poradnika od lekrsu
   https://github.com/lekrsu/shfw-walkthrough
 
@@ -554,6 +613,7 @@ Tutaj możesz ustawić, po jakim czasie hulajnoga ma się automatycznie wyłącz
 ![](screeny/33.png)
 
 
+<a name="zrodla"></a>
 ## 📚 Źródła:
 
 - https://www.youtube.com/watch?v=WXCJJVfrrk0  
