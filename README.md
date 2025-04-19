@@ -14,9 +14,19 @@
 ---
 
 ## 📌 Obsługiwane modele
-- G30
-- G2
-- F2
+
+- Ninebot Max G2  
+- Ninebot Max G30  
+- Ninebot  F2  
+- Ninebot  F20  
+- Ninebot  F25  
+- Ninebot  F30  
+- Ninebot  F40  
+- Ninebot  E22  
+- Ninebot  E25  
+- Ninebot  E45  
+
+*Dane oparte na opisie z filmu.*
 
 ---
 
