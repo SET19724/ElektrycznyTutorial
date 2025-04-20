@@ -29,6 +29,28 @@
 
 ---
 
+## ☕️ Wsparcie
+
+Jeśli ten projekt okazał się pomocny i chcesz okazać wdzięczność – możesz mnie wesprzeć! 🙏  
+Dzięki każdej małej darowiźnie mam więcej energii (i kofeiny!) do tworzenia kolejnych opracowań i treści opartych na moich doświadczeniach 🚀
+
+
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-%F0%9F%8D%95-orange?style=for-the-badge&logo=buy-me-a-coffee)](https://buymeacoffee.com/nekkogamma)
+
+📲 Możesz też użyć **Revolut** nazwa: `@nekkogamma`  
+<a href="https://revolut.me/nekkogamma" target="_blank">
+  <img src="screeny/darowizna.png" alt="Revolut QR" width="200"/>
+</a>  
+🔗 Link: [https://revolut.me/nekkogamma](https://revolut.me/nekkogamma)
+
+
+> Dziękuję za wsparcie! 💖 Każda kawa to dla mnie ogromna motywacja ☕⚡
+
+
+
+
+---
+
 <a name="obslugiwane-modele"></a>
 ## 📌 Obsługiwane modele
 
