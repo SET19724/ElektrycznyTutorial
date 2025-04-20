@@ -1,5 +1,5 @@
 # 🔧 Odblokowanie hulajnogi Ninebot – wersja BETA
-**Aktualizacja:** 19.04.2025
+**Aktualizacja:** 20.04.2025
 // Opracowanie stworzone w 2dni może zawierać błedy jeśli widzisz błąd daj znać ;)
 
 
@@ -18,20 +18,23 @@
 <a name="obslugiwane-modele"></a>
 ## 📌 Obsługiwane modele
 
-- Ninebot Max G2  
-- Ninebot Max G30  
-- Ninebot  F2  
+- Ninebot Max G2  ✅
+- Ninebot Max G30  ✅
+- Ninebot  F2  ✅
 - Ninebot  F20  
 - Ninebot  F25  
 - Ninebot  F30  
-- Ninebot  F40  
+- Ninebot  F40  ✅
 - Ninebot  E22  
 - Ninebot  E25  
 - Ninebot  E45  
 
-*Dane oparte na opisie z filmu.*
+>*Dane oparte na opisie z filmu.*
 >W przypadku modeli F20,F25,F30,F40 -Jest problemos.
 >Musisz po wgraniu shfw użyć starej wersji aplikacji 2.5 do konfiguracji inaczej źle będą wskakiwać ustawienia
+
+>Jeśli widzisz obok strzałkę to według użytkowników udało im się odblokować dany model
+
 ---
 ## 📚 Spis treści
 
@@ -41,7 +44,7 @@
 - 📽️ [Poradnik wideo od Mc Kuc](#poradnik-wideo)
 - ⚙️ [Proces odblokowania](#proces-odblokowania)
 - 🎯 [Co teraz po odlokowaniu?](#co-teraz)
-- 🌍 [Zmiana regionu – poprzez numer seryjny](#zmiana-regionu-przez-numer-seryjny)
+- 🌍 [Zmiana regionu](#region)
 - 🛴 [Lista prefixów numerów seryjnych](#lista-prefixow-numerow-seryjnych)
 - ✨ [Złoty numer seryjny G30](#zloty-numer-seryjny)
 - 📊 [F2 / F2 Plus / F2 Pro – prędkości](#f2-f2-plus-f2-pro-sport-predkosci)
@@ -50,6 +53,7 @@
 - 🚀 [Jak wgrać SHFW (Custom Firmware)](#jak-wgrac-shfw-custom-firmware)
 - ⚙️ [Ustawianie SHFW](#ustawianie-shfw)
 - 🧠 [WAŻNE jeśli masz Silnik nowej generacji G30 WAŻNE](#silnik-gen3-g30)
+- 🔧 [Zalecana wymiana na: łączniki MR60](#kable)
 - ✅ [Zalecane ustawienia SHFW wg poradnika od lekrsu](#zalecane-ustawienia-lekrsu)
 - 📚 [Źródła](#zrodla)
 
@@ -214,6 +218,14 @@ ZNACZENIE Uceglić – doprowadzić urządzenie (np. hulajnogę) do stanu, w kt�
 
 ![](screeny/12.png)
 
+> ⚠️ **Uwaga – Jeśli masz Błąd „Data format error” podczas wgrywania pliku**  
+>  
+> - Sprawdź, czy **Twój MCU ID (UID)** jest poprawny i **zgadza się z hulajnogą**.  
+> - Upewnij się, że hulajnoga **nie była wcześniej odblokowywana ani programowana ST-LINKiem** (np. przez poprzedniego właściciela).  
+> - Metoda działa **tylko na oryginalnym kontrolerze** – jeśli masz podróbkę lub zamiennik z chin, proces się nie powiedzie.
+> - W przypadku błędnego UID - wygeneruj nowe pliki na podstawie dobrego UID
+
+
 Po zakończeniu pojawi się komunikat: **"FLASH COMPLETE!"**
 Hulajnoga wyda sygnał dźwiękowy „bi-bip”.
 
@@ -230,8 +242,9 @@ Masz dwie opcje:
 
 - 🔧 [Wgraj SHFW – custom firmware](#-jak-wgrać-shfw-custom-firmware)
 
-  - Dużo opcji jest to alternatywne oprogramowanie od https://scooterhacking.org
+  - Dużo opcji daje alternatywne oprogramowanie od https://scooterhacking.org
   - W skrócie możecie ustawić każdy tryb mocy pod siebie i osiągnąć wyższe prędkości
+  - Personalizacja zachowania światła,wyłączenia hulajnogi,start bez odepchania,regulacja mocy hamowania elektronicznego hamulca,poziom baterii podany w liczbie a nie paskach i wiele więcej
 
 
 - 🌍 [Zmień numer seryjny by:](#zmiana-regionu--poprzez-numer-seryjny)
@@ -239,10 +252,10 @@ Masz dwie opcje:
   - Zmienić ograniczenia prędkości
   - Odblokować tempomat
 
-Jak zmienicie oprogramowanie na alternatywne warto korzystać z aplikacji NineDash
+Jeśli zmieniasz oprogramowanie na alternatywne SHFW korzystaj z aplikacji NineDash
  https://play.google.com/store/apps/details?id=adriandp.ninedash
 
-Nie wiadomo czy aplikacja nie wymusi automatycznej aktualizacji która ponownie zablokuje możliwości zmian dla zaawansowanych użytkowników
+Nie wiadomo czy aplikacja oryginalna nie wymusi automatycznej aktualizacji która ponownie zablokuje możliwości zmian dla zaawansowanych użytkowników
 
 
   > ⚠️ **Uwaga prawna**  
@@ -250,15 +263,15 @@ Nie wiadomo czy aplikacja nie wymusi automatycznej aktualizacji która ponownie 
 >  
 > Tak zmodyfikowany pojazd może być użytkowany **wyłącznie na terenie prywatnym i na własną odpowiedzialność**.  
 >  
-> Autor nie ponosi odpowiedzialności za skutki wynikające z nieprzestrzegania przepisów prawa ani za szkody wyrządzone osobom trzecim.
+> Autor nie ponosi odpowiedzialności za skutki wynikające z nieprzestrzegania przepisów prawa ani za wyrządzone szkody.
 
 ---
 
 
-<a name="zmiana-regionu-przez-numer-seryjny"></a>
-## 🌍 Zmiana regionu – poprzez numer seryjny
+<a name="region"></a>
+## 🌍 Zmiana regionu
 
-### Przykład numeru seryjnego (G30):
+### Przykład struktury numeru seryjnego (G30):
 N4GSD1939C0123
 
 | Pozycja  | Fragment | Znaczenie                                      |
@@ -271,7 +284,7 @@ N4GSD1939C0123
 | 10       | C        | Rewizja produktu                               |
 | 11–14    | 0123     | Unikalny numer seryjny                         |
 
-**Najważniejsze są 4 pierwsze znaki!**
+>**Najważniejsze są 4 pierwsze znaki!**
 
 ---
 
@@ -417,9 +430,9 @@ Przejdź do zakładki **"CONFIG"**:
 
 Rozwiń sekcję **Throttle** — tu ustawisz prędkość i ilość amperów dla poszczególnych trybów:
 
-![](screeny/28.png)
+![](screeny/28a.png)
 
-🔸 **Uwaga**: Screen pokazuje tylko wygląd menu — nie kopiuj tych ustawień.
+>🔸 **Uwaga**: Screen pokazuje tylko wygląd menu — nie kopiuj tych ustawień - polecane ustawienia znajdziesz niżej.
 
 ### 📋 Parametry do ustawienia:
 
@@ -451,7 +464,58 @@ Porównaj numer seryjny silnika który znajduje się na silniku przy kodzie QR (
 Inaczej będą dziwne dźwięki + koło nie będzie jeździć
 
 ![](screeny/silnik.png)
+
 ---
+
+<a name="kable"></a>
+## 🔌 Bullet connectors w Ninebot G30 – znany problem i rekomendowana wymiana
+
+W hulajnodze Ninebot G30 oryginalne łączniki typu “bullet” (wpinane kable zasilające silnik) często okazują się **niewystarczające** do bezpiecznego przesyłu prądu, szczególnie po modyfikacjach firmware czy podniesieniu parametrów.  
+ - Były stosowane w pierwszej generacji
+
+### 🛑 Co się dzieje?
+- **Przegrzewanie się styków** przy większym obciążeniu  
+- **Topienie izolacji** lub samego metalu konektora  
+- Ryzyko **przerwy w zasilaniu** lub uszkodzenia przewodów  
+
+Ten problem jest **powszechnie zgłaszany** przez użytkowników G30, zwłaszcza tych, którzy wgrywają custom firmware i zwiększają amperaż silnika.
+ - Ale dotyczy też zwykłych użytkowników
+
+ ![](screeny/kable1.png)
+ ![](screeny/kable2.png)
+
+---
+
+## 🔧 Zalecana wymiana na: łączniki MR60
+
+Aby uniknąć przegrzewania i zapewnić bezpieczny, stały przepływ prądu, warto wymienić oryginalne konektory na **łączniki MR60** (lub alternatywę wytrzymującą wysokie obciążenia):
+
+| Cecha                  | Oryginalne bullet | MR60                  |
+|------------------------|-------------------|-----------------------|
+| Maksymalny prąd        | ~30 A             | do 60 A i więcej      |
+| Materiał styków        | cienki stop miedzi| pozłacane mosiężne    |
+| Izolacja               | PVC, cienka       | nylonowe, grubsze     |
+| Trwałość połączenia    | dość niska        | wysoka                |
+| Bezpieczeństwo         | ryzyko przegrzania| bezpieczne do 60 A    |
+
+### 📌 Zalety MR60
+- **Większa nośność prądu** – pewność działania przy podwyższonym amperażu  
+- **Lepsze styki** – niższy opór, mniejsze nagrzewanie  
+- **Trwalsza izolacja** – odporna na wysokie temperatury  
+- **Prostszy montaż** – pasują na kable 8 AWG–10 AWG  
+
+![](screeny/MR60.png)
+![](screeny/kable3.png)
+
+
+> ⚠️ **Uwaga**: Wymiana konektorów wymaga precyzyjnego lutowania lub użycia odpowiednich zaciskarek.  
+> Jeśli nie masz doświadczenia w lutowaniu, zleć to specjaliście.
+
+
+
+✏️ **Podsumowanie**  
+Znany problem “topiących się” oryginalnych bullet connectors w G30 można łatwo rozwiązać, montując solidne łączniki MR60, które wytrzymują większy prąd nawet po podkręceniu parametrów.  
+
 
 
 ---
@@ -478,7 +542,7 @@ Ustawiacie sobie po kolei 3 tryby czyli ECO,DRIVE,SPORT
 - Ograniczenie prędkości: **wyłączone (0 km/h)**(Przy innych trybach niż sport warto ustawić preferowaną wartość)
 - Acceleration boost: **100%** (Tutaj zalecam stopniowo zwiększać aż się przyzwyczaicie na start np.30%)
 - Brake boost: **50%**
-- Włącz **Overmodulation** dla SPORT/DRIVE
+- Włącz **Overmodulation** dla SPORT/DRIVE(dla obu lub tylko jednego) (Daje wyższe prędkości kosztem szybszego rozładowania baterii)
 
 
 
@@ -527,12 +591,13 @@ Domyślny rozmiar kół w modelach g30 Max to **10"**, ale ustaw:
 - Dla G30 Ustaw **Motor frequency**: `20 kHz` lub `24 kHz`  
   (dla G2 i F2 nie ma tej opcji nic nie rób)
 
----
 
 ### 🔋 Ograniczenia nowszych modeli
 
 Niektóre nowe G30 z nowszym BMS mają ograniczenie prądu baterii do **28A**  
 → przez co będą miały gorsze osiągi niż starsze modele (z limitem **40A**)
+
+---
 
 ###  Prędkość startu / Start bez odpychania
 - Jest to prędkość gdy odpychasz się i dopiero hulajnoga reaguje na przycisk od gazu
