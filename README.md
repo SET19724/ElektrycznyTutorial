@@ -2,6 +2,19 @@
 **Aktualizacja:** 20.04.2025
 // Opracowanie stworzone w 2dni może zawierać błedy jeśli widzisz błąd daj znać ;)
 
+---
+
+🌐 **Wersje językowe (automatyczne tłumaczenia przez Google Translate):**
+
+- 🇵🇱 Polski (Oryginał)
+- EN [English](https://translate.google.com/translate?sl=pl&tl=en&u=https://github.com/SET19724/ElektrycznyTutorial)
+- 🇪🇸 [Español](https://translate.google.com/translate?sl=pl&tl=es&u=https://github.com/SET19724/ElektrycznyTutorial)
+- 🇩🇪 [Deutsch](https://translate.google.com/translate?sl=pl&tl=de&u=https://github.com/SET19724/ElektrycznyTutorial)
+
+> ⚠️ Wszystkie tłumaczenia generowane przez sztuczną inteligencję.  
+> 🧠 Jeśli coś brzmi dziwnie, to wina robota, nie autora - ***chociaż może być to jednak wina autora. ;)***  
+> 💡 Protip: otwórz w przeglądarce na komputerze — mobilny GitHub nie lubi translate'a.
+---
 
 
 > ⚠️ **Zastrzeżenie prawne**  
