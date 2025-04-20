@@ -365,8 +365,8 @@ Tabele jaką znalazłem z oryginalnymi wartościami według numeru
 
 ---
 
-<a name="dodatkowe-info"></a>
-## ℹ️ Dodatkowe info
+
+## ℹ️ Legenda:
 
 **Oznaczenia:**
 - *with CC* – z tempomatem  
@@ -444,80 +444,6 @@ Rozwiń sekcję **Throttle** — tu ustawisz prędkość i ilość amperów dla 
 ℹ️ Po kliknięciu ikonki `i` przy każdej opcji wyświetli się szczegółowy opis w języku angielskim.
 
 
-<a name="silnik-gen3-g30"></a>
-## 🧠 WAŻNE Silnik nowej generacji model G30 WAŻNE !
-
-Jeśli posiadasz **nowszy silnik trzeciej generacji (Gen 3)** w hulajnodze G30, koniecznie zaznacz opcję **"New motor"** w zakładce `Motor config/Motor settings`.
-
-🔍 **Nie jesteś pewien, którą wersję silnika masz?**  
-Porównaj numer seryjny silnika który znajduje się na silniku przy kodzie QR (Motor Serial Number – SN) z poniższą tabelą:
-
-| Numer seryjny silnika (SN)   | Generacja          | Modele                            |
-|------------------------------|--------------------|-----------------------------------|
-| Zaczyna się od `6`           | Pierwsza generacja | Większość starszych modeli        |
-| Zaczyna się od `9`           | Druga generacja    | G30P, niektóre G30Lx              |
-| Zawiera `PCAH`               | Trzecia generacja  | G30P                              |
-| Zawiera `PAAH`               | Trzecia generacja  | G30E                              |
-| Zawiera `PADH` lub `PADJ`    | Trzecia generacja  | G30D                              |
-
-> ✅ **Wniosek:** Jeśli twój numer silnika zawiera `PCAH`, `PAAH`, `PADH` lub `PADJ`, **masz silnik Gen 3** i musisz zaznaczyć odpowiednią opcję w konfiguracji!
-Inaczej będą dziwne dźwięki + koło nie będzie jeździć
-
-![](screeny/silnik.png)
-
----
-
-<a name="kable"></a>
-## 🔌 Bullet connectors w Ninebot G30 – znany problem i rekomendowana wymiana
-
-W hulajnodze Ninebot G30 oryginalne łączniki typu “bullet” (wpinane kable zasilające silnik) często okazują się **niewystarczające** do bezpiecznego przesyłu prądu, szczególnie po modyfikacjach firmware czy podniesieniu parametrów.  
- - Były stosowane w pierwszej generacji
-
-### 🛑 Co się dzieje?
-- **Przegrzewanie się styków** przy większym obciążeniu  
-- **Topienie izolacji** lub samego metalu konektora  
-- Ryzyko **przerwy w zasilaniu** lub uszkodzenia przewodów  
-
-Ten problem jest **powszechnie zgłaszany** przez użytkowników G30, zwłaszcza tych, którzy wgrywają custom firmware i zwiększają amperaż silnika.
- - Ale dotyczy też zwykłych użytkowników
-
- ![](screeny/kable1.png)
- ![](screeny/kable2.png)
-
----
-
-## 🔧 Zalecana wymiana na: łączniki MR60
-
-Aby uniknąć przegrzewania i zapewnić bezpieczny, stały przepływ prądu, warto wymienić oryginalne konektory na **łączniki MR60** (lub alternatywę wytrzymującą wysokie obciążenia):
-
-| Cecha                  | Oryginalne bullet | MR60                  |
-|------------------------|-------------------|-----------------------|
-| Maksymalny prąd        | ~30 A             | do 60 A i więcej      |
-| Materiał styków        | cienki stop miedzi| pozłacane mosiężne    |
-| Izolacja               | PVC, cienka       | nylonowe, grubsze     |
-| Trwałość połączenia    | dość niska        | wysoka                |
-| Bezpieczeństwo         | ryzyko przegrzania| bezpieczne do 60 A    |
-
-### 📌 Zalety MR60
-- **Większa nośność prądu** – pewność działania przy podwyższonym amperażu  
-- **Lepsze styki** – niższy opór, mniejsze nagrzewanie  
-- **Trwalsza izolacja** – odporna na wysokie temperatury  
-- **Prostszy montaż** – pasują na kable 8 AWG–10 AWG  
-
-![](screeny/MR60.png)
-![](screeny/kable3.png)
-
-
-> ⚠️ **Uwaga**: Wymiana konektorów wymaga precyzyjnego lutowania lub użycia odpowiednich zaciskarek.  
-> Jeśli nie masz doświadczenia w lutowaniu, zleć to specjaliście.
-
-
-
-✏️ **Podsumowanie**  
-Znany problem “topiących się” oryginalnych bullet connectors w G30 można łatwo rozwiązać, montując solidne łączniki MR60, które wytrzymują większy prąd nawet po podkręceniu parametrów.  
-
-
-
 ---
 
 <a name="zalecane-ustawienia-lekrsu"></a>
@@ -579,6 +505,33 @@ Domyślny rozmiar kół w modelach g30 Max to **10"**, ale ustaw:
 
 - **G30** → `9.3"`
 - **G2 i F2** → `9.7"`
+
+---
+
+<a name="silnik-gen3-g30"></a>
+## 🧠 WAŻNE Silnik nowej generacji model G30 WAŻNE !
+
+Jeśli posiadasz **nowszy silnik trzeciej generacji (Gen 3)** w hulajnodze G30, koniecznie zaznacz opcję **"New motor"** w zakładce `Motor config/Motor settings`.
+
+🔍 **Nie jesteś pewien, którą wersję silnika masz?**  
+Porównaj numer seryjny silnika który znajduje się na silniku przy kodzie QR (Motor Serial Number – SN) z poniższą tabelą:
+
+| Numer seryjny silnika (SN)   | Generacja          | Modele                            |
+|------------------------------|--------------------|-----------------------------------|
+| Zaczyna się od `6`           | Pierwsza generacja | Większość starszych modeli        |
+| Zaczyna się od `9`           | Druga generacja    | G30P, niektóre G30Lx              |
+| Zawiera `PCAH`               | Trzecia generacja  | G30P                              |
+| Zawiera `PAAH`               | Trzecia generacja  | G30E                              |
+| Zawiera `PADH` lub `PADJ`    | Trzecia generacja  | G30D                              |
+
+> ✅ **Wniosek:** Jeśli twój numer silnika zawiera `PCAH`, `PAAH`, `PADH` lub `PADJ`, **masz silnik Gen 3** i musisz zaznaczyć odpowiednią opcję w konfiguracji!
+Inaczej będą dziwne dźwięki + koło nie będzie jeździć
+
+![](screeny/silnik.png)
+
+---
+
+
 
 ![](screeny/29.png)
 
@@ -681,6 +634,85 @@ Tutaj możesz ustawić, po jakim czasie hulajnoga ma się automatycznie wyłącz
 
 
 ![](screeny/33.png)
+
+---
+
+<a name="silnik-gen3-g30"></a>
+## 🧠 WAŻNE Silnik nowej generacji model G30 WAŻNE !
+
+Jeśli posiadasz **nowszy silnik trzeciej generacji (Gen 3)** w hulajnodze G30, koniecznie zaznacz opcję **"New motor"** w zakładce `Motor config/Motor settings`.
+
+🔍 **Nie jesteś pewien, którą wersję silnika masz?**  
+Porównaj numer seryjny silnika który znajduje się na silniku przy kodzie QR (Motor Serial Number – SN) z poniższą tabelą:
+
+| Numer seryjny silnika (SN)   | Generacja          | Modele                            |
+|------------------------------|--------------------|-----------------------------------|
+| Zaczyna się od `6`           | Pierwsza generacja | Większość starszych modeli        |
+| Zaczyna się od `9`           | Druga generacja    | G30P, niektóre G30Lx              |
+| Zawiera `PCAH`               | Trzecia generacja  | G30P                              |
+| Zawiera `PAAH`               | Trzecia generacja  | G30E                              |
+| Zawiera `PADH` lub `PADJ`    | Trzecia generacja  | G30D                              |
+
+> ✅ **Wniosek:** Jeśli twój numer silnika zawiera `PCAH`, `PAAH`, `PADH` lub `PADJ`, **masz silnik Gen 3** i musisz zaznaczyć odpowiednią opcję w konfiguracji!
+Inaczej będą dziwne dźwięki + koło nie będzie jeździć
+
+![](screeny/silnik.png)
+
+---
+
+<a name="dodatkowe-info"></a>
+<a name="kable"></a>
+## 🔌 Bullet connectors w Ninebot G30 – znany problem i rekomendowana wymiana
+
+W hulajnodze Ninebot G30 oryginalne łączniki typu “bullet” (wpinane kable zasilające silnik) często okazują się **niewystarczające** do bezpiecznego przesyłu prądu, szczególnie po modyfikacjach firmware czy podniesieniu parametrów.  
+ - Były stosowane w pierwszej generacji
+
+### 🛑 Co się dzieje?
+- **Przegrzewanie się styków** przy większym obciążeniu  
+- **Topienie izolacji** lub samego metalu konektora  
+- Ryzyko **przerwy w zasilaniu** lub uszkodzenia przewodów  
+
+Ten problem jest **powszechnie zgłaszany** przez użytkowników G30, zwłaszcza tych, którzy wgrywają custom firmware i zwiększają amperaż silnika.
+ - Ale dotyczy też zwykłych użytkowników
+
+ ![](screeny/kable1.png)
+ ![](screeny/kable2.png)
+
+---
+
+## 🔧 Zalecana wymiana na: łączniki MR60
+
+Aby uniknąć przegrzewania i zapewnić bezpieczny, stały przepływ prądu, warto wymienić oryginalne konektory na **łączniki MR60** (lub alternatywę wytrzymującą wysokie obciążenia):
+
+| Cecha                  | Oryginalne bullet | MR60                  |
+|------------------------|-------------------|-----------------------|
+| Maksymalny prąd        | ~30 A             | do 60 A i więcej      |
+| Materiał styków        | cienki stop miedzi| pozłacane mosiężne    |
+| Izolacja               | PVC, cienka       | nylonowe, grubsze     |
+| Trwałość połączenia    | dość niska        | wysoka                |
+| Bezpieczeństwo         | ryzyko przegrzania| bezpieczne do 60 A    |
+
+### 📌 Zalety MR60
+- **Większa nośność prądu** – pewność działania przy podwyższonym amperażu  
+- **Lepsze styki** – niższy opór, mniejsze nagrzewanie  
+- **Trwalsza izolacja** – odporna na wysokie temperatury  
+- **Prostszy montaż** – pasują na kable 8 AWG–10 AWG  
+
+![](screeny/MR60.png)
+![](screeny/kable3.png)
+
+
+> ⚠️ **Uwaga**: Wymiana konektorów wymaga precyzyjnego lutowania lub użycia odpowiednich zaciskarek.  
+> Jeśli nie masz doświadczenia w lutowaniu, zleć to specjaliście.
+
+
+
+✏️ **Podsumowanie**  
+Znany problem “topiących się” oryginalnych bullet connectors w G30 można łatwo rozwiązać, montując solidne łączniki MR60, które wytrzymują większy prąd nawet po podkręceniu parametrów.  
+
+
+
+---
 
 
 <a name="zrodla"></a>
