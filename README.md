@@ -727,12 +727,14 @@ Aby uniknąć przegrzewania i zapewnić bezpieczny, stały przepływ prądu, war
 - **Prostszy montaż** – pasują na kable 8 AWG–10 AWG  
 
 ![](screeny/MR60.png)
+
 ![](screeny/kable3.png)
 
 
-> ⚠️ **Uwaga**: Wymiana konektorów wymaga precyzyjnego lutowania lub użycia odpowiednich zaciskarek.  
+> ⚠️ **Uwaga**: Wymiana konektorów wymaga lutowania lub użycia odpowiednich zaciskarek.  
 > Jeśli nie masz doświadczenia w lutowaniu, zleć to specjaliście.
-
+>
+>![](screeny/mem1.png)
 
 
 ✏️ **Podsumowanie**  
