@@ -300,7 +300,7 @@ Jeśli zmieniasz oprogramowanie na alternatywne SHFW najlepiej korzystaj z aplik
 
 
 
- <center><img src="screeny/ninedash.jpg" width="35%" height="35%"></center>
+ <center><img src="screeny/ninedash.png" width="35%" height="35%"></center>
 
 
 
