@@ -252,10 +252,21 @@ Masz dwie opcje:
   - Zmienić ograniczenia prędkości
   - Odblokować tempomat
 
-Jeśli zmieniasz oprogramowanie na alternatywne SHFW korzystaj z aplikacji NineDash
+---
+## NINEDASH - APLIKACJA ZASTĘPCZA ZA ORYGINALNĄ
+
+Jeśli zmieniasz oprogramowanie na alternatywne SHFW najlepiej korzystaj z aplikacji NineDash(Android)
  https://play.google.com/store/apps/details?id=adriandp.ninedash
 
-Nie wiadomo czy aplikacja oryginalna nie wymusi automatycznej aktualizacji która ponownie zablokuje możliwości zmian dla zaawansowanych użytkowników
+ >Nie wiadomo czy aplikacja oryginalna nie wymusi automatycznej aktualizacji która ponownie zablokuje możliwości zmian dla zaawansowanych użytkowników
+
+ >Jeśli masz Iphone użyj np.darkbot lub innej alternatywy
+
+
+
+ ![](screeny/ninedash.jpg)
+
+
 
 
   > ⚠️ **Uwaga prawna**  
@@ -491,7 +502,13 @@ Ustawiacie sobie po kolei 3 tryby czyli ECO,DRIVE,SPORT
 - Initial: 0A
 - Variable: 2000
 
-### Brake Hamulce
+**Przykład ustawienia normalnego w aplikacji dla G30 MAX - Działający w trybach dla Sport i Drive**
+
+![](screeny/fieldnormal.jpg)
+
+
+
+### Hamulce(Brake)
 
 Warto w tej zakładce ustawić autobraking na 6A
 
@@ -505,6 +522,10 @@ Domyślny rozmiar kół w modelach g30 Max to **10"**, ale ustaw:
 
 - **G30** → `9.3"`
 - **G2 i F2** → `9.7"`
+
+ >Oryginalnie hulajnoga zawyża prędkość po tej zmianie odczyty na ekranie są zgodne z odczytem według GPS
+
+![](screeny/29.png)
 
 ---
 
@@ -531,13 +552,6 @@ Inaczej będą dziwne dźwięki + koło nie będzie jeździć
 
 ---
 
-
-
-![](screeny/29.png)
-
-> Dzięki temu prędkość na wyświetlaczu będzie bardziej zgodna z rzeczywistą (GPS).
-
----
 
 ### ⚙️ Silnik
 
@@ -723,6 +737,9 @@ Znany problem “topiących się” oryginalnych bullet connectors w G30 można 
 - https://wiki.scooterhacking.org/doku.php?id=nbmax  
 - https://rollerplausch.com/threads/f2-series-informationen-firmware-hardware-tuning.11004/
 - https://rollerplausch.com/threads/shfw-anleitung-2025-scooterhacking-utility-ninebot-xiaomi-e-scooter-tuning.3753/
+- https://www.reddit.com/r/ElectricScooters/comments/10hzreq/nine_bot_melted_wires_discovered_when_changing/
+- https://www.reddit.com/r/NinebotMAX/comments/t9em9t/connectors_melted_no_charging/
+- https://www.reddit.com/r/NinebotMAX/comments/1d5pooc/upgraded_to_mr60/
 
 >License/Licencja:CC BY-NC-SA 4.0
 Dodanie licencji która zakazuje użytku komercyjnego CC BY-NC-SA 4.0
