@@ -3,6 +3,7 @@
 // Opracowanie stworzone w 2dni może zawierać błedy jeśli widzisz błąd daj znać ;)
 
 
+
 > ⚠️ **Zastrzeżenie prawne**  
 >  
 > Niniejszy materiał został stworzony wyłącznie w celach edukacyjnych.  
@@ -264,7 +265,7 @@ Jeśli zmieniasz oprogramowanie na alternatywne SHFW najlepiej korzystaj z aplik
 
 
 
- ![](screeny/ninedash.jpg)
+ <center><img src="screeny/ninedash.jpg" width="35%" height="35%"></center>
 
 
 
