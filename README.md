@@ -90,9 +90,10 @@ Dzięki każdej małej darowiźnie mam więcej energii (i kofeiny!) do tworzenia
 - 🚀 [Jak wgrać SHFW (Custom Firmware)](#jak-wgrac-shfw-custom-firmware)
 - ⚙️ [Ustawianie SHFW](#ustawianie-shfw)
 - 🧠 [WAŻNE jeśli masz Silnik nowej generacji G30 WAŻNE](#silnik-g30)
-- 🔧 [Zalecana wymiana na: łączniki MR60](#kable)
+- 🔧 [Zalecana wymiana na: łączniki MR60 lub MT60](#kable)
 - 🔧 [Typy kontrolerów DRV/ESC](#kontrolery)
 - ✅ [Zalecane ustawienia SHFW wg poradnika od lekrsu](#zalecane-ustawienia)
+- 🔧 [Kody błędów W BUDOWIE](#errorkody)
 - 📚 [Źródła](#zrodla)
 
 
@@ -286,7 +287,7 @@ Masz dwie opcje:
 - 🔧 [Wgraj SHFW – custom firmware](#-jak-wgrać-shfw-custom-firmware)
 
   - Dużo opcji daje alternatywne oprogramowanie od https://scooterhacking.org
-  - W skrócie możecie ustawić każdy tryb mocy pod siebie i osiągnąć wyższe prędkości 35-50km/h
+  - W skrócie możecie ustawić każdy tryb mocy pod siebie i osiągnąć wyższe prędkości 35-50km/h i więcej po modyfikacji kontrolera + baterii
   - Personalizacja zachowania światła,wyłączenia hulajnogi,start bez odepchania,regulacja mocy hamowania elektronicznego hamulca,poziom baterii podany w liczbie a nie paskach i wiele więcej
 
 
@@ -356,6 +357,20 @@ N4GSD1939C0123
 #### F2 :
 - `NAGK` → 22 km/h, bez tempomatu  
 - `NAGS` → 32 km/h, z tempomatem ← zalecana zmiana
+
+#### F30 :
+- `N5GC` → ograniczony
+- `N5GQ` → Większa prędkość i tempomat ← zalecana zmiana na F30E
+
+#### F40 :
+- `N5G?` → ograniczony
+- `N5GE` → Większa prędkość i tempomat ← zalecana zmiana na F40 Global
+
+#### F65 :
+- `N5GJ` → ograniczony
+- `N5G4` → Większa prędkość i tempomat ← zalecana zmiana
+
+
 
 ---
 
@@ -440,7 +455,7 @@ Tabele jaką znalazłem z oryginalnymi wartościami według numeru
 <a name="jak-zmienic-region"></a>
 ## 🔁 Jak zmienić region?
 
-1. Otwórz aplikację **ScooterHacking Utility**  
+1. Otwórz aplikację **ScooterHacking Utility**  [Link](https://utility.cfw.sh)
 2. Przejdź do zakładki:  
    `TOOLS > CHANGE REGION`  
 
@@ -593,7 +608,8 @@ Jak działa? Kontroler silnika zmienia kąt przesunięcia fazowego prądu (tzw. 
 >  - Przy 22 km/h: prąd = 4A  
 >  Większy prąd redukuje siłę pola magnetycznego, umożliwiając wyższe obroty silnika, ale zmniejsza moment obrotowy i może zwiększać zużycie energii.
 >
->Parametry te pozwalają na dynamiczne zarządzanie pracą silnika, optymalizując balans między prędkością a momentem obrotowym w zależności od potrzeb użytkownika i warunków jazdy.
+>Parametry te pozwalają na dynamiczne zarządzanie pracą silnika, optymalizując balans między prędkością a momentem obrotowym w zależności od potrzeb użytkownika i warunków jazdy
+a także ustawień limitów.
 
 ### Hamulce(Brake)
 
@@ -626,13 +642,15 @@ Porównaj numer seryjny silnika który znajduje się na silniku przy kodzie QR (
 
 | Numer seryjny silnika (SN)   | Generacja          | Modele                            |
 |------------------------------|--------------------|-----------------------------------|
+| Zaczyna się od `5`           | Pierwsza generacja | Większość starszych modeli        |
 | Zaczyna się od `6`           | Pierwsza generacja | Większość starszych modeli        |
 | Zaczyna się od `9`           | Druga generacja    | G30P, niektóre G30Lx              |
 | Zawiera `PCAH`               | Trzecia generacja  | G30P                              |
 | Zawiera `PAAH`               | Trzecia generacja  | G30E                              |
 | Zawiera `PADH` lub `PADJ`    | Trzecia generacja  | G30D                              |
+| Zawiera `ANC`    | 3/4 Generacja  | ?                              |
 
-> ✅ **Wniosek:** Jeśli twój numer silnika zawiera `PCAH`, `PAAH`, `PADH` lub `PADJ`, **masz silnik Gen 3** i musisz zaznaczyć odpowiednią opcję w konfiguracji!
+> ✅ **Wniosek:** Jeśli twój numer silnika zawiera `PCAH`, `PAAH`, `PADH`, `ANC` lub `PADJ`, **masz silnik Gen 3** i musisz zaznaczyć odpowiednią opcję w konfiguracji!
 Inaczej będą dziwne dźwięki + koło nie będzie jeździć
 
 ![](screeny/silnik.png)
@@ -738,29 +756,6 @@ Tutaj możesz ustawić, po jakim czasie hulajnoga ma się automatycznie wyłącz
 
 ---
 
-<a name="silnik-g30"></a>
-## 🧠 WAŻNE Silnik nowej generacji model G30 WAŻNE !
-
-Jeśli posiadasz **nowszy silnik trzeciej generacji (Gen 3)** w hulajnodze G30, koniecznie zaznacz opcję **"New motor"** w zakładce `Motor config/Motor settings`.
-
-🔍 **Nie jesteś pewien, którą wersję silnika masz?**  
-Porównaj numer seryjny silnika który znajduje się na silniku przy kodzie QR (Motor Serial Number – SN) z poniższą tabelą:
-
-| Numer seryjny silnika (SN)   | Generacja          | Modele                            |
-|------------------------------|--------------------|-----------------------------------|
-| Zaczyna się od `6`           | Pierwsza generacja | Większość starszych modeli        |
-| Zaczyna się od `9`           | Druga generacja    | G30P, niektóre G30Lx              |
-| Zawiera `PCAH`               | Trzecia generacja  | G30P                              |
-| Zawiera `PAAH`               | Trzecia generacja  | G30E                              |
-| Zawiera `PADH` lub `PADJ`    | Trzecia generacja  | G30D                              |
-
-> ✅ **Wniosek:** Jeśli twój numer silnika zawiera `PCAH`, `PAAH`, `PADH` lub `PADJ`, **masz silnik Gen 3** i musisz zaznaczyć odpowiednią opcję w konfiguracji!
-Inaczej będą dziwne dźwięki + koło nie będzie jeździć
-
-![](screeny/silnik.png)
-
----
-
 <a name="dodatkowe-info"></a>
 <a name="kable"></a>
 ## 🔌 Bullet connectors w Ninebot G30 – znany problem i rekomendowana wymiana
@@ -776,6 +771,8 @@ W hulajnodze Ninebot G30 oryginalne łączniki typu “bullet” (wpinane kable 
 Ten problem jest **powszechnie zgłaszany** przez użytkowników G30, zwłaszcza tych, którzy wgrywają custom firmware i zwiększają amperaż silnika.
  - Ale dotyczy też zwykłych użytkowników
 
+ > ⚠️ **Uwaga**:W przypadku funkcji Acceleration boost nie zaleca się zwiększać jej powyżej 30% jeśli masz stary typ łączników
+
  ![](screeny/kable1.png)
  ![](screeny/kable2.png)
 
@@ -784,7 +781,7 @@ Ten problem jest **powszechnie zgłaszany** przez użytkowników G30, zwłaszcza
 
 ---
 
-## 🔧 Zalecana wymiana na: łączniki MR60
+## 🔧 Zalecana wymiana na: łączniki MR60 lub MT60
 
 Aby uniknąć przegrzewania i zapewnić bezpieczny, stały przepływ prądu, warto wymienić oryginalne konektory na **łączniki MR60** (lub alternatywę wytrzymującą wysokie obciążenia):
 
@@ -814,7 +811,10 @@ Aby uniknąć przegrzewania i zapewnić bezpieczny, stały przepływ prądu, war
 
 
 ✏️ **Podsumowanie**  
-Znany problem “topiących się” oryginalnych bullet connectors w G30 można łatwo rozwiązać, montując solidne łączniki MR60, które wytrzymują większy prąd nawet po podkręceniu parametrów.  
+Znany problem topiących się kabli oryginalnych bullet connectors w G30 można łatwo rozwiązać, montując solidne łączniki MR60 lub MT60, które wytrzymują większy prąd nawet po podkręceniu parametrów.
+
+ - Niektórzy łączyli te kable również na WAGO tutaj opinie są podzielone
+ - **Nie zaleca się zwiększać obciążeń przy SHFW szczególnie parametru Acceleration Boost powyżej 30%**
 
 
 ---
@@ -850,7 +850,10 @@ Najprościej po wersji DRV (w aplikacji również widać typ procesora) lub fizy
 ## Odblokowanie za pomocą ST-Link(W BUDOWIE)
 
 
+---
 
+<a name="errorkody"></a>
+## Kody błędów(W BUDOWIE)
 
 
 ---
