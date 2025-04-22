@@ -1,8 +1,6 @@
-
-
 # 🔧 Odblokowanie hulajnogi Ninebot – wersja BETA
 **Aktualizacja:** 22.04.2025
-// Opracowanie stworzone w 2dni może zawierać błedy jeśli widzisz błąd daj znać ;)
+// Może zawierać błedy jeśli widzisz błąd daj znać najlepiej na discord ;)
 
 ---
 
@@ -67,7 +65,7 @@ Dzięki każdej małej darowiźnie mam więcej energii (i kofeiny!) do tworzenia
 - Ninebot  E25  
 - Ninebot  E45  
 
->*Dane oparte na opisie z filmu.*
+> ⚠️ **Uwaga:*** Dane oparte na opisie z filmu.*
 >W przypadku modeli F20,F25,F30,F40 -Jest problemos.
 >Musisz po wgraniu shfw użyć starej wersji aplikacji 2.5 do konfiguracji inaczej źle będą wskakiwać ustawienia
 
@@ -92,9 +90,11 @@ Dzięki każdej małej darowiźnie mam więcej energii (i kofeiny!) do tworzenia
 - 🚀 [Jak wgrać SHFW (Custom Firmware)](#jak-wgrac-shfw-custom-firmware)
 - ⚙️ [Ustawianie SHFW](#ustawianie-shfw)
 - 🧠 [WAŻNE jeśli masz Silnik nowej generacji G30 WAŻNE](#silnik-g30)
-- 🔧 [Zalecana wymiana na: łączniki MR60](#kable)
+-  [Jak wrócić do oryginalnego oprogramowania(W BUDOWIE)](#powrotstock)
+- 🔧 [Zalecana wymiana na: łączniki MR60 lub MT60](#kable)
 - 🔧 [Typy kontrolerów DRV/ESC](#kontrolery)
 - ✅ [Zalecane ustawienia SHFW wg poradnika od lekrsu](#zalecane-ustawienia)
+- 🔧 [Kody błędów W BUDOWIE](#errorkody)
 - 📚 [Źródła](#zrodla)
 
 
@@ -113,7 +113,7 @@ Dzięki każdej małej darowiźnie mam więcej energii (i kofeiny!) do tworzenia
 ## 🔓 Obsługiwane wersje firmware
 
 Obecnie **nie ma ograniczeń** dotyczących wersji firmware.  
-- Nawet jeśli masz wersję **1.8.1**, metoda powinna zadziałać bez problemu. modele G30,G2
+- Nawet jeśli masz wersję **1.8.11**, metoda powinna zadziałać bez problemu. modele G30,G2
 
 ---
 
@@ -213,7 +213,7 @@ W skrócie:
 2. Zaznacz **"I understand"**
 3. Wybierz model hulajnogi
 4. Wklej skopiowany UID
-   > **Uwaga:** dokładność UID jest kluczowa — jedna pomyłka = nie odblokujesz
+   > ⚠️ **Uwaga:** dokładność UID jest kluczowa — jedna pomyłka = nie odblokujesz
 5. Poczekaj na wygenerowanie plików
 6. Pobierz pliki
 
@@ -258,7 +258,7 @@ Po otrzymaniu plików kliknij trzy kropki i wybierz **"Download"**
 
    ![](screeny/11.png)
 
-> ⚠️ Nie oddalaj się od hulajnogi i jej nie wyłączaj – możesz ją uceglić! W takim wypadku pomoże tylko programator ST-LINK.
+> ⚠️ **Uwaga:** Nie oddalaj się od hulajnogi i jej nie wyłączaj – możesz ją uceglić! W takim wypadku pomoże tylko programator ST-LINK lub wymiana.
 ZNACZENIE Uceglić – doprowadzić urządzenie (np. hulajnogę) do stanu, w którym nie reaguje na włączenie, nie uruchamia się, nie da się go normalnie naprawić ani przywrócić bez specjalistycznego sprzętu (np. ST-LINK, UART itp.).																																																												 
 
 ![](screeny/12.png)
@@ -288,14 +288,15 @@ Masz dwie opcje:
 - 🔧 [Wgraj SHFW – custom firmware](#-jak-wgrać-shfw-custom-firmware)
 
   - Dużo opcji daje alternatywne oprogramowanie od https://scooterhacking.org
-  - W skrócie możecie ustawić każdy tryb mocy pod siebie i osiągnąć wyższe prędkości
+  - W skrócie możecie ustawić każdy tryb mocy pod siebie i osiągnąć wyższe prędkości 35-50km/h i więcej po modyfikacji kontrolera + baterii
   - Personalizacja zachowania światła,wyłączenia hulajnogi,start bez odepchania,regulacja mocy hamowania elektronicznego hamulca,poziom baterii podany w liczbie a nie paskach i wiele więcej
 
 
 - 🌍 [Zmień numer seryjny by:](#zmiana-regionu--poprzez-numer-seryjny)
 
-  - Zmienić ograniczenia prędkości
+  - Zmienić region
   - Odblokować tempomat
+  - Zmienić ograniczenia prędkości
 
 ---
 ## NINEDASH - APLIKACJA ZASTĘPCZA ZA ORYGINALNĄ
@@ -303,7 +304,7 @@ Masz dwie opcje:
 Jeśli zmieniasz oprogramowanie na alternatywne SHFW najlepiej korzystaj z aplikacji NineDash(Android)
  https://play.google.com/store/apps/details?id=adriandp.ninedash
 
- >Nie wiadomo czy aplikacja oryginalna nie wymusi automatycznej aktualizacji która ponownie zablokuje możliwości zmian dla zaawansowanych użytkowników
+ > ⚠️ **Uwaga:**Nie wiadomo czy aplikacja oryginalna nie wymusi automatycznej aktualizacji która ponownie zablokuje możliwości zmian dla zaawansowanych użytkowników
 
  >Jeśli masz Iphone użyj np.Pichis,Darkbot lub innej alternatywy
 
@@ -340,7 +341,7 @@ N4GSD1939C0123
 | 10       | C        | Rewizja produktu                               |
 | 11–14    | 0123     | Unikalny numer seryjny                         |
 
->**Najważniejsze są 4 pierwsze znaki!**
+> ⚠️ **Uwaga:*** *Najważniejsze są 4 pierwsze znaki!**
 
 ---
 
@@ -353,6 +354,32 @@ N4GSD1939C0123
 #### G2:
 - `01GZ` → DE, 20 km/h, bez tempomatu  
 - `01GU` → US, 32 km/h, z tempomatem ← zalecana zmiana  
+
+#### F2 :
+- `NAGK` → 22 km/h, bez tempomatu  
+- `NAGS` → 32 km/h, z tempomatem ← zalecana zmiana
+
+#### F30 :
+- `N5GC` → ograniczony
+- `N5GQ` → Większa prędkość i tempomat ← zalecana zmiana na F30E
+
+#### F40 :
+- `N5G?` → ograniczony
+- `N5GE` → Większa prędkość i tempomat ← zalecana zmiana na F40 Global
+
+#### F65 :
+- `N5GJ` → ograniczony
+- `N5G4` → Większa prędkość i tempomat ← zalecana zmiana
+
+#### D28 :
+- `N5G?` → ograniczony
+- `N5GP` → Większa prędkość + ?tempomat? ←mało informacji
+
+#### D38 :
+- `N8GJ` → ograniczony 25km/h
+- `N8GK` → Większa prędkość 30km/h i tempomat ← zalecana zmiana
+
+
 
 ---
 
@@ -386,12 +413,12 @@ N4GSD1939C0123
 <a name="zloty-numer-seryjny"></a>
 >## ✨ Złoty numer seryjny
 
-Jeśli zmienisz **pozycje 6–9** w numerze seryjnym na `1111`, np.:N4GSD1111C0123
+Jeśli zmienisz **pozycje 6–9** w numerze seryjnym na `1111`, np.:`N4GSD1111C0123`
 
 
 ...i zrestartujesz hulajnogę, odblokujesz **pełny potencjał fabrycznego oprogramowania**.
 
-> To był numer testowy używany przez deweloperów – bez limitów prędkości i z aktywnym tempomatem.
+> ⚠️ **Uwaga:** To był numer testowy używany przez deweloperów – bez limitów prędkości i z funkkcją tempomatu.
 
 ---
 
@@ -437,7 +464,7 @@ Tabele jaką znalazłem z oryginalnymi wartościami według numeru
 <a name="jak-zmienic-region"></a>
 ## 🔁 Jak zmienić region?
 
-1. Otwórz aplikację **ScooterHacking Utility**  
+1. Otwórz aplikację **ScooterHacking Utility**  [Link](https://utility.cfw.sh)
 2. Przejdź do zakładki:  
    `TOOLS > CHANGE REGION`  
 
@@ -447,10 +474,10 @@ Tabele jaką znalazłem z oryginalnymi wartościami według numeru
 
    ![](screeny/21.png)
 
-4. Wpisz pełny, poprawny numer seryjny (zgodnie z tabelą wyżej)  
+4. Wybierz region z listy lub wpisz pełny, poprawny numer seryjny (zgodnie z tabelą wyżej)  
 5. Zatwierdź – hulajnoga uruchomi się ponownie
 
-> ⚠️ Nie wpisuj przypadkowych numerów – użyj poprawnych kodów dla swojego modelu!
+> ⚠️ **Uwaga:** Nie wpisuj przypadkowych numerów – użyj poprawnych kodów dla swojego modelu!
 
 ---
 
@@ -465,10 +492,13 @@ Często pojawia się błąd **"Flashing failed"** — **nie panikuj!**
 SHFW najprawdopodobniej zostało poprawnie wgrane. Najlepiej w takim przypadku **wyłącz i włącz hulajnogę**.
 
 Jeśli na ekranie pojawiają się cyfry, to oznacza poziom naładowania baterii.  
-Przy 100% powinno wyświetlać się `A0`.
+
+>Przy 100% baterii powinno wyświetlać się `A0`.
 
 Po poprawnym wgraniu pojawi się wersja SHFW — jak na screenie poniżej.  
 Dla pewności warto jeszcze raz powtórzyć proces flashowania.
+
+> Po wszystkim ustaw ustawienia SHFW inaczej nie pojeździsz bo nic nie jest skonfigurowane
 
 ![](screeny/25.png)  
 ![](screeny/26.png)
@@ -488,7 +518,7 @@ Rozwiń sekcję **Throttle** — tu ustawisz prędkość i ilość amperów dla 
 
 ![](screeny/28a.png)
 
->🔸 **Uwaga**: Screen pokazuje tylko wygląd menu — nie kopiuj tych ustawień - polecane ustawienia znajdziesz niżej.
+> ⚠️ **Uwaga:** Screen pokazuje tylko wygląd menu — nie kopiuj tych ustawień - polecane ustawienia znajdziesz niżej.
 
 ### 📋 Parametry do ustawienia:
 
@@ -520,39 +550,75 @@ Ustawiacie sobie po kolei 3 tryby czyli ECO,DRIVE,SPORT
 - Tryb SPORT:
   - DPC: **25A**
   - Krzywa: pełna kwadratowa (Quadratic na max w prawo = 1.0)
-- Pozostałe tryby: niższe ustawienia (Ja zalecam 10A ECO,16 DRIVE,25A SPORT)
+- Pozostałe tryby: ***niższe ustawienia (Ja zalecam 10A ECO,16 DRIVE,25A SPORT)***
 - Ograniczenie prędkości: **wyłączone (0 km/h)**(Przy innych trybach niż sport warto ustawić preferowaną wartość)
-- Acceleration boost: **100%** (Tutaj zalecam stopniowo zwiększać aż się przyzwyczaicie na start np.30%)
+- Acceleration boost: **100%** (Tutaj zalecam stopniowo zwiększać aż się przyzwyczaicie na start np.30%)(Daje wyższe prędkości kosztem szybszego rozładowania baterii)
 - Brake boost: **50%**
 - Włącz **Overmodulation** dla SPORT/DRIVE(dla obu lub tylko jednego) (Daje wyższe prędkości kosztem szybszego rozładowania baterii)
 
-<center><img src="screeny/memjulian.png" width="35%" height="35%"></center>
 
 
 ---
 
-### 🧲 Field Weakening (Osłabienie pola magnetycznego)
+### 🧲 Field Weakening (Osłabienie pola magnetycznego) - Ustawienia
+ -***Czym jest ? - Field weakening (osłabianie pola magnetycznego):*** w hulajnogach elektrycznych to technika stosowana w silnikach elektrycznych, głównie bezszczotkowych (BLDC) lub PMSM, która pozwala zwiększyć prędkość obrotową silnika kosztem momentu obrotowego. Polega na manipulacji prądem w uzwojeniach statora, aby zmniejszyć siłę pola magnetycznego generowanego przez magnesy stałe w silniku.
+
+- W praktyce:
+Jak działa? Kontroler silnika zmienia kąt przesunięcia fazowego prądu (tzw. advance angle) lub redukuje prąd w uzwojeniach, co osłabia pole magnetyczne. To pozwala silnikowi osiągać wyższe obroty, przekraczając nominalną prędkość maksymalną.
+
+- Zastosowanie w hulajnogach: Umożliwia osiągnięcie wyższych prędkości, np. podczas jazdy na prostych odcinkach, gdy potrzebna jest mniejsza siła napędowa.
+
+- Zalety: Większa prędkość maksymalna, lepsze dostosowanie do różnych warunków jazdy.
+
+- Wady: Spadek momentu obrotowego, co może utrudniać przyspieszanie lub jazdę pod górę; zwiększone zużycie energii i potencjalne przegrzewanie silnika.
+
+- Technika ta jest często stosowana w zaawansowanych hulajnogach elektrycznych, gdzie kontroler pozwala na dynamiczne zarządzanie wydajnością silnika.
+
+
 
 **Do normalnego użytku:**
-- Prędkość: 20 km/h
-- Initial: 0A
-- Variable: 1200
+- Prędkość(Start speed: 20 km/h
+- Initial field current: 0A
+- Variable field current: 1200 mA/km/h
 
 **Dla wyższej efektywności (niższe zużycie baterii):**
-- Prędkość: 20 km/h
-- Initial: 0A
-- Variable: 600
+- Prędkość(Start speed: 20 km/h
+- Initial field current: 0A
+- Variable field current: 600 mA/km/h
 
-**Dla szczytowej prędkości (może powodować problemy):**
-- Prędkość: 20 km/h
-- Initial: 0A
-- Variable: 2000
+**Dla największych prędkości (może powodować problemy):**
+- Prędkość(Start speed: 20 km/h
+- Initial field current: 0A
+- Variable field current: 2000 mA/km/h
 
 **Przykład ustawienia normalnego w aplikacji dla G30 MAX - Działający w trybach dla Sport i Drive**
 
 ![](screeny/fieldnormal.jpg)
 
+>**Czyli zastosowano tutaj ustawienia z profilu normalnego:**
+- Prędkość(Start speed: 20 km/h
+- Initial field current: 0A
+- Variable field current: 1200 mA/km/h
 
+>## Małe objaśnienie pola magnetycznego (Field Weakening) w hulajnogach elektrycznych
+>
+>Poniżej przedstawiono wyjaśnienie kluczowych parametrów związanych z techniką osłabiania pola magnetycznego w silnikach hulajnóg elektrycznych:P
+>- **Prędkość początkowa (Start speed: 20 km/h)**  
+>  Minimalna prędkość, przy której aktywuje się osłabianie pola magnetycznego. Poniżej 20 km/h silnik działa w standardowym trybie, zapewniając maksymalny moment obrotowy.
+> Powyżej tej wartości kontroler może zacząć osłabiać pole, zwiększając prędkość obrotową kosztem siły napędowej.
+>
+>- **Początkowy prąd pola (Initial field current: 0A)**  
+>  Przy prędkości początkowej (20 km/h) nie wprowadza się dodatkowego prądu do osłabiania pola magnetycznego. Silnik pracuje w nominalnych warunkach, co gwarantuje wysoką
+>efektywność i maksymalny moment obrotowy na początku procesu osłabiania.
+>
+>- **Zmienny prąd pola (Variable field current: 2000 mA/km/h)**  
+>  Określa tempo zwiększania prądu osłabiającego pole magnetyczne wraz ze wzrostem prędkości. Za każdy 1 km/h powyżej 20 km/h prąd wzrasta o 2000 mA (2A). Przykładowo:
+>  - Przy 21 km/h: prąd = 2A
+>  - Przy 22 km/h: prąd = 4A  
+>  Większy prąd redukuje siłę pola magnetycznego, umożliwiając wyższe obroty silnika, ale zmniejsza moment obrotowy i może zwiększać zużycie energii.
+>
+>Parametry te pozwalają na dynamiczne zarządzanie pracą silnika, optymalizując balans między prędkością a momentem obrotowym w zależności od potrzeb użytkownika i warunków jazdy
+a także ustawień limitów.
 
 ### Hamulce(Brake)
 
@@ -569,7 +635,7 @@ Domyślny rozmiar kół w modelach g30 Max to **10"**, ale ustaw:
 - **G30** → `9.3"`
 - **G2 i F2** → `9.7"`
 
- >Oryginalnie hulajnoga zawyża prędkość po tej zmianie odczyty na ekranie są zgodne z odczytem według GPS
+ > ⚠️ **Uwaga:**Oryginalnie hulajnoga zawyża prędkość po tej zmianie odczyty na ekranie są zgodne z odczytem według GPS
 
 ![](screeny/29.png)
 
@@ -585,13 +651,15 @@ Porównaj numer seryjny silnika który znajduje się na silniku przy kodzie QR (
 
 | Numer seryjny silnika (SN)   | Generacja          | Modele                            |
 |------------------------------|--------------------|-----------------------------------|
+| Zaczyna się od `5`           | Pierwsza generacja | Większość starszych modeli        |
 | Zaczyna się od `6`           | Pierwsza generacja | Większość starszych modeli        |
 | Zaczyna się od `9`           | Druga generacja    | G30P, niektóre G30Lx              |
 | Zawiera `PCAH`               | Trzecia generacja  | G30P                              |
 | Zawiera `PAAH`               | Trzecia generacja  | G30E                              |
 | Zawiera `PADH` lub `PADJ`    | Trzecia generacja  | G30D                              |
+| Zawiera `ANC`    | 3/4 Generacja  | ?                              |
 
-> ✅ **Wniosek:** Jeśli twój numer silnika zawiera `PCAH`, `PAAH`, `PADH` lub `PADJ`, **masz silnik Gen 3** i musisz zaznaczyć odpowiednią opcję w konfiguracji!
+> ✅ **Wniosek:** Jeśli twój numer silnika zawiera `PCAH`, `PAAH`, `PADH`, `ANC` lub `PADJ`, **masz silnik Gen 3** i musisz zaznaczyć odpowiednią opcję w konfiguracji!
 Inaczej będą dziwne dźwięki + koło nie będzie jeździć
 
 ![](screeny/silnik.png)
@@ -614,9 +682,9 @@ Niektóre nowe G30 z nowszym BMS mają ograniczenie prądu baterii do **28A**
 
 ###  Prędkość startu / Start bez odpychania
 - Jest to prędkość gdy odpychasz się i dopiero hulajnoga reaguje na przycisk od gazu
--Domyślnie jest ustawione na 5km/h
--Możesz zmienić według tego jak ci pasuje
--Jeśli chcesz ruszać bez odpychania zmieniasz na 0km/h
+- Domyślnie jest ustawione na 5km/h
+- Możesz zmienić według tego jak ci pasuje
+- Jeśli chcesz ruszać bez odpychania zmieniasz na 0km/h
 
 
 ![](screeny/31.png)
@@ -626,16 +694,16 @@ Niektóre nowe G30 z nowszym BMS mają ograniczenie prądu baterii do **28A**
 ## 🛠️ Ustawienia tempomatu (Cruise Control)
 
 ![](screeny/32.png)				   
-Funkcja **Cruise Control** (tempomat) oferuje cztery tryby działania:
+Funkcja **Cruise Control (Tempomat)** oferuje cztery tryby działania:
 
 - **Off** – tempomat wyłączony  
-- **Time** – tempomat włącza się po określonym czasie (ustawianym przez użytkownika)  
-- **Single tap** – tempomat aktywuje się po jednokrotnym naciśnięciu manetki gazu  
-- **Double tap** – tempomat aktywuje się po dwukrotnym szybkim naciśnięciu manetki gazu  (trzeba wyczuć czasem do połowy wciskam żeby łapało)(tą opcję polecam)
+- **Time** – tempomat włącza się po określonym czasie jechania ze stałą prędkością (ustawianym przez użytkownika)  
+- **Pojedyńcze wciśnięcie manetki gazu (Single tap)** – tempomat aktywuje się po jednokrotnym naciśnięciu manetki gazu  (trzeba wyczuć czasem do połowy wciskam żeby łapało)
+- **Podwójne wciśnięcie manetki gazu (Double tap)** – tempomat aktywuje się po dwukrotnym szybkim naciśnięciu manetki gazu  (trzeba wyczuć czasem do połowy wciskam żeby łapało)(tą opcję polecam)
 
 ---
 
-### 🔄 Zmiana prędkości tempomatu za pomocą manetki(Opcja Increase/decrease CC speed with throttle:):
+### 🔄 Dodatkowa funkcja - Zmiana prędkości tempomatu za pomocą manetki(Opcja Increase/decrease CC speed with throttle:):
 
 - Wciśnięcie manetki **poniżej 30% przez 0,75 sekundy** → prędkość zmniejsza się o **1 km/h**
 - Wciśnięcie manetki **powyżej 50% przez 0,75 sekundy** → prędkość zwiększa się o **1 km/h**
@@ -657,7 +725,7 @@ Możesz wybrać, jaki sygnał dźwiękowy będzie odtwarzany przy **włączeniu*
 
 | Ustawienie     | Opis                                      |
 |----------------|-------------------------------------------|
-| **None**       | Brak jakiegokolwiek dźwięku               |
+| **None**       | Brak jakiegokolwiek dźwięku(Nie zalecane)               |
 | **Single**     | Krótkie pojedyncze „piknięcie”   (Tą opcję polecam)         |
 | **Long**       | Dłuższy sygnał dźwiękowy                  |
 | **Double**     | Podwójne krótkie „piknięcia”              |
@@ -668,16 +736,16 @@ Możesz wybrać, jaki sygnał dźwiękowy będzie odtwarzany przy **włączeniu*
 ## 💡 Ustawienia oświetlenia (Light Mode)
 
 Oświetlenie hulajnogi może być dostosowane do własnych preferencji.  
-Dostępne są następujące tryby działania światła hamowania (światło tylne):
+Dostępne są następujące tryby działania świateł:
 
 | Tryb       | Opis                                                                 |
 |------------|----------------------------------------------------------------------|
-| **Default**  | Światło hamowania **miga**, gdy naciskasz hamulec, z ustawioną częstotliwością migania *(Brake light flash speed)*. |
-| **Static**   | Światło hamowania jest **połączone z przednim światłem** – jeśli włączysz przednie światło, tylne również świeci. |
-| **Reversed** | Światło hamowania **miga**, dopóki nie naciśniesz hamulca – wtedy **gaśnie**. |
-| **Strobe**   | Tworzy **efekt stroboskopowy** światła hamowania, z ustawioną częstotliwością migania. |
-| **German**   | Tylne światło jest **zawsze włączone**, a tylko przednie można włączać i wyłączać. |
-| **Car**      | Światło hamowania działa jak w samochodzie – zapala się **tylko w momencie nacisku hamulca** (jak w modelu Max G2). |
+| **Domyślny (Default)**  | Światło hamowania **miga**, gdy naciskasz hamulec, z ustawioną częstotliwością migania według parametru **(Brake light flash speed)**. |
+| **Statyczny (Static)**   | Światło hamowania jest **połączone z przednim światłem** – jeśli włączysz przednie światło, tylne również świeci. |
+| **Odwrócony (Reversed)** | Światło hamowania **miga**, dopóki nie naciśniesz hamulca – wtedy **gaśnie**. |
+| **Stroboskopowy (Strobe)**   | Tworzy **efekt stroboskopowy** światła hamowania, z ustawioną częstotliwością migania. |
+| **Niemiecki (German)**   | Tylne światło jest **zawsze włączone**,miga podczas hamowania, a tylko przednie można włączać i wyłączać. |
+| **Auto (Car)**      | Światło hamowania działa jak w samochodzie – zapala się **tylko w momencie nacisku hamulca** (jak w modelu Max G2). |
 
 > 🛠️ Ustawienie częstotliwości migania znajdziesz pod parametrem **Brake light flash speed**
 
@@ -689,34 +757,11 @@ Dostępne są następujące tryby działania światła hamowania (światło tyln
 
 Tutaj możesz ustawić, po jakim czasie hulajnoga ma się automatycznie wyłączyć:
 
-- **Auto-shutdown delay** – opóźnienie automatycznego wyłączenia podczas normalnego użytkowania - Czyli kiedy zostawiasz ją włączoną po jakim czasie sama się wyłączy
-- **Auto-shutdown delay when locked** – opóźnienie automatycznego wyłączenia, gdy hulajnoga jest **zablokowana** -Czyli kiedy zostawiasz ją włączoną i aktywujesz blokadę(żeby nikt jej nie ruszał) po jakim czasie sama się wyłączy (Tutaj zalecam ustawić na MAX)--Pamiętaj że po określonym czasie ona sama się odblokuje i ktoś może sobię włączyć i odjechać brum brum sadcat ;)
+- **Opóźnienie automatycznego wyłączenia (Auto-shutdown delay)** – opóźnienie automatycznego wyłączenia podczas normalnego użytkowania - Czyli kiedy zostawiasz ją włączoną po jakim czasie sama się wyłączy
+- **Opóźnienie automatycznego wyłączenia przy włączonej blokadzie antykradzieżowej (Auto-shutdown delay when locked)** – opóźnienie automatycznego wyłączenia, gdy hulajnoga jest **zablokowana** -Czyli kiedy zostawiasz ją włączoną i aktywujesz blokadę(żeby nikt jej nie ruszał) po jakim czasie sama się wyłączy (Tutaj zalecam ustawić na MAX)--Pamiętaj że po określonym czasie ona sama się odblokuje i ktoś może sobię włączyć i odjechać brum brum sadcat ;)
 
 
 ![](screeny/33.png)
-
----
-
-<a name="silnik-g30"></a>
-## 🧠 WAŻNE Silnik nowej generacji model G30 WAŻNE !
-
-Jeśli posiadasz **nowszy silnik trzeciej generacji (Gen 3)** w hulajnodze G30, koniecznie zaznacz opcję **"New motor"** w zakładce `Motor config/Motor settings`.
-
-🔍 **Nie jesteś pewien, którą wersję silnika masz?**  
-Porównaj numer seryjny silnika który znajduje się na silniku przy kodzie QR (Motor Serial Number – SN) z poniższą tabelą:
-
-| Numer seryjny silnika (SN)   | Generacja          | Modele                            |
-|------------------------------|--------------------|-----------------------------------|
-| Zaczyna się od `6`           | Pierwsza generacja | Większość starszych modeli        |
-| Zaczyna się od `9`           | Druga generacja    | G30P, niektóre G30Lx              |
-| Zawiera `PCAH`               | Trzecia generacja  | G30P                              |
-| Zawiera `PAAH`               | Trzecia generacja  | G30E                              |
-| Zawiera `PADH` lub `PADJ`    | Trzecia generacja  | G30D                              |
-
-> ✅ **Wniosek:** Jeśli twój numer silnika zawiera `PCAH`, `PAAH`, `PADH` lub `PADJ`, **masz silnik Gen 3** i musisz zaznaczyć odpowiednią opcję w konfiguracji!
-Inaczej będą dziwne dźwięki + koło nie będzie jeździć
-
-![](screeny/silnik.png)
 
 ---
 
@@ -735,6 +780,8 @@ W hulajnodze Ninebot G30 oryginalne łączniki typu “bullet” (wpinane kable 
 Ten problem jest **powszechnie zgłaszany** przez użytkowników G30, zwłaszcza tych, którzy wgrywają custom firmware i zwiększają amperaż silnika.
  - Ale dotyczy też zwykłych użytkowników
 
+ > ⚠️ **Uwaga:** W przypadku funkcji Acceleration boost nie zaleca się zwiększać jej powyżej 30% jeśli masz stary typ łączników
+
  ![](screeny/kable1.png)
  ![](screeny/kable2.png)
 
@@ -743,7 +790,7 @@ Ten problem jest **powszechnie zgłaszany** przez użytkowników G30, zwłaszcza
 
 ---
 
-## 🔧 Zalecana wymiana na: łączniki MR60
+## 🔧 Zalecana wymiana na: łączniki MR60 lub MT60
 
 Aby uniknąć przegrzewania i zapewnić bezpieczny, stały przepływ prądu, warto wymienić oryginalne konektory na **łączniki MR60** (lub alternatywę wytrzymującą wysokie obciążenia):
 
@@ -773,7 +820,15 @@ Aby uniknąć przegrzewania i zapewnić bezpieczny, stały przepływ prądu, war
 
 
 ✏️ **Podsumowanie**  
-Znany problem “topiących się” oryginalnych bullet connectors w G30 można łatwo rozwiązać, montując solidne łączniki MR60, które wytrzymują większy prąd nawet po podkręceniu parametrów.  
+Znany problem topiących się kabli oryginalnych bullet connectors w G30 można łatwo rozwiązać, montując solidne łączniki MR60 lub MT60, które wytrzymują większy prąd nawet po podkręceniu parametrów.
+
+ - Niektórzy łączyli te kable również na WAGO tutaj opinie są podzielone
+ - **Nie zaleca się zwiększać obciążeń przy SHFW szczególnie parametru Acceleration Boost powyżej 30%**
+
+---
+<a name="powrotstock"></a>
+##  Jak wrócić do oryginalnego oprogramowania(W BUDOWIE)
+
 
 
 ---
@@ -799,9 +854,15 @@ Znany problem “topiących się” oryginalnych bullet connectors w G30 można 
 
 ![](screeny/kontrolergen2.png)
 
->📌 **Jak rozpoznać?**  
+> ⚠️ **Uwaga:**📌 **Jak rozpoznać?**  
 Najprościej po wersji DRV (w aplikacji również widać typ procesora) lub fizycznie po otworzeniu hulajnogi.
+>
+>![](screeny/) <center><img src="screeny/rodzajprocka.png" width="35%" height="35%"></center>
 
+
+## 🎛️ Kontroler F20D
+
+<center><img src="screeny/kontrolerf20d.png" width="35%" height="35%"></center>
 
 ---
 
@@ -988,6 +1049,14 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 - **Do niektórych błędów wymagane są narzędzia jak [Reflasher](https://scooterhack.in/reflasher),[NinebotFlasher](https://www.microsoft.com/en-us/p/ninebot-flasher/9p5hws0hq55s),[IAP](https://scooterhack.in/iapce)**
 - **Często reset (wyłączenie i włączenie hulajnogi) lub ponowne podłączenie kabli rozwiązuje drobne problemy**
 - **Aby sprawdzić stan baterii,napięcia,ilość cykli naładowania,przewidywany zasięg użyj [Scootbatt](https://play.google.com/store/apps/details?id=com.basse.scootbatt)**
+
+
+---
+
+<a name="FAQ"></a>
+## FAQ(W BUDOWIE)
+
+
 
 
 ---
