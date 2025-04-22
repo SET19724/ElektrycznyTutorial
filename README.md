@@ -1,5 +1,5 @@
 # 🔧 Odblokowanie hulajnogi Ninebot – wersja BETA
-**Aktualizacja:** 21.04.2025
+**Aktualizacja:** 22.04.2025
 // Może zawierać błedy jeśli widzisz błąd daj znać najlepiej na discord ;)
 
 ---
@@ -65,7 +65,7 @@ Dzięki każdej małej darowiźnie mam więcej energii (i kofeiny!) do tworzenia
 - Ninebot  E25  
 - Ninebot  E45  
 
->*Dane oparte na opisie z filmu.*
+> ⚠️ **Uwaga:*** Dane oparte na opisie z filmu.*
 >W przypadku modeli F20,F25,F30,F40 -Jest problemos.
 >Musisz po wgraniu shfw użyć starej wersji aplikacji 2.5 do konfiguracji inaczej źle będą wskakiwać ustawienia
 
@@ -78,7 +78,7 @@ Dzięki każdej małej darowiźnie mam więcej energii (i kofeiny!) do tworzenia
 - 🔓 [Obsługiwane wersje firmware](#obsługiwane-wersje-firmware)
 - 🎉 [Dołącz do Discorda](#dolacz-do-discorda)
 - 📽️ [Poradnik wideo od Mc Kuc](#poradnik-wideo)
-- ⚙️ [Proces odblokowania bot](#proces-odblokowania)
+- ⚙️ [Proces odblokowania Bot](#proces-odblokowania)
 - ⚙️ [Alternatywa Proces odblokowania ST-Link](#stlink)
 - 🎯 [Co teraz po odlokowaniu?](#co-teraz)
 - 🌍 [Zmiana regionu](#region)
@@ -90,6 +90,7 @@ Dzięki każdej małej darowiźnie mam więcej energii (i kofeiny!) do tworzenia
 - 🚀 [Jak wgrać SHFW (Custom Firmware)](#jak-wgrac-shfw-custom-firmware)
 - ⚙️ [Ustawianie SHFW](#ustawianie-shfw)
 - 🧠 [WAŻNE jeśli masz Silnik nowej generacji G30 WAŻNE](#silnik-g30)
+-  [Jak wrócić do oryginalnego oprogramowania(W BUDOWIE)](#powrotstock)
 - 🔧 [Zalecana wymiana na: łączniki MR60 lub MT60](#kable)
 - 🔧 [Typy kontrolerów DRV/ESC](#kontrolery)
 - ✅ [Zalecane ustawienia SHFW wg poradnika od lekrsu](#zalecane-ustawienia)
@@ -212,7 +213,7 @@ W skrócie:
 2. Zaznacz **"I understand"**
 3. Wybierz model hulajnogi
 4. Wklej skopiowany UID
-   > **Uwaga:** dokładność UID jest kluczowa — jedna pomyłka = nie odblokujesz
+   > ⚠️ **Uwaga:** dokładność UID jest kluczowa — jedna pomyłka = nie odblokujesz
 5. Poczekaj na wygenerowanie plików
 6. Pobierz pliki
 
@@ -257,7 +258,7 @@ Po otrzymaniu plików kliknij trzy kropki i wybierz **"Download"**
 
    ![](screeny/11.png)
 
-> ⚠️ Nie oddalaj się od hulajnogi i jej nie wyłączaj – możesz ją uceglić! W takim wypadku pomoże tylko programator ST-LINK.
+> ⚠️ **Uwaga:** Nie oddalaj się od hulajnogi i jej nie wyłączaj – możesz ją uceglić! W takim wypadku pomoże tylko programator ST-LINK lub wymiana.
 ZNACZENIE Uceglić – doprowadzić urządzenie (np. hulajnogę) do stanu, w którym nie reaguje na włączenie, nie uruchamia się, nie da się go normalnie naprawić ani przywrócić bez specjalistycznego sprzętu (np. ST-LINK, UART itp.).																																																												 
 
 ![](screeny/12.png)
@@ -303,7 +304,7 @@ Masz dwie opcje:
 Jeśli zmieniasz oprogramowanie na alternatywne SHFW najlepiej korzystaj z aplikacji NineDash(Android)
  https://play.google.com/store/apps/details?id=adriandp.ninedash
 
- >Nie wiadomo czy aplikacja oryginalna nie wymusi automatycznej aktualizacji która ponownie zablokuje możliwości zmian dla zaawansowanych użytkowników
+ > ⚠️ **Uwaga:**Nie wiadomo czy aplikacja oryginalna nie wymusi automatycznej aktualizacji która ponownie zablokuje możliwości zmian dla zaawansowanych użytkowników
 
  >Jeśli masz Iphone użyj np.Pichis,Darkbot lub innej alternatywy
 
@@ -340,7 +341,7 @@ N4GSD1939C0123
 | 10       | C        | Rewizja produktu                               |
 | 11–14    | 0123     | Unikalny numer seryjny                         |
 
->**Najważniejsze są 4 pierwsze znaki!**
+> ⚠️ **Uwaga:*** *Najważniejsze są 4 pierwsze znaki!**
 
 ---
 
@@ -369,6 +370,14 @@ N4GSD1939C0123
 #### F65 :
 - `N5GJ` → ograniczony
 - `N5G4` → Większa prędkość i tempomat ← zalecana zmiana
+
+#### D28 :
+- `N5G?` → ograniczony
+- `N5GP` → Większa prędkość + ?tempomat? ←mało informacji
+
+#### D38 :
+- `N8GJ` → ograniczony 25km/h
+- `N8GK` → Większa prędkość 30km/h i tempomat ← zalecana zmiana
 
 
 
@@ -404,12 +413,12 @@ N4GSD1939C0123
 <a name="zloty-numer-seryjny"></a>
 >## ✨ Złoty numer seryjny
 
-Jeśli zmienisz **pozycje 6–9** w numerze seryjnym na `1111`, np.:N4GSD1111C0123
+Jeśli zmienisz **pozycje 6–9** w numerze seryjnym na `1111`, np.:`N4GSD1111C0123`
 
 
 ...i zrestartujesz hulajnogę, odblokujesz **pełny potencjał fabrycznego oprogramowania**.
 
-> To był numer testowy używany przez deweloperów – bez limitów prędkości i z aktywnym tempomatem.
+> ⚠️ **Uwaga:** To był numer testowy używany przez deweloperów – bez limitów prędkości i z funkkcją tempomatu.
 
 ---
 
@@ -468,7 +477,7 @@ Tabele jaką znalazłem z oryginalnymi wartościami według numeru
 4. Wybierz region z listy lub wpisz pełny, poprawny numer seryjny (zgodnie z tabelą wyżej)  
 5. Zatwierdź – hulajnoga uruchomi się ponownie
 
-> ⚠️ Nie wpisuj przypadkowych numerów – użyj poprawnych kodów dla swojego modelu!
+> ⚠️ **Uwaga:** Nie wpisuj przypadkowych numerów – użyj poprawnych kodów dla swojego modelu!
 
 ---
 
@@ -509,7 +518,7 @@ Rozwiń sekcję **Throttle** — tu ustawisz prędkość i ilość amperów dla 
 
 ![](screeny/28a.png)
 
->🔸 **Uwaga**: Screen pokazuje tylko wygląd menu — nie kopiuj tych ustawień - polecane ustawienia znajdziesz niżej.
+> ⚠️ **Uwaga:** Screen pokazuje tylko wygląd menu — nie kopiuj tych ustawień - polecane ustawienia znajdziesz niżej.
 
 ### 📋 Parametry do ustawienia:
 
@@ -626,7 +635,7 @@ Domyślny rozmiar kół w modelach g30 Max to **10"**, ale ustaw:
 - **G30** → `9.3"`
 - **G2 i F2** → `9.7"`
 
- >Oryginalnie hulajnoga zawyża prędkość po tej zmianie odczyty na ekranie są zgodne z odczytem według GPS
+ > ⚠️ **Uwaga:**Oryginalnie hulajnoga zawyża prędkość po tej zmianie odczyty na ekranie są zgodne z odczytem według GPS
 
 ![](screeny/29.png)
 
@@ -771,7 +780,7 @@ W hulajnodze Ninebot G30 oryginalne łączniki typu “bullet” (wpinane kable 
 Ten problem jest **powszechnie zgłaszany** przez użytkowników G30, zwłaszcza tych, którzy wgrywają custom firmware i zwiększają amperaż silnika.
  - Ale dotyczy też zwykłych użytkowników
 
- > ⚠️ **Uwaga**:W przypadku funkcji Acceleration boost nie zaleca się zwiększać jej powyżej 30% jeśli masz stary typ łączników
+ > ⚠️ **Uwaga:** W przypadku funkcji Acceleration boost nie zaleca się zwiększać jej powyżej 30% jeśli masz stary typ łączników
 
  ![](screeny/kable1.png)
  ![](screeny/kable2.png)
@@ -816,6 +825,11 @@ Znany problem topiących się kabli oryginalnych bullet connectors w G30 można 
  - Niektórzy łączyli te kable również na WAGO tutaj opinie są podzielone
  - **Nie zaleca się zwiększać obciążeń przy SHFW szczególnie parametru Acceleration Boost powyżej 30%**
 
+---
+<a name="powrotstock"></a>
+##  Jak wrócić do oryginalnego oprogramowania(W BUDOWIE)
+
+
 
 ---
 
@@ -840,7 +854,7 @@ Znany problem topiących się kabli oryginalnych bullet connectors w G30 można 
 
 ![](screeny/kontrolergen2.png)
 
->📌 **Jak rozpoznać?**  
+> ⚠️ **Uwaga:**📌 **Jak rozpoznać?**  
 Najprościej po wersji DRV (w aplikacji również widać typ procesora) lub fizycznie po otworzeniu hulajnogi.
 
 
@@ -854,6 +868,14 @@ Najprościej po wersji DRV (w aplikacji również widać typ procesora) lub fizy
 
 <a name="errorkody"></a>
 ## Kody błędów(W BUDOWIE)
+
+
+---
+
+<a name="FAQ"></a>
+## FAQ(W BUDOWIE)
+
+
 
 
 ---
