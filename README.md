@@ -1,7 +1,7 @@
 
 
 # 🔧 Odblokowanie hulajnogi Ninebot – wersja BETA
-**Aktualizacja:** 20.04.2025
+**Aktualizacja:** 22.04.2025
 // Opracowanie stworzone w 2dni może zawierać błedy jeśli widzisz błąd daj znać ;)
 
 ---
