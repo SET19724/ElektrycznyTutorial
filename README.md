@@ -67,7 +67,7 @@ Dzięki każdej małej darowiźnie mam więcej energii (i kofeiny!) do tworzenia
 
 > ⚠️ **Uwaga:*** Dane oparte na opisie z filmu.*
 >W przypadku modeli F20,F25,F30,F40 -Jest problemos.
->Musisz po wgraniu shfw użyć starej wersji aplikacji 2.5 do konfiguracji inaczej źle będą wskakiwać ustawienia
+>Musisz po wgraniu shfw w wersji 0.3.6 użyj starej wersji aplikacji SHU 2.5 do konfiguracji inaczej źle będą wskakiwać ustawienia
 
 >Jeśli widzisz obok strzałkę to według użytkowników udało im się odblokować dany model
 
@@ -89,6 +89,7 @@ Dzięki każdej małej darowiźnie mam więcej energii (i kofeiny!) do tworzenia
 - 🔁 [Jak zmienić region?](#jak-zmienic-region)
 - 🚀 [Jak wgrać SHFW (Custom Firmware)](#jak-wgrac-shfw-custom-firmware)
 - ⚙️ [Ustawianie SHFW](#ustawianie-shfw)
+- ⚙️ [Obsługiwane modele SHFW-Changelog](#shfwwsparcie)
 - 🧠 [WAŻNE jeśli masz Silnik nowej generacji G30 WAŻNE](#silnik-g30)
 -  [Jak wrócić do oryginalnego oprogramowania(W BUDOWIE)](#powrotstock)
 - 🔧 [Zalecana wymiana na: łączniki MR60 lub MT60](#kable)
@@ -96,7 +97,6 @@ Dzięki każdej małej darowiźnie mam więcej energii (i kofeiny!) do tworzenia
 - ✅ [Zalecane ustawienia SHFW wg poradnika od lekrsu](#zalecane-ustawienia)
 - 🔧 [Kody błędów W BUDOWIE](#errorkody)
 - 📚 [Źródła](#zrodla)
-
 
 
 
@@ -484,6 +484,7 @@ Tabele jaką znalazłem z oryginalnymi wartościami według numeru
 <a name="jak-wgrac-shfw-custom-firmware"></a>
 ## 🚀 Jak wgrać SHFW (Custom Firmware)
 
+
 ![](screeny/22.png)  
 ![](screeny/23.png)  
 ![](screeny/24.png)
@@ -502,6 +503,296 @@ Dla pewności warto jeszcze raz powtórzyć proces flashowania.
 
 ![](screeny/25.png)  
 ![](screeny/26.png)
+
+---
+
+<a name="shfwwsparcie"></a>
+## 🛴 Obsługiwane modele SHFW - Obecna wersja SHFW: **3.10.1** (24.01.2025)
+
+> **Lista modeli od której wersji są obsługiwane przez SHFW**
+
+| Model hulajnogi                     | Wersja SHFW od której zostało dodane wsprarcie |
+|------------------------------------|--------------------------------------|
+| Segway G30                         | v0.2.2                               |
+| E-Series                           | v0.2.4                               |
+| Segway Max (nowe silniki)         | v0.3.0 (base 187)                    |
+| Xiaomi GD32                        | v0.3.0 (base 247)                    |
+| EsX (Max G30LE)                    | v0.3.2 (base 255)                    |
+| F-Series (F20, F25, F30, F40)      | v0.3.6 – Brak nowszej wersji. **Użyj starszej aplikacji SHU 2.5 do konfirguracji ustawień** [Link](https://cdn.discordapp.com/attachments/828606571373527040/1281327305867788381/ScooterHackingUtility-2.5.apk?ex=6809e0cb&is=68088f4b&hm=3ebdbc31a1d2e2e48978c632ad8d0e007dab5f027cd0d98c4c8cf905bb91bc31&) |
+| D-Series                           | v0.3.6 (eksperymentalnie)           |
+| G2                                 | v3.9.0                               |
+| F-Series (F2/F2+/F2 Pro)           | v3.10.0                              |
+
+
+<details>
+<summary>📦 Kliknij, aby rozwinąć pełen changelog SHFW -PL(Tłumaczony przez chatgpt)</summary>
+
+# 📦 SHFW – Lista zmian (changelog)
+
+## v0.2.2
+- Dodano przełącznik trybu ładowania  
+- Możliwość ustawienia jasności tylnego światła  
+- Poprawiono działanie manetki zależnej od prędkości  
+- Ulepszono tempomat  
+- Usunięto auto-hamowanie przy przekroczeniu prędkości  
+- Zmieniono sposób aktywacji silnika
+
+## v0.2.3
+- Lepsze osiągi pod górę  
+- Udawanie wersji BLE/BMS  
+- Możliwość wyłączenia manetki przy braku sygnału  
+- Zmiana zachowania silnika  
+- Poprawiona prędkość na wyświetlaczu (Mi)  
+- Wyższa prędkość maksymalna  
+- Jasność światła tylnego osobno dla każdego modelu  
+- Naprawiono ładowanie dla Max i EsX  
+- Lepsza blokada programowa  
+- Tempomat lepiej zapamiętuje prędkość
+
+## v0.2.4
+- Obsługa serii E  
+- Naprawa błędu limitu prędkości  
+- Lepsza reakcja manetki (DPC)  
+- Mniej restartów  
+- Poprawki trybu ładowania
+
+## v0.2.5
+- Mniejsze stuknięcia przy hamowaniu  
+- Drobne poprawki DPC
+
+## v0.2.6
+- Ustawienia czujników Halla  
+- Pasek baterii pokazuje więcej informacji  
+- Regulowana sztywność limitu prędkości  
+- Światło stopu jak w samochodzie  
+- Regulacja czasu zwiększania tempomatu  
+- Podgląd wartości Halla na biegu jałowym  
+- Tempomat wg pozycji manetki  
+- Naprawa spadku napięcia w Max
+
+## v0.3.0
+- Osłabienie pola (field weakening)  
+- Obsługa serii F i nowych silników Max  
+- Alternatywna kontrola prędkości (PI)  
+- Naprawa flashowania stockowego  
+- Naprawa świateł Max
+
+## v0.3.1
+- Poprawka emulacji baterii Xiaomi  
+- Tempomat działa poniżej prędkości startowej
+
+## v0.3.2
+- Obsługa EsX i E-Series  
+- Kontrola PID  
+- Przełącznik silnika Max  
+- Mniejsze hamowanie z FW  
+- Lepsza obsługa wyłącznika  
+- Zmiana działania światła podczas autohamowania
+
+## v0.3.3
+- Naprawa CC z FW  
+- Automatyczne wsparcie dla nowych silników Max (przy poprawnym S/N)
+
+## v0.3.4
+- Nowy sposób zmiany profilu – gaz + hamulec  
+- Tryb prędkości bez wygładzania  
+- Profil widoczny na pasku baterii  
+- Regulacja PID  
+- Wygładzanie napięcia BMS  
+- Napięcie ogniw z 2 miejscami po przecinku
+
+## v0.3.5
+- Wymuszony wybór profilu  
+- Ulepszony czas/próg zmiany profilu
+
+## v0.3.6
+- Naprawa KD i dolnych limitów  
+- Aktywacja Xiaomi działa poprawnie  
+- Wczesne wsparcie serii D  
+- EsX z bazą 255 = osiągi jak baza 133
+
+## v3.7.0
+- Nowe wersjonowanie  
+- Częstotliwość PWM ustawialna  
+- Wzmocnienie przyspieszania/hamowania  
+- Minimalna prędkość hamowania  
+- Limity manetki (Iq, Id)  
+- Wyświetlanie prądu/mocy/zasięgu
+
+## v3.7.1
+- Poprawka suwaków FW  
+- Ukrycie błędów 16/19 dla EsX/EX
+
+## v3.7.2
+- Poprawa działania silnika
+
+## v3.9.0
+- Obsługa G2  
+- Overmodulacja (wyższe prędkości)  
+- Skala prądu 10mA  
+- Suwak do 100A  
+- Nowa sekwencja zmiany profilu  
+- Wyłączanie po przytrzymaniu  
+- Ujemna prędkość startowa  
+- Zmiana skali mocy (10W)  
+- Wyłączenie CC po zmianie trybu
+
+## v3.9.1
+- Naprawa przycisku zasilania (Xiaomi)
+
+## v3.10.0
+- Obsługa F2, F2+, F2 Pro  
+- Wygładzanie DPC  
+- Kategoryzacja i ukrywanie błędów  
+- Lepsza reakcja manetki i hamowanie (G2)  
+- Auto-hamowanie przy niskiej prędkości  
+- Lepsza baza 255 dla EsX
+
+Notatka: Seria F i D pozostają na wersji 0.3.6. Obecnie pracujemy nad ukończeniem wersji 3.10.0 dla tych dwóch modeli.(Do konfiguracji wersji 0.3.6 użyj starej wersji aplikacji 2.5)
+
+
+
+
+
+## v3.10.1
+- Naprawa błędów 40, 41 i 52 dla F2 i F2 Plus
+
+
+</details>
+
+<details>
+<summary>📦 Kliknij, aby rozwinąć pełen changelog SHFW -EN</summary>
+
+# 📦 SHFW – Changelog
+
+## v0.2.2
+- Added charging mode switch  
+- Custom taillight brightness  
+- Improved speed-based throttle  
+- Better cruise control  
+- Removed auto-braking at speed limit  
+- Changed motor activation behavior
+
+## v0.2.3
+- Improved uphill performance  
+- BLE and BMS spoofing  
+- Throttle cutoff on no input  
+- Changed motor switch behavior  
+- Speed display fix (Mi)  
+- Increased top speed  
+- Per-model taillight brightness  
+- Fixed charging mode for Max/EsX  
+- Improved software lock  
+- Cruise control saves speed better
+
+## v0.2.4
+- Added E-Series support  
+- Fixed speed limit bug  
+- Better DPC throttle  
+- Fewer random reboots  
+- Improved charging mode
+
+## v0.2.5
+- Reduced clonking while braking  
+- Minor DPC adjustment
+
+## v0.2.6
+- Custom Hall sensor ranges  
+- Battery bar shows data  
+- Configurable speed regulation  
+- Car-like brake light  
+- Adjustable CC speed step  
+- Idle Hall sensor values  
+- Speed-CC from throttle pos  
+- Max 5V voltage drop fix
+
+## v0.3.0
+- Field weakening  
+- F-Series and new Max motors support  
+- Alternative speed control (PI)  
+- Fix flashing to stock  
+- Max light bug fix
+
+## v0.3.1
+- Xiaomi battery emu fix  
+- Fix CC under motor start speed
+
+## v0.3.2
+- EsX / E-Series support  
+- SpeedControl: PI → PID  
+- Max motor toggle  
+- Reduced FW braking w/o throttle  
+- Improved key switch  
+- Changed brake light behavior
+
+## v0.3.3
+- CC works with FW  
+- Max motors supported by default (correct S/N)
+
+## v0.3.4
+- New profile trigger: Throttle + Brake  
+- Speed mode without smoothing  
+- Battery bar shows profile  
+- PID adjustment incl. min output  
+- Smoothed BMS emu voltage  
+- BMS cell voltage: 2 decimals
+
+## v0.3.5
+- Fix: profile trigger now required  
+- Improved trigger delay and threshold
+
+## v0.3.6
+- Fixed speed control (kd, lower limit)  
+- Xiaomi activation fix  
+- Experimental D-Series support  
+- EsX: choose between base 133 / 255
+
+## v3.7.0
+- Semantic versioning  
+- Adjustable PWM freq  
+- Acceleration + brake boost  
+- Brake min speed  
+- Torque overshoot limits (Iq, Id)  
+- Dash shows current, power, range
+
+## v3.7.1
+- Fix FW slider init  
+- Suppress error 16/19 for EsX/EX
+
+## v3.7.2
+- Improved motor control
+
+## v3.9.0
+- G2 support  
+- Overmodulation added  
+- Current scale: 1mA → 10mA  
+- Current slider to 100A  
+- Custom profile switch  
+- Shutdown on hold  
+- Negative start speed  
+- Dash power in 10W  
+- Disable CC on mode/profile switch
+
+## v3.9.1
+- Fix power button lock behavior (Xiaomi)
+
+## v3.10.0
+- Support F2, F2+, F2 Pro  
+- DPC smoothing option  
+- New error suppression system  
+- Improved throttle delay (G2)  
+- Better acceleration/braking (G2)  
+- Autobrake uses min speed  
+- Base 255 now equals base 133 on EsX
+
+Note: F- and D-Series stay on 0.3.6. We are currently working on finishing 3.10.0 for these two models.
+
+## v3.10.1
+- Fixed errors 40, 41, 52 for F2 and F2+
+
+
+</details>
+
 
 ---
 
@@ -834,7 +1125,7 @@ Znany problem topiących się kabli oryginalnych bullet connectors w G30 można 
 ---
 
 <a name="kontrolery"></a>
-## Kontrolery (Inaczej-DRV)
+## Kontrolery (Inaczej-ESC/DRV)
 
 ## 🎛️ Różnice między kontrolerami Ninebot G30 – Gen 1 vs Gen 2
 
@@ -953,6 +1244,7 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 
 
 ![](screeny/stlink.png)
+![](screeny/st32.png)
 ## G30 - AT32 CZARNY KONTROLER PRZYKŁAD
 ![](screeny/g30przykladstlink.png)
 
@@ -1006,7 +1298,7 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 
 ---
 
-# 📋 Kody błędów hulajnogi(DOPRACOWAC I SPRAWDZIC WSZYSTKO)
+# 📋 Kody błędów hulajnogi(W BUDOWIE DO WERYFIKACJI)
 
 | Kod | Opis błędu | Co zrobić |
 |-----|------------|-----------|
@@ -1074,6 +1366,7 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 - https://www.reddit.com/r/NinebotMAX/comments/t9em9t/connectors_melted_no_charging/
 - https://www.reddit.com/r/NinebotMAX/comments/1d5pooc/upgraded_to_mr60/
 - https://joeybabcock.me/wiki/Ninebot_Max_G30_ESC_Generations
+- https://gist.githubusercontent.com/lekrsu/76243ae48e4899e11643cc3110cceb8d/raw/3affca6756501ca3475c572795a2f7d785953868/nineboterror.md
 
 >License/Licencja:CC BY-NC-SA 4.0
 Dodanie licencji która zakazuje użytku komercyjnego CC BY-NC-SA 4.0
