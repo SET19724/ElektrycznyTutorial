@@ -1,5 +1,5 @@
 # 🔧 Odblokowanie hulajnogi Ninebot – wersja BETA
-**Aktualizacja:** 22.04.2025
+**Aktualizacja:** 24.04.2025
 // Może zawierać błedy jeśli widzisz błąd daj znać najlepiej na discord ;)
 
 ---
@@ -72,31 +72,49 @@ Dzięki każdej małej darowiźnie mam więcej energii (i kofeiny!) do tworzenia
 >Jeśli widzisz obok strzałkę to według użytkowników udało im się odblokować dany model
 
 ---
+
+
 ## 📚 Spis treści
 
+### 🌍 Wstępne informacje
 - 🔧 [Obsługiwane modele](#obslugiwane-modele)
 - 🔓 [Obsługiwane wersje firmware](#obsługiwane-wersje-firmware)
 - 🎉 [Dołącz do Discorda](#dolacz-do-discorda)
+
+### 🔧 Odblokowywanie
 - 📽️ [Poradnik wideo od Mc Kuc](#poradnik-wideo)
 - ⚙️ [Proces odblokowania Bot](#proces-odblokowania)
-- ⚙️ [Alternatywa Proces odblokowania ST-Link](#stlink)
+- ⚙️ [[Alternatywa] Proces odblokowania programatorem ST-Link](#stlink)
+
+### 🛠️ Po odblokowaniu i konfiguracja
+
 - 🎯 [Co teraz po odlokowaniu?](#co-teraz)
-- 🌍 [Zmiana regionu](#region)
-- 🛴 [Lista prefixów numerów seryjnych](#lista-prefixow-numerow-seryjnych)
-- ✨ [Złoty numer seryjny G30](#zloty-numer-seryjny)
-- 📊 [F2 / F2 Plus / F2 Pro – prędkości](#f2-f2-plus-f2-pro-sport-predkosci)
-- ℹ️ [Dodatkowe info](#dodatkowe-info)
-- 🔁 [Jak zmienić region?](#jak-zmienic-region)
 - 🚀 [Jak wgrać SHFW (Custom Firmware)](#jak-wgrac-shfw-custom-firmware)
 - ⚙️ [Ustawianie SHFW](#ustawianie-shfw)
+- ✅ [Zalecane ustawienia SHFW wg poradnika od lekrsu](#zalecane-ustawienia)
 - ⚙️ [Obsługiwane modele SHFW-Changelog](#shfwwsparcie)
 - 🧠 [WAŻNE jeśli masz Silnik nowej generacji G30 WAŻNE](#silnik-g30)
--  [Jak wrócić do oryginalnego oprogramowania(W BUDOWIE)](#powrotstock)
-- 🔧 [Zalecana wymiana na: łączniki MR60 lub MT60](#kable)
+
+### 🌍 Region i numery seryjne
+
+- 🌍 [Zmiana regionu](#region)
+- 🔁 [Jak zmienić region?](#jak-zmienic-region)
+- 🛴 [Lista prefixów numerów seryjnych](#lista-prefixow-numerow-seryjnych)
+- ✨ [Złoty numer seryjny G30](#zloty-numer-seryjny)
+- 📊 [F2 / F2 Plus / F2 Pro – prędkości i oznaczenia](#f2-f2-plus-f2-pro-sport-predkosci)
+
+### 🔧 Techniczne informacje
+
 - 🔧 [Typy kontrolerów DRV/ESC](#kontrolery)
-- ✅ [Zalecane ustawienia SHFW wg poradnika od lekrsu](#zalecane-ustawienia)
+- 🔧 [Zalecana wymiana na: łączniki MR60 lub MT60](#kable)
 - 🔧 [Kody błędów W BUDOWIE](#errorkody)
+- [Jak wrócić do oryginalnego oprogramowania(W BUDOWIE)](#powrotstock)
+
+### ℹ️ Inne
+
+- ℹ️ [Dodatkowe info](#dodatkowe-info)
 - 📚 [Źródła](#zrodla)
+
 
 
 
@@ -1158,11 +1176,7 @@ Najprościej po wersji DRV (w aplikacji również widać typ procesora) lub fizy
 ---
 
 <a name="stlink"></a>
-## Odblokowanie za pomocą ST-Link(W BUDOWIE)
-
-
-
-# 📡 Programator ST-Link i zmiana firmware w hulajnodze
+## 📡 Programator ST-Link i zmiana firmware w hulajnodze - Odblokowanie za pomocą ST-Link - Unbrick
 
 
 
@@ -1172,6 +1186,11 @@ Najprościej po wersji DRV (w aplikacji również widać typ procesora) lub fizy
 
 > ## Wersja aplikacji Reflasher 1.4.2
 > - W przypadku modelu F2 wybierz G2 z listy
+>
+> **ReFlasher obsługuje następujące modele i płyty:**
+>- Ninebot ESx/E/F/D/G30 - wszystkie BLE(dashboard/licznik), all STM32 & AT32 DRV płyty
+>- Xiaomi M365 & Mi Scooter Lite/1S/Pro/Pro 2/3 - wszystkie BLE(dashboard/licznik), all STM32 & GD32 DRV płyty
+>- Ninebot G2 - DRV płyta
 
 ## Co to jest programator ST-Link?
 
@@ -1238,15 +1257,78 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 
 ## Kroki podłączenia
 
-1. **Zidentyfikuj piny**: Sprawdź schematy w programie Reflasher (zakładka **``Diagrams``**, aby znaleźć odpowiednie piny **SWDIO, SWCLK, GND i VCC** na kontrolerze.
+1. **Zidentyfikuj piny**: Sprawdź schematy w programie Reflasher (zakładka **``Diagrams``**) lub rozwiń z przykładów poniżej , aby znaleźć odpowiednie piny **SWDIO, SWCLK, GND i VCC** na kontrolerze.
 2. **Podłącz przewody do programatora**: Podłącz przewody do pinów programatora oznaczonych ***SWDIO, SWCLK, GND , VCC*** ST-Link.
 3. **Podłącz przewody do kontrolera**: Przylutuj przewody do padów debugowania w kontrolerze lub dociskaj przy wgrywaniu w następnym kroku.
 
 
 ![](screeny/stlink.png)
-![](screeny/st32.png)
-## G30 - AT32 CZARNY KONTROLER PRZYKŁAD
-![](screeny/g30przykladstlink.png)
+![](screeny/photofromJohannes_96.png)
+## Przykłady z pinoutem DRV:
+
+<details>
+
+**<summary>ROZWIŃ G30 CZARNY KONTROLER TYP: AT32</summary>**
+
+![](screeny/schematy/DRV/g30przykladstlink.png)
+
+
+
+
+
+</details>
+
+<details>
+
+**<summary>ROZWIŃ G30 GEN1 TYP: ST32</summary>**
+
+![](screeny/schematy/DRV/G30D-DRVzpinami.png)
+
+
+</details>
+
+<details>
+
+**<summary>ROZWIŃ G2-F2 TYP: AT32</summary>**
+
+![](screeny/schematy/DRV/G2-F2-DRVzpinami.png)
+
+
+</details>
+
+<details>
+
+**<summary>ROZWIŃ ESX_E</summary>**
+
+![](screeny/schematy/DRV/ESX_E-DRVzpinami.png)
+
+
+</details>
+
+## Przykłady z pinoutem BLE:
+
+<details>
+
+**<summary>ROZWIŃ G30 EKRAN/DASHBOARD</summary>**
+
+![](screeny/schematy/BLE/G30-BLEzpinami.png)
+
+
+
+</details>
+
+<details>
+
+**<summary>ROZWIŃ SERIA F-D EKRAN/DASHBOARD</summary>**
+
+![](screeny/schematy/BLE/F&D-Series-BLEzpinami.png)
+
+
+
+</details>
+
+
+
 
 
 #### Najważniejsze piny:
@@ -1255,7 +1337,7 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 | SWDIO | Linia danych |
 | SWCLK | Linia zegara |
 | GND   | Masa |
-| VCC   | Zasilanie 3.3V |
+| VCC   | Zasilanie |
 
 
 
@@ -1271,7 +1353,7 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 
 ![](screeny/przykladalldone.png)
 
-> -**Nie działa ?** - [Sprawdź rozwiązania znanych problemów](#rozwiazaniastlink)
+> **Nie działa ?** - [Sprawdź rozwiązania znanych problemów](#rozwiazaniastlink)
 > - Jeśli wyskakuje błąd, sprawdź kable – bywają wadliwe, ale najczęściej problemem są sterowniki lub wadliwe połączenie.
 > - Możesz też podrapać styki(pady) mogą być pokryte warstwą ochronną która blokuje połączenie
 > - Jeśli posiadasz port USB 3.0 użyj go daje posiada większą stabilność i wydajność prądową żeby zasilić programator nie jest to wymagane a zalecane
