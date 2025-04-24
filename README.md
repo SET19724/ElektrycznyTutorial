@@ -57,7 +57,7 @@ Dzięki każdej małej darowiźnie mam więcej energii (i kofeiny!) do tworzenia
 - Ninebot Max G2  ✅
 - Ninebot Max G30  ✅
 - Ninebot  F2  ✅
-- Ninebot  F20  
+- Ninebot  F20  ✅
 - Ninebot  F25  
 - Ninebot  F30  
 - Ninebot  F40  ✅
@@ -229,7 +229,7 @@ Różni się tylko interfejs
 W skrócie:
 1. Wpisz `/start`
 2. Zaznacz **"I understand"**
-3. Wybierz model hulajnogi
+3. Wybierz model hulajnogi (jeśli nie widzisz sprawdź `Lab`)
 4. Wklej skopiowany UID
    > ⚠️ **Uwaga:** dokładność UID jest kluczowa — jedna pomyłka = nie odblokujesz
 5. Poczekaj na wygenerowanie plików
@@ -931,7 +931,8 @@ a także ustawień limitów.
 
 ### Hamulce(Brake)
 
-Warto w tej zakładce ustawić autobraking na 6A
+W zakładce hamulce zostawiamy najlepiej `AUTO`
+Warto w tej zakładce ustawić autobraking na 6A-8A
 
 Da nam to automatyczne hamowanie podobne do oryginału
 
@@ -1264,7 +1265,7 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 
 ![](screeny/stlink.png)
 ![](screeny/photofromJohannes_96.png)
-## Przykłady z pinoutem DRV:
+## Przykłady z pinoutem Kontroler(DRV/ESC):
 
 <details>
 
@@ -1283,6 +1284,7 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 **<summary>ROZWIŃ G30 GEN1 TYP: ST32</summary>**
 
 ![](screeny/schematy/DRV/G30D-DRVzpinami.png)
+![](screeny/schematy/DRV/G30-DRVzpinami.png)
 
 
 </details>
@@ -1298,14 +1300,14 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 
 <details>
 
-**<summary>ROZWIŃ ESX_E</summary>**
+**<summary>ROZWIŃ SERIE ESX-E</summary>**
 
 ![](screeny/schematy/DRV/ESX_E-DRVzpinami.png)
 
 
 </details>
 
-## Przykłady z pinoutem BLE:
+## Przykłady z pinoutem EkraN (BLE/DASBOARD):
 
 <details>
 
@@ -1359,7 +1361,7 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 > - Jeśli posiadasz port USB 3.0 użyj go daje posiada większą stabilność i wydajność prądową żeby zasilić programator nie jest to wymagane a zalecane
 > - Możesz też mieć problem ze sterownikami [Sprawdź rozwiązania](#rozwiazaniastlink)
 
-### Krok 5: Wgraj SHFW / Zmieniasz tylko region(Pomiń/Skip)
+### Krok 5: Wgraj SHFW / Zmieniasz tylko region?(Pomiń/Skip)
 - Wgraj SHFW - 🚀 [Jak wgrać SHFW (Custom Firmware)](#jak-wgrac-shfw-custom-firmware)
 - Skonfiguruj ustawienia inaczej nie będziesz w stanie jeździć tutaj jak konfigurować - ⚙️ [Ustawianie SHFW](#ustawianie-shfw)
 
@@ -1380,6 +1382,7 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 
 ---
 
+<a name="errorkody"></a>
 # 📋 Kody błędów hulajnogi(W BUDOWIE DO WERYFIKACJI)
 
 | Kod | Opis błędu | Co zrobić |
