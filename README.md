@@ -1,5 +1,5 @@
 # 🔧 Odblokowanie hulajnogi Ninebot – wersja BETA
-**Aktualizacja:** 24.04.2025
+**Aktualizacja:** 25.04.2025
 // Może zawierać błedy jeśli widzisz błąd daj znać najlepiej na discord ;)
 
 ---
@@ -100,7 +100,6 @@ Dzięki każdej małej darowiźnie mam więcej energii (i kofeiny!) do tworzenia
 - 🌍 [Zmiana regionu](#region)
 - 🔁 [Jak zmienić region?](#jak-zmienic-region)
 - 🛴 [Lista prefixów numerów seryjnych](#lista-prefixow-numerow-seryjnych)
-- ✨ [Złoty numer seryjny G30](#zloty-numer-seryjny)
 - 📊 [F2 / F2 Plus / F2 Pro – prędkości i oznaczenia](#f2-f2-plus-f2-pro-sport-predkosci)
 
 ### 🔧 Techniczne informacje
@@ -241,7 +240,7 @@ Piszemy /start
 Zaznacz "I understand" po przeczytaniu informacji
 Następnie wybieramy model
 
-![](screeny/15.png)
+![](screeny/15v2.png)
 
 ![](screeny/16.png)
 
@@ -306,7 +305,7 @@ Masz dwie opcje:
 - 🔧 [Wgraj SHFW – custom firmware](#-jak-wgrać-shfw-custom-firmware)
 
   - Dużo opcji daje alternatywne oprogramowanie od https://scooterhacking.org
-  - W skrócie możecie ustawić każdy tryb mocy pod siebie i osiągnąć wyższe prędkości 35-50km/h i więcej po modyfikacji kontrolera + baterii
+  - W skrócie możecie ustawić każdy tryb mocy pod siebie i osiągnąć wyższe prędkości 30+km/h i więcej po modyfikacji kontrolera + baterii
   - Personalizacja zachowania światła,wyłączenia hulajnogi,start bez odepchania,regulacja mocy hamowania elektronicznego hamulca,poziom baterii podany w liczbie a nie paskach i wiele więcej
 
 
@@ -428,15 +427,20 @@ N4GSD1939C0123
 | NTG1     | Audi EKS                     | 20 km/h   |
 
 
+<details>
+<summary>ROZWIŃ: CIEKAWOSTKA ZŁOTY NUMER SERYJNY G30</summary>
 <a name="zloty-numer-seryjny"></a>
->## ✨ Złoty numer seryjny
 
-Jeśli zmienisz **pozycje 6–9** w numerze seryjnym na `1111`, np.:`N4GSD1111C0123`
+## ✨ Złoty numer seryjny (Przestarzała methoda nie zalecana)(Ciekawostka)
+
+W starszych modelach hulajnóg (np. G30 z lat 2019–2021) można było odblokować **pełny potencjał fabrycznego oprogramowania**, zmieniając **pozycje 6–9** w numerze seryjnym na `1111`, np.: `N4GSD1111C0123`.
 
 
-...i zrestartujesz hulajnogę, odblokujesz **pełny potencjał fabrycznego oprogramowania**.
+> ⚠️ **Uwaga:** Ten trik dotyczył wyłącznie starszych wersji. **W nowszych modelach (G30 2022+ i nowsze)** taka zmiana może powodować **błędy silnika/zacinanie silnika (np. stuttering)**.
 
-> ⚠️ **Uwaga:** To był numer testowy używany przez deweloperów – bez limitów prędkości i z funkkcją tempomatu.
+> 🛠️ **Dla entuzjastów:** To był kiedyś numer testowy używany przez deweloperów – zmieniający limit prędkości do 30km/h i z funkcją tempomatu. Przy obecnym firmware zmiana może powodować problemy.
+
+</details>
 
 ---
 
@@ -1197,6 +1201,19 @@ Najprościej po wersji DRV (w aplikacji również widać typ procesora) lub fizy
 
 Programator ST-Link to urządzenie wykorzystywane do programowania i debugowania mikrokontrolerów STM32,AT32, które są używane w wielu urządzeniach elektronicznych, w tym także w hulajnogach. Dzięki ST-Link możesz zmieniać firmware (oprogramowanie) w urządzeniach opartych na mikrokontrolerach STM32 lub AT32, co pozwala na modyfikację funkcji lub naprawę problemów związanych z oprogramowaniem.
 
+## Co zakupić?
+- **Programator ST-Link**
+
+![](screeny/programator.png)
+
+- **Kable do podłączenia dupont wire damsko>męskie**
+
+![](screeny/przewody.png)
+
+- **Warto dokupić kostkę z pinami**
+
+![](screeny/pinheader.png)
+
 ## Jakie korzyści daje użycie programatora ST-Link w hulajnodze?
 
 W przypadku hulajnogi, zmiana firmware może pozwolić na:
@@ -1218,6 +1235,10 @@ Zanim zaczniesz, upewnij się, że masz odpowiednie oprogramowanie na komputerze
 - **ST-Link Utility** (Windows): Oficjalne narzędzie do programowania mikrokontrolerów STM32.(Wgranie tego programu zazwyczaj wgrywa też sterowniki a także pozwala na aktualizację samego programatora)
 - **Reflasher** (Windows): Narzędzie do programowania hulajnogi od ScooterHacking. [Link do pobrania](https://www.scooterhacking.org/forum/viewtopic.php?f=14&t=676)
 
+
+<details>
+<summary>ROZWIŃ: Nie możesz skorzystać z komputera/źle działa na komputerze ?</summary>
+
 >Nie możesz skorzystać z komputera/źle działa na komputerze ?
 > - Możesz użyć alternatywy dla programu Reflasher w [wersji na przeglądarke](https://flash.bastelpichi.de/help.html)
 > - **W przypadku wgrywania firmware telefonem musisz użyć przejściówki OTG np. Z USB-C do USB**
@@ -1225,6 +1246,7 @@ Zanim zaczniesz, upewnij się, że masz odpowiednie oprogramowanie na komputerze
 >
 >![](screeny/otgprzejsciowka.png)
 
+</details>
 
 
 ### Krok 2: Konfiguracja w programie Reflasher
