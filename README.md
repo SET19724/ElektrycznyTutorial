@@ -65,11 +65,13 @@ Dzięki każdej małej darowiźnie mam więcej energii (i kofeiny!) do tworzenia
 - Ninebot  E25  
 - Ninebot  E45  
 
-> ⚠️ **Uwaga:*** Dane oparte na opisie z filmu.*
->W przypadku modeli F20,F25,F30,F40 -Jest problemos.
->Musisz po wgraniu shfw w wersji 0.3.6 użyj starej wersji aplikacji SHU 2.5 do konfiguracji inaczej źle będą wskakiwać ustawienia
+> ⚠️ **Uwaga:** Dane oparte na opisie z filmu.
 
 >Jeśli widzisz obok strzałkę to według użytkowników udało im się odblokować dany model
+
+
+
+
 
 ---
 
@@ -121,8 +123,8 @@ Dzięki każdej małej darowiźnie mam więcej energii (i kofeiny!) do tworzenia
 
 ## ❓ Czy potrzebuję programatora ST-LINK?
 **Nie!** Jest to najnowsza metoda, która nie wymaga użycia ST-LINKa.
-- Sposób jednak nie działa nie możesz odpiąć konta z jakiegoś powodu ?
-- Alternatywa czyli odblokowanie przez ST-LINK - stara metoda sekcja obecnie W BUDOWIE
+> Sposób jednak lub działa nie możesz odpiąć konta z jakiegoś powodu ?
+- [Alternatywa czyli odblokowanie przez ST-LINK - stara metoda sekcja obecnie W BUDOWIE](#stlink)
 
 ---
 
@@ -222,10 +224,10 @@ Różni się tylko interfejs
 ### 3. Uzyskanie plików od bota na Telegramie
 
 - Otwórz Telegram i znajdź bota **@downgrade_ninebot**
-  👉 [https://t.me/downgrade_ninebot](https://t.me/downgrade_ninebot)
+- Lub użyj linku  👉 [https://t.me/downgrade_ninebot](https://t.me/downgrade_ninebot)
 
 #### Krok po kroku:
-W skrócie:
+ - **Przebieg w skrócie:**
 1. Wpisz `/start`
 2. Zaznacz **"I understand"**
 3. Wybierz model hulajnogi (jeśli nie widzisz sprawdź `Lab`)
@@ -234,43 +236,48 @@ W skrócie:
 5. Poczekaj na wygenerowanie plików
 6. Pobierz pliki
 
-Tutaj ze screenami:
+**Tutaj ze screenami:**
 
-Piszemy /start
-Zaznacz "I understand" po przeczytaniu informacji
-Następnie wybieramy model
-
-![](screeny/15v2.png)
+ - Piszemy /start
 
 ![](screeny/16.png)
 
-Bot zapyta o UID wklejamy ze schowka swój unikalny numer
+ - Zaznacz "I understand" po przeczytaniu informacji
+
+![](screeny/15v2.png)
+
+ - Następnie wybieramy model
+
 
 ![](screeny/17.png)
 
-Bot potrzebuje trochę czasu teraz czekamy może potrwać od 1 minuty do kilku dni zależnie od kolejki którą musi bot przetworzyć
+Bot zapyta o UID wklejamy ze schowka swój unikalny numer
+
 
 ![](screeny/18.png)
 
+Bot potrzebuje trochę czasu teraz czekamy może potrwać od 1 minuty do kilku dni zależnie od kolejki którą musi bot przetworzyć
+
+
+![](screeny/9.png)
+
 Pobieramy przygotowany plik pod naszą hulajnogę naciskając na 3kropki
 
-![](screeny/9.png)
 
+![](screeny/9.png)
 
 Po otrzymaniu plików kliknij trzy kropki i wybierz **"Download"**
-
-![](screeny/9.png)
 
 ---
 
 ### 4. Wgranie plików przez ScooterHacking Utility
 
-1. W aplikacji wybierz zakładkę **FLASH**
+1. W aplikacji wybierz zakładkę **"FLASH"**
 2. Kliknij **"LOAD FROM FILE"**
-3. Znajdź pobrany plik w pamięci telefonu i wybierz go
 
    ![](screeny/10.png)
 
+3. Znajdź pobrany plik w pamięci telefonu i wybierz go
 4. Kliknij **"START FLASH"**
 
    ![](screeny/11.png)
@@ -280,18 +287,22 @@ ZNACZENIE Uceglić – doprowadzić urządzenie (np. hulajnogę) do stanu, w kt�
 
 ![](screeny/12.png)
 
+**Zaczekaj aż proces wgrywania się zakończy nie ruszaj nic**
+
 > ⚠️ **Uwaga – Jeśli masz Błąd „Data format error” podczas wgrywania pliku**  
 >  
 > - Sprawdź, czy **Twój MCU ID (UID)** jest poprawny i **zgadza się z hulajnogą**.  
 > - Upewnij się, że hulajnoga **nie była wcześniej odblokowywana ani programowana ST-LINKiem** (np. przez poprzedniego właściciela).  
 > - Metoda działa **tylko na oryginalnym kontrolerze** – jeśli masz podróbkę lub zamiennik z chin, proces się nie powiedzie.
-> - W przypadku błędnego UID - wygeneruj nowe pliki na podstawie dobrego UID
+> - W przypadku błędnego UID - wygeneruj nowe pliki na używając dobrego UID
 
+
+
+
+![](screeny/19.png)
 
 Po zakończeniu pojawi się komunikat: **"FLASH COMPLETE!"**
 Hulajnoga wyda sygnał dźwiękowy „bi-bip”.
-
-![](screeny/19.png)
 
 ✅ **Gotowe! Hulajnoga odblokowana!**
 
@@ -306,7 +317,7 @@ Masz dwie opcje:
 
   - Dużo opcji daje alternatywne oprogramowanie od https://scooterhacking.org
   - W skrócie możecie ustawić każdy tryb mocy pod siebie i osiągnąć wyższe prędkości 30+km/h i więcej po modyfikacji kontrolera + baterii
-  - Personalizacja zachowania światła,wyłączenia hulajnogi,start bez odepchania,regulacja mocy hamowania elektronicznego hamulca,poziom baterii podany w liczbie a nie paskach i wiele więcej
+  - Personalizacja zachowania świateł,wyłączenia hulajnogi,start bez odepchania,regulacja mocy hamowania elektronicznego silnikiem,poziom baterii podany w liczbie a nie samych paskach i wiele więcej
 
 
 - 🌍 [Zmień numer seryjny by:](#zmiana-regionu--poprzez-numer-seryjny)
@@ -321,7 +332,7 @@ Masz dwie opcje:
 Jeśli zmieniasz oprogramowanie na alternatywne SHFW najlepiej korzystaj z aplikacji NineDash(Android)
  https://play.google.com/store/apps/details?id=adriandp.ninedash
 
- > ⚠️ **Uwaga:**Nie wiadomo czy aplikacja oryginalna nie wymusi automatycznej aktualizacji która ponownie zablokuje możliwości zmian dla zaawansowanych użytkowników
+ > ⚠️ **Uwaga:** Nie wiadomo czy aplikacja oryginalna nie wymusi automatycznej aktualizacji która ponownie zablokuje możliwości zmian dla zaawansowanych użytkowników
 
  >Jeśli masz Iphone użyj np.Pichis,Darkbot lub innej alternatywy
 
@@ -412,6 +423,8 @@ N4GSD1939C0123
 | 02GV     | EU     | 25 km/h, z CC      |
 | 02GW     | EU     | 25 km/h, brak CC   |
 
+---
+
 ### G30:
 | Prefix   | Model                        | Prędkość  |
 |----------|------------------------------|-----------|
@@ -431,7 +444,7 @@ N4GSD1939C0123
 <summary>ROZWIŃ: CIEKAWOSTKA ZŁOTY NUMER SERYJNY G30</summary>
 <a name="zloty-numer-seryjny"></a>
 
-## ✨ Złoty numer seryjny (Przestarzała methoda nie zalecana)(Ciekawostka)
+## ✨ Złoty numer seryjny G30 (Przestarzała metoda nie zalecana)(Ciekawostka)
 
 W starszych modelach hulajnóg (np. G30 z lat 2019–2021) można było odblokować **pełny potencjał fabrycznego oprogramowania**, zmieniając **pozycje 6–9** w numerze seryjnym na `1111`, np.: `N4GSD1111C0123`.
 
@@ -444,10 +457,11 @@ W starszych modelach hulajnóg (np. G30 z lat 2019–2021) można było odblokow
 
 ---
 
-<a name="f2-f2-plus-f2-pro-sport-predkosci"></a>
-## 📊 F2 / F2 Plus / F2 Pro (sortowane wg SPORT prędkości)
 
-Tabele jaką znalazłem z oryginalnymi wartościami według numeru
+<a name="f2-f2-plus-f2-pro-sport-predkosci"></a>
+##  F2 / F2 Plus / F2 Pro (sortowane wg prędkości W TRYBIE SPORT )
+
+Tabele jaką znalazłem z oryginalnymi wartościami według oznaczeń
 
 | Prefix SN | ECO prędkość | ECO prąd | DRIVE prędkość | DRIVE prąd | SPORT prędkość | SPORT prąd | Model    | Czujnik temp. silnika (E41) |
 |-----------|---------------|-----------|----------------|------------|----------------|------------|----------|-----------------------------|
@@ -510,6 +524,9 @@ Tabele jaką znalazłem z oryginalnymi wartościami według numeru
 ![](screeny/22.png)  
 ![](screeny/23.png)  
 ![](screeny/24.png)
+
+>W przypadku modeli F20,F25,F30,F40 -Jest problemos.
+>Musisz po wgraniu shfw w wersji 0.3.6 użyj starej wersji aplikacji SHU 2.5 do konfiguracji inaczej źle będą wskakiwać ustawienia
 
 Często pojawia się błąd **"Flashing failed"** — **nie panikuj!**  
 SHFW najprawdopodobniej zostało poprawnie wgrane. Najlepiej w takim przypadku **wyłącz i włącz hulajnogę**.
@@ -862,18 +879,16 @@ Ustawiacie sobie po kolei 3 tryby czyli ECO,DRIVE,SPORT
 
 - Tryb SPORT:
   - DPC: **25A**
-  - Krzywa: pełna kwadratowa (Quadratic na max w prawo = 1.0)
+  - Krzywa: **Pełna kwadratowa (Quadratic na max w prawo = 1.0)**
 - Pozostałe tryby: ***niższe ustawienia (Ja zalecam 10A ECO,16 DRIVE,25A SPORT)***
 - Ograniczenie prędkości: **wyłączone (0 km/h)**(Przy innych trybach niż sport warto ustawić preferowaną wartość)
 - Acceleration boost: **100%** (Tutaj zalecam stopniowo zwiększać aż się przyzwyczaicie na start np.30%)(Daje wyższe prędkości kosztem szybszego rozładowania baterii)
 - Brake boost: **50%**
 - Włącz **Overmodulation** dla SPORT/DRIVE(dla obu lub tylko jednego) (Daje wyższe prędkości kosztem szybszego rozładowania baterii)
 
-
-
 ---
 
-### 🧲 Field Weakening (Osłabienie pola magnetycznego) - Ustawienia
+### 🧲 Osłabienie pola magnetycznego (Field Weakening) - Ustawienia i czym jest ?
  -***Czym jest ? - Field weakening (osłabianie pola magnetycznego):*** w hulajnogach elektrycznych to technika stosowana w silnikach elektrycznych, głównie bezszczotkowych (BLDC) lub PMSM, która pozwala zwiększyć prędkość obrotową silnika kosztem momentu obrotowego. Polega na manipulacji prądem w uzwojeniach statora, aby zmniejszyć siłę pola magnetycznego generowanego przez magnesy stałe w silniku.
 
 - W praktyce:
@@ -890,17 +905,17 @@ Jak działa? Kontroler silnika zmienia kąt przesunięcia fazowego prądu (tzw. 
 
 
 **Do normalnego użytku:**
-- Prędkość(Start speed: 20 km/h
+- Prędkość (Start speed: 20 km/h)
 - Initial field current: 0A
 - Variable field current: 1200 mA/km/h
 
 **Dla wyższej efektywności (niższe zużycie baterii):**
-- Prędkość(Start speed: 20 km/h
+- Prędkość (Start speed: 20 km/h)
 - Initial field current: 0A
 - Variable field current: 600 mA/km/h
 
 **Dla największych prędkości (może powodować problemy):**
-- Prędkość(Start speed: 20 km/h
+- Prędkość (Start speed: 20 km/h)
 - Initial field current: 0A
 - Variable field current: 2000 mA/km/h
 
@@ -933,10 +948,10 @@ Jak działa? Kontroler silnika zmienia kąt przesunięcia fazowego prądu (tzw. 
 >Parametry te pozwalają na dynamiczne zarządzanie pracą silnika, optymalizując balans między prędkością a momentem obrotowym w zależności od potrzeb użytkownika i warunków jazdy
 a także ustawień limitów.
 
-### Hamulce(Brake)
+### Hamulce (Brake)
 
 W zakładce hamulce zostawiamy najlepiej `AUTO`
-Warto w tej zakładce ustawić autobraking na 6A-8A
+ - Warto w tej zakładce ustawić autobraking na 6A-8A
 
 Da nam to automatyczne hamowanie podobne do oryginału
 
@@ -949,7 +964,7 @@ Domyślny rozmiar kół w modelach g30 Max to **10"**, ale ustaw:
 - **G30** → `9.3"`
 - **G2 i F2** → `9.7"`
 
- > ⚠️ **Uwaga:**Oryginalnie hulajnoga zawyża prędkość po tej zmianie odczyty na ekranie są zgodne z odczytem według GPS
+ > ⚠️ **Uwaga:** Oryginalnie hulajnoga zawyża prędkość po tej zmianie odczyty na ekranie są zgodne z odczytem według GPS
 
 ![](screeny/29.png)
 
@@ -1150,6 +1165,11 @@ Znany problem topiących się kabli oryginalnych bullet connectors w G30 można 
 <a name="kontrolery"></a>
 ## Kontrolery (Inaczej-ESC/DRV)
 
+> ⚠️ **Uwaga:**📌 **Jak rozpoznać typ procesora?**  
+Najprościej po wersji DRV (w aplikacji również widać typ procesora) lub fizycznie po otworzeniu hulajnogi.
+>
+>![](screeny/) <center><img src="screeny/rodzajprocka.png" width="35%" height="35%"></center>
+
 ## 🎛️ Różnice między kontrolerami Ninebot G30 – Gen 1 vs Gen 2
 
 **🛠️ Gen 1:**  
@@ -1168,10 +1188,6 @@ Znany problem topiących się kabli oryginalnych bullet connectors w G30 można 
 
 ![](screeny/kontrolergen2.png)
 
-> ⚠️ **Uwaga:**📌 **Jak rozpoznać?**  
-Najprościej po wersji DRV (w aplikacji również widać typ procesora) lub fizycznie po otworzeniu hulajnogi.
->
->![](screeny/) <center><img src="screeny/rodzajprocka.png" width="35%" height="35%"></center>
 
 
 ## 🎛️ Kontroler F20D
@@ -1316,6 +1332,15 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 **<summary>ROZWIŃ G2-F2 TYP: AT32</summary>**
 
 ![](screeny/schematy/DRV/G2-F2-DRVzpinami.png)
+
+
+</details>
+
+<details>
+
+**<summary>ROZWIŃ SERIA F</summary>**
+
+![](screeny/schematy/DRV/tutajdodac.png)
 
 
 </details>
