@@ -92,7 +92,7 @@ Dzięki każdej małej darowiźnie mam więcej energii (i kofeiny!) do tworzenia
 - ✅ [Zalecane ustawienia SHFW wg poradnika od lekrsu](#zalecane-ustawienia)
 - ⚙️ [Obsługiwane modele SHFW-Changelog](#shfwwsparcie)
 - 🧠 [WAŻNE jeśli masz Silnik nowej generacji G30 WAŻNE](#silnik-g30)
--  [Jak wgra fabryczne oprogramowanie ?](#powrotdostock)
+- ⚙️ [Jak wgrać fabryczne oprogramowanie ?](#powrotdostock)
 
 ### 🌍 Region i numery seryjne
 
