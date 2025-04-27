@@ -1,5 +1,5 @@
 # 🔧 Odblokowanie hulajnogi Ninebot – wersja BETA
-**Aktualizacja:** 25.04.2025
+**Aktualizacja:** 27.04.2025
 // Może zawierać błedy jeśli widzisz błąd daj znać najlepiej na discord ;)
 
 ---
@@ -65,11 +65,7 @@ Dzięki każdej małej darowiźnie mam więcej energii (i kofeiny!) do tworzenia
 - Ninebot  E25  
 - Ninebot  E45  
 
-> ⚠️ **Uwaga:** Dane oparte na opisie z filmu.
-
->Jeśli widzisz obok strzałkę to według użytkowników udało im się odblokować dany model
-
-
+> ⚠️ **Uwaga:** Jeśli widzisz obok strzałkę ✅ to według użytkowników udało im się odblokować dany model
 
 
 
@@ -96,6 +92,7 @@ Dzięki każdej małej darowiźnie mam więcej energii (i kofeiny!) do tworzenia
 - ✅ [Zalecane ustawienia SHFW wg poradnika od lekrsu](#zalecane-ustawienia)
 - ⚙️ [Obsługiwane modele SHFW-Changelog](#shfwwsparcie)
 - 🧠 [WAŻNE jeśli masz Silnik nowej generacji G30 WAŻNE](#silnik-g30)
+-  [Jak wgra fabryczne oprogramowanie ?](#powrotdostock)
 
 ### 🌍 Region i numery seryjne
 
@@ -109,7 +106,7 @@ Dzięki każdej małej darowiźnie mam więcej energii (i kofeiny!) do tworzenia
 - 🔧 [Typy kontrolerów DRV/ESC](#kontrolery)
 - 🔧 [Zalecana wymiana na: łączniki MR60 lub MT60](#kable)
 - 🔧 [Kody błędów W BUDOWIE](#errorkody)
-- [Jak wrócić do oryginalnego oprogramowania(W BUDOWIE)](#powrotstock)
+- 🔧 [Jak wrócić do oryginalnego oprogramowania(W BUDOWIE)](#powrotstock)
 
 ### ℹ️ Inne
 
@@ -240,7 +237,7 @@ Różni się tylko interfejs
 
  - Piszemy /start
 
-![](screeny/16.png)
+![](screeny/16v2.png)
 
  - Zaznacz "I understand" po przeczytaniu informacji
 
@@ -304,7 +301,8 @@ ZNACZENIE Uceglić – doprowadzić urządzenie (np. hulajnogę) do stanu, w kt�
 Po zakończeniu pojawi się komunikat: **"FLASH COMPLETE!"**
 Hulajnoga wyda sygnał dźwiękowy „bi-bip”.
 
-✅ **Gotowe! Hulajnoga odblokowana!**
+## ✅ **Gotowe! Hulajnoga odblokowana!** ✅
+
 
 ---
 
@@ -457,6 +455,15 @@ W starszych modelach hulajnóg (np. G30 z lat 2019–2021) można było odblokow
 
 ---
 
+### G65:
+| Prefix   | Model                        | Prędkość  |
+|----------|------------------------------|-----------|
+| N4GV     | WorldWide                     | 32 km/h   |
+| N4GW     | ?                     | 25 km/h   |
+
+
+---
+
 
 <a name="f2-f2-plus-f2-pro-sport-predkosci"></a>
 ##  F2 / F2 Plus / F2 Pro (sortowane wg prędkości W TRYBIE SPORT )
@@ -513,7 +520,8 @@ Tabele jaką znalazłem z oryginalnymi wartościami według oznaczeń
 4. Wybierz region z listy lub wpisz pełny, poprawny numer seryjny (zgodnie z tabelą wyżej)  
 5. Zatwierdź – hulajnoga uruchomi się ponownie
 
-> ⚠️ **Uwaga:** Nie wpisuj przypadkowych numerów – użyj poprawnych kodów dla swojego modelu!
+> ⚠️ **Uwaga:** Nie wpisuj przypadkowych numerów – użyj poprawnych kodów dla swojego modelu !
+> - Jeśli po zmianie regionu dalej masz problem spróbuj innego regionu lub wgraj customfirmware SHFW ewentualnie po prostu przywróć oryginalny
 
 ---
 
@@ -927,6 +935,7 @@ Jak działa? Kontroler silnika zmienia kąt przesunięcia fazowego prądu (tzw. 
 - Prędkość(Start speed: 20 km/h
 - Initial field current: 0A
 - Variable field current: 1200 mA/km/h
+> - **Powinien być kompatybilny również z modelami G2,F2**
 
 >## Małe objaśnienie pola magnetycznego (Field Weakening) w hulajnogach elektrycznych
 >
@@ -1092,6 +1101,8 @@ Tutaj możesz ustawić, po jakim czasie hulajnoga ma się automatycznie wyłącz
 
 ![](screeny/33.png)
 
+
+
 ---
 
 <a name="dodatkowe-info"></a>
@@ -1155,10 +1166,43 @@ Znany problem topiących się kabli oryginalnych bullet connectors w G30 można 
  - **Nie zaleca się zwiększać obciążeń przy SHFW szczególnie parametru Acceleration Boost powyżej 30%**
 
 ---
-<a name="powrotstock"></a>
-##  Jak wrócić do oryginalnego oprogramowania(W BUDOWIE)
+<a name="powrotdostock"></a>
+## 🛠️ Jak wrócić do fabrycznego oprogramowania
 
 
+
+   ### 1.Użyj aplikacji ScooterHackingUtility przejdź do zakładki `FLASH` i wybierz opcję ``LOAD FROM REPO``.
+
+   <p align="center">
+     <img src="screeny/loadzrepo1.png" width="35%" height="35%">
+   </p>
+
+   ---
+
+   ### 2. Następnie zobaczysz trzy opcje:
+
+   - **BLE** = Moduł Bluetooth/Ekran/Dashboard,  
+   - **BMS** = System zarządzania baterią,  
+   - **DRV** = Sterownik/motor controller.  
+
+   Wybierz odpowiedni moduł, który chcesz przywrócić do oryginału lub np.zmienić na starszą wersję.
+
+   <p align="center">
+     <img src="screeny/loadzrepo2.png" width="35%" height="35%">
+   </p>
+
+   ---
+
+   ### 3. Po wybraniu modułu pojawi się lista dostępnych wersji oprogramowania.
+
+   Wybierz oryginalną wersję firmware'u i rozpocznij instalację.
+
+   <p align="center">
+     <img src="screeny/loadzrepo3.png" width="35%" height="35%">
+   </p>
+
+
+> ⚠️ **Uwaga:** **W przypadku DRV/sterownika/kontrolera - jeśli przy danej wersji jest napis "(Compat)" - oznacza to że jest to wersja odblokowana.Jeśli wgrywasz bez tego napisu to musisz potem znowu odblokować na nowo hulajnogę.**
 
 ---
 
@@ -1218,15 +1262,15 @@ Najprościej po wersji DRV (w aplikacji również widać typ procesora) lub fizy
 Programator ST-Link to urządzenie wykorzystywane do programowania i debugowania mikrokontrolerów STM32,AT32, które są używane w wielu urządzeniach elektronicznych, w tym także w hulajnogach. Dzięki ST-Link możesz zmieniać firmware (oprogramowanie) w urządzeniach opartych na mikrokontrolerach STM32 lub AT32, co pozwala na modyfikację funkcji lub naprawę problemów związanych z oprogramowaniem.
 
 ## Co zakupić?
-- **Programator ST-Link**
+- **Programator ST-Link - zazwyczaj sprzedawany z kablami dupont żeńsko-żeńskie**
 
 ![](screeny/programator.png)
 
-- **Kable do podłączenia dupont wire damsko>męskie**
+- **Warto dokupić - Kable do podłączenia dupont wire damsko>męskie**
 
 ![](screeny/przewody.png)
 
-- **Warto dokupić kostkę z pinami**
+- **Warto dokupić - kostkę z pinami**
 
 ![](screeny/pinheader.png)
 
@@ -1479,7 +1523,8 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 
 <a name="FAQ"></a>
 ## FAQ(W BUDOWIE)
-
+ - Montaż/Serwis
+- Producent zaleca przy dokręcaniu śrub od kół użyć siły 65 ± 2Nm a także zastosować klej do gwintów Tonsan 1262(zamiennik to czerwony locktite)
 
 
 
