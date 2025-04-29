@@ -1,5 +1,5 @@
 # 🔧 Odblokowanie hulajnogi Ninebot – wersja BETA
-**Aktualizacja:** 27.04.2025
+**Aktualizacja:** 29.04.2025
 // Może zawierać błedy jeśli widzisz błąd daj znać najlepiej na discord ;)
 
 ---
@@ -314,7 +314,7 @@ Masz dwie opcje:
 - 🔧 [Wgraj SHFW – custom firmware](#-jak-wgrać-shfw-custom-firmware)
 
   - Dużo opcji daje alternatywne oprogramowanie od https://scooterhacking.org
-  - W skrócie możecie ustawić każdy tryb mocy pod siebie i osiągnąć wyższe prędkości 30+km/h i więcej po modyfikacji kontrolera + baterii
+  - W skrócie możecie ustawić każdy tryb mocy pod siebie i osiągnąć wyższe prędkości 30+km/h i więcej po modyfikacji kontrolera + baterii(zależnie od modelu)
   - Personalizacja zachowania świateł,wyłączenia hulajnogi,start bez odepchania,regulacja mocy hamowania elektronicznego silnikiem,poziom baterii podany w liczbie a nie samych paskach i wiele więcej
 
 
@@ -374,36 +374,40 @@ N4GSD1939C0123
 ### 📌 Przykłady zmian numerów seryjnych
 
 #### G30:
-- `N4GE` → DE (20 km/h)  
-- `N4GS` → International (30 km/h) ← zalecana zmiana
+- `N4GE` → DE ograniczony do (20 km/h)  
+- `N4GS` → International ograniczony do (30 km/h) ← zalecana zmiana
 
 #### G2:
-- `01GZ` → DE, 20 km/h, bez tempomatu  
-- `01GU` → US, 32 km/h, z tempomatem ← zalecana zmiana  
+- `01GZ` → DE, ograniczony do 20 km/h, bez tempomatu  
+- `01GU` → US, ograniczony do 32 km/h, z tempomatem ← zalecana zmiana  
+
+#### G65:
+- `N4GW` → ograniczony do 25 km/h  
+- `N4GV` → WW, ograniczony do 32 km/h, z ?tempomatem? ← zalecana zmiana  
 
 #### F2 :
-- `NAGK` → 22 km/h, bez tempomatu  
-- `NAGS` → 32 km/h, z tempomatem ← zalecana zmiana
+- `NAGK` → ograniczony do 22 km/h, bez tempomatu  
+- `NAGS` → ograniczony do 32 km/h, z tempomatem ← zalecana zmiana
 
 #### F30 :
 - `N5GC` → ograniczony
-- `N5GQ` → Większa prędkość i tempomat ← zalecana zmiana na F30E
+- `N5GQ` → Większa prędkość ograniczenia i tempomat ← zalecana zmiana na F30E
 
 #### F40 :
 - `N5G?` → ograniczony
-- `N5GE` → Większa prędkość i tempomat ← zalecana zmiana na F40 Global
+- `N5GE` → Większa prędkość ograniczenia i tempomat ← zalecana zmiana na F40 Global
 
 #### F65 :
 - `N5GJ` → ograniczony
-- `N5G4` → Większa prędkość i tempomat ← zalecana zmiana
+- `N5G4` → Większa prędkość ograniczenia i tempomat ← zalecana zmiana
 
 #### D28 :
 - `N5G?` → ograniczony
-- `N5GP` → Większa prędkość + ?tempomat? ←mało informacji
+- `N5GP` → Większa prędkość ograniczenia + ?tempomat? ←mało informacji
 
 #### D38 :
 - `N8GJ` → ograniczony 25km/h
-- `N8GK` → Większa prędkość 30km/h i tempomat ← zalecana zmiana
+- `N8GK` → Większa prędkość ograniczenia 30km/h i tempomat ← zalecana zmiana
 
 
 
@@ -848,6 +852,8 @@ Note: F- and D-Series stay on 0.3.6. We are currently working on finishing 3.10.
 
 > Jeśli tego nie zrobisz, hulajnoga **nie będzie jeździć**, ponieważ nie ma domyślnych ustawień!
 
+> **Seria F i D** np.F20,F25,F40 w przypadku wgrania wersji **0.3.6 SHFW** użyj starej wersji aplikacji SHU 2.5 do konfiguracji inaczej źle będą wskakiwać ustawienia
+
 Przejdź do zakładki **"CONFIG"**:
 
 ![](screeny/27.png)
@@ -1043,8 +1049,8 @@ Funkcja **Cruise Control (Tempomat)** oferuje cztery tryby działania:
 
 ### 🔄 Dodatkowa funkcja - Zmiana prędkości tempomatu za pomocą manetki(Opcja Increase/decrease CC speed with throttle:):
 
-- Wciśnięcie manetki **poniżej 30% przez 0,75 sekundy** → prędkość zmniejsza się o **1 km/h**
-- Wciśnięcie manetki **powyżej 50% przez 0,75 sekundy** → prędkość zwiększa się o **1 km/h**
+- Wciśnięcie manetki **poniżej 30% zakresu jej wychyłu przez 0,75 sekundy** → prędkość zmniejsza się o **1 km/h**
+- Wciśnięcie manetki **powyżej 50% zakresu jej wychyłu przez 0,75 sekundy** → prędkość zwiększa się o **1 km/h**
 
 > ✅ Działa tylko w trybie **Speed-based** (opartym na prędkości)
 
@@ -1202,7 +1208,7 @@ Znany problem topiących się kabli oryginalnych bullet connectors w G30 można 
    </p>
 
 
-> ⚠️ **Uwaga:** **W przypadku DRV/sterownika/kontrolera - jeśli przy danej wersji jest napis "(Compat)" - oznacza to że jest to wersja odblokowana.Jeśli wgrywasz bez tego napisu to musisz potem znowu odblokować na nowo hulajnogę.**
+> ⚠️ **Uwaga:** **W przypadku DRV/sterownika/kontrolera - jeśli przy danej wersji jest napis "(Compat)" - oznacza to że jest to wersja odblokowana i można wgrać np.customfirmware SHFW lub zmienić region.Jeśli wgrywasz bez tego napisu to musisz liczyć sie z tym że potem będziesz musiał ponownie znowu odblokować hulajnogę poprzez np.stlink.**
 
 ---
 
@@ -1382,9 +1388,11 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 
 <details>
 
-**<summary>ROZWIŃ SERIA F</summary>**
+**<summary>ROZWIŃ SERIA F (F20,F40 itd.) D (D18,D28 itd.) </summary>**
 
-![](screeny/schematy/DRV/tutajdodac.png)
+![](screeny/schematy/DRV/seria-f-d-zpinami.png)
+
+> Od dołu widać 4 styki najlepiej zdrapać czarną maske np.drewnianą pałeczką od sushi lub czymś plastikowym
 
 
 </details>
