@@ -1,5 +1,5 @@
 # 🔧 Odblokowanie hulajnogi Ninebot – wersja BETA
-**Aktualizacja:** 29.04.2025
+**Aktualizacja:** 02.05.2025
 // Może zawierać błedy jeśli widzisz błąd daj znać najlepiej na discord ;)
 
 ---
@@ -1327,7 +1327,7 @@ Przygotuj programator ST-Link, uruchom odpowiednie oprogramowanie ( np. [Reflash
 > - G30 KONTROLER 1 GENERACJI Z BULLETCONNECTORS= **ST32**
 > - G30 MAX CZARNY KONTROLER Z PRZYKRĘCANYMI KABLAMI= **AT32**
 > - G2 = **AT32**
-> - F2 = **AT32**
+> - F2 = **AT32** lub **GD32**(aktualnie brak wsparcia dla GD32)
 > - Więcej znajdziesz tutaj [Typy kontrolerów DRV/ESC](#kontrolery)
 
 
@@ -1383,6 +1383,7 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 
 ![](screeny/schematy/DRV/G2-F2-DRVzpinami.png)
 
+> W przypadku F2 może być procesor GD32 któy aktualnie nie jest wspierany przez aplikację
 
 </details>
 
@@ -1391,6 +1392,8 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 **<summary>ROZWIŃ SERIA F (F20,F40 itd.) D (D18,D28 itd.) </summary>**
 
 ![](screeny/schematy/DRV/seria-f-d-zpinami.png)
+
+![](screeny/schematy/DRV/F&D-Series-DRV_dolplyty.png)
 
 > Od dołu widać 4 styki najlepiej zdrapać czarną maske np.drewnianą pałeczką od sushi lub czymś plastikowym
 
