@@ -29,23 +29,49 @@
 
 ---
 
-## ☕️ Wsparcie
 
-Jeśli ten projekt okazał się pomocny i chcesz okazać wdzięczność – możesz mnie wesprzeć! 🙏  
-Dzięki każdej małej darowiźnie mam więcej energii (i kofeiny!) do tworzenia kolejnych opracowań i treści opartych na moich doświadczeniach 🚀
+## 💖 Pomóż mi tworzyć dalej 💖
+
+Ten projekt powstał z **pasji i chęci pomocy innym** – może właśnie **Tobie**.  
+Jeśli **pomogłem Ci w czymś ważnym**, możesz się odwdzięczyć symbolicznie:  
+**☕ kawą, 🍺 piwkiem albo energetykiem ⚡ – wybór należy do Ciebie!**
 
 
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-%F0%9F%8D%95-orange?style=for-the-badge&logo=buy-me-a-coffee)](https://buymeacoffee.com/nekkogamma)
 
-📲 Możesz też użyć **Revolut** nazwa: `@nekkogamma`  
+### 🧠 Twoje wsparcie:
+
+- **Pozwala rozwijać** ten i kolejne projekty 🚀  
+- **Pokazuje, że to co robię, ma sens** ❤️  
+- **Realnie wpływa** na to, co mogę dać innym.
+- **Motywuje** mnie do działania i częstych aktualizacji 🔄  
+- **Pomaga kolejnym osobom**, którym może się to przydać 🙌  
+- **Dajesz mi znak, że to działa i warto** 👏
+
+
+
+[![Kup mi kawę](https://img.shields.io/badge/Kup%20mi%20kawę-%E2%98%95%EF%B8%8F-orange?style=for-the-badge&logo=buy-me-a-coffee)](https://buymeacoffee.com/nekkogamma)
+
+### 📲 **Wsparcie przez Revolut:**
+
+1. **Nazwa użytkownika**: `@nekkogamma`  
+2. **Bezpośredni link** do darowizny:  
+   [Kliknij tutaj, aby wesprzeć](https://revolut.me/nekkogamma)
+
+3. **Revolut QR** (skanowanie):  
 <a href="https://revolut.me/nekkogamma" target="_blank">
   <img src="screeny/darowizna.png" alt="Revolut QR" width="200"/>
-</a>  
-🔗 Link: [https://revolut.me/nekkogamma](https://revolut.me/nekkogamma)
+</a>
+
+🔗 **Alternatywnie**:  
+[revolut.me/nekkogamma](https://revolut.me/nekkogamma)
 
 
-> Dziękuję za wsparcie! 💖 Każda kawa to dla mnie ogromna motywacja ☕⚡
 
+
+<img src="screeny/memewsparcie.png" alt="funny support meme" width="400"/>  
+
+
+> **Serio. Dzięki! 🥹**
 
 
 
