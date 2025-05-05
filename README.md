@@ -1,4 +1,4 @@
-# 🔧 Odblokowanie hulajnogi Ninebot – wersja BETA
+# 🔧 Odblokowanie hulajnogi Ninebot +MiniWIKI – wersja BETA
 **Aktualizacja:** 02.05.2025
 // Może zawierać błedy jeśli widzisz błąd daj znać najlepiej na discord ;)
 
@@ -272,12 +272,12 @@ Różni się tylko interfejs
  - Następnie wybieramy model
 
 
-![](screeny/17.png)
+![](screeny/17v2.png)
 
 Bot zapyta o UID wklejamy ze schowka swój unikalny numer
 
 
-![](screeny/18.png)
+![](screeny/18v2.png)
 
 Bot potrzebuje trochę czasu teraz czekamy może potrwać od 1 minuty do kilku dni zależnie od kolejki którą musi bot przetworzyć
 
@@ -1006,6 +1006,7 @@ Domyślny rozmiar kół w modelach g30 Max to **10"**, ale ustaw:
 - **G2 i F2** → `9.7"`
 
  > ⚠️ **Uwaga:** Oryginalnie hulajnoga zawyża prędkość po tej zmianie odczyty na ekranie są zgodne z odczytem według GPS
+ > Co do G30 mam pewność w innych modelach warto sprawdzić samemu (jeśli sprawdziłeś podziel się wynikami na discord)
 
 ![](screeny/29.png)
 
