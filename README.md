@@ -282,7 +282,7 @@ Bot zapyta o UID wklejamy ze schowka swój unikalny numer
 Bot potrzebuje trochę czasu teraz czekamy może potrwać od 1 minuty do kilku dni zależnie od kolejki którą musi bot przetworzyć
 
 
-![](screeny/9.png)
+
 
 Pobieramy przygotowany plik pod naszą hulajnogę naciskając na 3kropki
 
