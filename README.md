@@ -212,19 +212,19 @@ Różni się tylko interfejs
 - Po uruchomieniu aplikacji wybierz swoją hulajnogę.
   *(Włącz hulajnogę oraz Bluetooth w telefonie)*
 
-  <img src="screeny/14.png" width="55%" height="55%">
+  <img src="screeny/14.png" style="max-width: 100%; width: 400px; height: auto;">
 
 - Kliknij trzy kropki w prawym górnym rogu.
 
-   <img src="screeny/1.png" width="55%" height="55%">
+   <img src="screeny/1.png" style="max-width: 100%; width: 400px; height: auto;">
 
 - Wybierz opcję **"Hardware details"**.
 
-  <img src="screeny/2.png" width="55%" height="55%">
+  <img src="screeny/2.png" style="max-width: 100%; width: 400px; height: auto;">
 
 - Skopiuj swój unikalny **UID**.
 
-   <img src="screeny/3.png" width="55%" height="55%">
+   <img src="screeny/3.png" style="max-width: 100%; width: 400px; height: auto;">
 
 ---
 
@@ -232,17 +232,18 @@ Różni się tylko interfejs
 
 - Przejdź do **Ustawienia**.
 
-   <img src="screeny/4.png" width="55%" height="55%">
+   <img src="screeny/4.png" style="max-width: 100%; width: 400px; height: auto;">
 
 - Na dole wybierz **"Cofnij powiązanie"**.
 
-   <img src="screeny/5.png" width="55%" height="55%">
+   <img src="screeny/5.png" style="max-width: 100%; width: 400px; height: auto;">
 
 - Kliknij **"Cofnij powiązanie"** – aplikacja poprosi o e-mail przypisany do konta.
 
-   <img src="screeny/6.png" width="55%" height="55%">
+   <img src="screeny/6.png" style="max-width: 100%; width: 400px; height: auto;">
 
-   <img src="screeny/7.png" width="55%" height="55%">
+
+   <img src="screeny/7.png" style="max-width: 100%; width: 400px; height: auto;">
 
 ---
 
@@ -300,12 +301,14 @@ Po otrzymaniu plików kliknij trzy kropki i wybierz **"Download"**
 1. W aplikacji wybierz zakładkę **"FLASH"**
 2. Kliknij **"LOAD FROM FILE"**
 
-   <img src="screeny/10.png" width="55%" height="55%">
+<img src="screeny/10.png" style="max-width: 100%; width: 400px; height: auto;">
+
 
 3. Znajdź pobrany plik w pamięci telefonu i wybierz go
 4. Kliknij **"START FLASH"**
 
-   <img src="screeny/11.png" width="55%" height="55%">
+
+   <img src="screeny/11.png" style="max-width: 100%; width: 400px; height: auto;">
 
 > ⚠️ **Uwaga:** Nie oddalaj się od hulajnogi i jej nie wyłączaj – możesz ją uceglić! W takim wypadku pomoże tylko programator ST-LINK lub wymiana.
 ZNACZENIE Uceglić – doprowadzić urządzenie (np. hulajnogę) do stanu, w którym nie reaguje na włączenie, nie uruchamia się, nie da się go normalnie naprawić ani przywrócić bez specjalistycznego sprzętu (np. ST-LINK, UART itp.).																																																												 
@@ -364,7 +367,7 @@ Jeśli zmieniasz oprogramowanie na alternatywne SHFW najlepiej korzystaj z aplik
 
 
 
- <center><img src="screeny/ninedash.png" width="35%" height="35%"></center>
+ <center><img src="screeny/ninedash.png" style="max-width: 100%; width: 400px; height: auto;"></center>
 
 
 
@@ -561,8 +564,10 @@ Tabele jaką znalazłem z oryginalnymi wartościami według oznaczeń
 ## 🚀 Jak wgrać SHFW (Custom Firmware)
 
 
-![](screeny/22.png)  
+<img src="screeny/22.png" style="max-width: 100%; width: 400px; height: auto;">
+
 ![](screeny/23.png)  
+
 ![](screeny/24.png)
 
 >W przypadku modeli F20,F25,F30,F40 -Jest problemos.
@@ -581,7 +586,8 @@ Dla pewności warto jeszcze raz powtórzyć proces flashowania.
 > Po wszystkim ustaw ustawienia SHFW inaczej nie pojeździsz bo nic nie jest skonfigurowane
 
 ![](screeny/25.png)  
-<img src="screeny/26.png" width="55%" height="55%">
+
+<img src="screeny/26.png" style="max-width: 100%; width: 400px; height: auto;">
 
 ---
 
@@ -884,11 +890,11 @@ Note: F- and D-Series stay on 0.3.6. We are currently working on finishing 3.10.
 
 Przejdź do zakładki **"CONFIG"**:
 
-![](screeny/27.png)
+<img src="screeny/27.png" style="max-width: 100%; width: 400px; height: auto;">
 
 Rozwiń sekcję **Throttle** — tu ustawisz prędkość i ilość amperów dla poszczególnych trybów:
 
-![](screeny/28a.png)
+<img src="screeny/28a.png" style="max-width: 100%; width: 400px; height: auto;">
 
 > ⚠️ **Uwaga:** Screen pokazuje tylko wygląd menu — nie kopiuj tych ustawień - polecane ustawienia znajdziesz niżej.
 
@@ -963,7 +969,7 @@ Jak działa? Kontroler silnika zmienia kąt przesunięcia fazowego prądu (tzw. 
 
 **Przykład ustawienia normalnego w aplikacji dla G30 MAX - Działający w trybach dla Sport i Drive**
 
-![](screeny/fieldnormal.jpg)
+<img src="screeny/fieldnormal.jpg" style="max-width: 100%; width: 400px; height: auto;">
 
 >**Czyli zastosowano tutaj ustawienia z profilu normalnego:**
 - Prędkość(Start speed: 20 km/h
@@ -1010,7 +1016,11 @@ Domyślny rozmiar kół w modelach g30 Max to **10"**, ale ustaw:
  > ⚠️ **Uwaga:** Oryginalnie hulajnoga zawyża prędkość po tej zmianie odczyty na ekranie są zgodne z odczytem według GPS
  > Co do G30 mam pewność w innych modelach warto sprawdzić samemu (jeśli sprawdziłeś podziel się wynikami na discord)
 
-![](screeny/29.png)
+
+
+
+<img src="screeny/29.png" style="max-width: 100%; height: auto;">
+
 
 ---
 
@@ -1066,7 +1076,8 @@ Niektóre nowe G30 z nowszym BMS mają ograniczenie prądu baterii do **28A**
 
 ## 🛠️ Ustawienia tempomatu (Cruise Control)
 
-![](screeny/32.png)				   
+![](screeny/32.png)
+
 Funkcja **Cruise Control (Tempomat)** oferuje cztery tryby działania:
 
 - **Off** – tempomat wyłączony  
@@ -1134,7 +1145,8 @@ Tutaj możesz ustawić, po jakim czasie hulajnoga ma się automatycznie wyłącz
 - **Opóźnienie automatycznego wyłączenia przy włączonej blokadzie antykradzieżowej (Auto-shutdown delay when locked)** – opóźnienie automatycznego wyłączenia, gdy hulajnoga jest **zablokowana** -Czyli kiedy zostawiasz ją włączoną i aktywujesz blokadę(żeby nikt jej nie ruszał) po jakim czasie sama się wyłączy (Tutaj zalecam ustawić na MAX)--Pamiętaj że po określonym czasie ona sama się odblokuje i ktoś może sobię włączyć i odjechać brum brum sadcat ;)
 
 
-![](screeny/33.png)
+
+<img src="screeny/33.png" style="max-width: 100%; width: 400px; height: auto;">
 
 
 
@@ -1209,7 +1221,7 @@ Znany problem topiących się kabli oryginalnych bullet connectors w G30 można 
    ### 1.Użyj aplikacji ScooterHackingUtility przejdź do zakładki `FLASH` i wybierz opcję ``LOAD FROM REPO``.
 
    <p align="center">
-     <img src="screeny/loadzrepo1.png" width="35%" height="35%">
+     <img src="screeny/loadzrepo1.png" style="max-width: 100%; width: 400px; height: auto;">
    </p>
 
    ---
@@ -1223,7 +1235,7 @@ Znany problem topiących się kabli oryginalnych bullet connectors w G30 można 
    Wybierz odpowiedni moduł, który chcesz przywrócić do oryginału lub np.zmienić na starszą wersję.
 
    <p align="center">
-     <img src="screeny/loadzrepo2.png" width="35%" height="35%">
+     <img src="screeny/loadzrepo2.png" style="max-width: 100%; width: 400px; height: auto;">
    </p>
 
    ---
@@ -1233,7 +1245,7 @@ Znany problem topiących się kabli oryginalnych bullet connectors w G30 można 
    Wybierz oryginalną wersję firmware'u i rozpocznij instalację.
 
    <p align="center">
-     <img src="screeny/loadzrepo3.png" width="35%" height="35%">
+     <img src="screeny/loadzrepo3.png" style="max-width: 100%; width: 400px; height: auto;">
    </p>
 
 
@@ -1247,7 +1259,7 @@ Znany problem topiących się kabli oryginalnych bullet connectors w G30 można 
 > ⚠️ **Uwaga:**📌 **Jak rozpoznać typ procesora?**  
 Najprościej po wersji DRV (w aplikacji również widać typ procesora) lub fizycznie po otworzeniu hulajnogi.
 >
->![](screeny/) <center><img src="screeny/rodzajprocka.png" width="35%" height="35%"></center>
+>![](screeny/) <img src="screeny/rodzajprocka.png" style="max-width: 100%; width: 400px; height: auto;">
 
 ## 🎛️ Różnice między kontrolerami Ninebot G30 – Gen 1 vs Gen 2
 
@@ -1258,7 +1270,7 @@ Najprościej po wersji DRV (w aplikacji również widać typ procesora) lub fizy
 - Wykorzystuje procesor STM32
 - Posiada dwie rewizje różniące się budową
 
-![](screeny/kontrolergen1.png)
+<img src="screeny/kontrolergen1.png" style="max-width: 100%; width: 400px; height: auto;">
 
 **⚙️ Gen 2:**  
 - Stosowany w nowszych egzemplarzach G30.
@@ -1271,7 +1283,7 @@ Najprościej po wersji DRV (w aplikacji również widać typ procesora) lub fizy
 
 ## 🎛️ Kontroler F20D
 
-<center><img src="screeny/kontrolerf20d.png" width="35%" height="35%"></center>
+<img src="screeny/kontrolerf20d.png" style="max-width: 100%; width: 400px; height: auto;">
 
 ---
 
@@ -1501,7 +1513,7 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 ### Krok 5: Testowanie
 **Przetestuj hulajnogę, aby upewnić się, że wszystko działa poprawnie.**
 
-<center><img src="screeny/memekitku.png" width="35%" height="35%"></center>
+<center><img src="screeny/memekitku.png" style="max-width: 100%; width: 400px; height: auto;"></center>
 
 
 
