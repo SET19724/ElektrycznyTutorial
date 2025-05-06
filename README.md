@@ -1,5 +1,5 @@
 # 🔧 Odblokowanie hulajnogi Ninebot +MiniWIKI – wersja BETA
-**Aktualizacja:** 02.05.2025
+**Aktualizacja:** 06.05.2025
 // Może zawierać błedy jeśli widzisz błąd daj znać najlepiej na discord ;)
 
 ---
@@ -132,7 +132,7 @@ Jeśli **pomogłem Ci w czymś ważnym**, możesz się odwdzięczyć symboliczni
 - 🔧 [Typy kontrolerów DRV/ESC](#kontrolery)
 - 🔧 [Zalecana wymiana na: łączniki MR60 lub MT60](#kable)
 - 🔧 [Kody błędów W BUDOWIE](#errorkody)
-- 🔧 [Jak wrócić do oryginalnego oprogramowania(W BUDOWIE)](#powrotstock)
+- 🔧 [Jak wrócić do oryginalnego oprogramowania](#powrotstock)
 
 ### ℹ️ Inne
 
@@ -147,7 +147,7 @@ Jeśli **pomogłem Ci w czymś ważnym**, możesz się odwdzięczyć symboliczni
 ## ❓ Czy potrzebuję programatora ST-LINK?
 **Nie!** Jest to najnowsza metoda, która nie wymaga użycia ST-LINKa.
 > Sposób jednak lub działa nie możesz odpiąć konta z jakiegoś powodu ?
-- [Alternatywa czyli odblokowanie przez ST-LINK - stara metoda sekcja obecnie W BUDOWIE](#stlink)
+- [Alternatywa czyli odblokowanie przez ST-LINK - stara metoda sekcja obecnie](#stlink)
 
 ---
 
@@ -212,35 +212,37 @@ Różni się tylko interfejs
 - Po uruchomieniu aplikacji wybierz swoją hulajnogę.
   *(Włącz hulajnogę oraz Bluetooth w telefonie)*
 
-  ![](screeny/14.png)
+  <img src="screeny/14.png" width="55%" height="55%">
 
 - Kliknij trzy kropki w prawym górnym rogu.
 
-  ![](screeny/1.png)
+   <img src="screeny/1.png" width="55%" height="55%">
 
 - Wybierz opcję **"Hardware details"**.
 
-  ![](screeny/2.png)
+  <img src="screeny/2.png" width="55%" height="55%">
 
 - Skopiuj swój unikalny **UID**.
 
-  ![](screeny/3.png)
+   <img src="screeny/3.png" width="55%" height="55%">
 
 ---
 
 ### 2. Odepnij hulajnogę od konta w oficjalnej aplikacji
 
-- Przejdź do **Settings**.
+- Przejdź do **Ustawienia**.
 
-  ![](screeny/4.png)
+   <img src="screeny/4.png" width="55%" height="55%">
 
-- Na dole wybierz **"Unbind vehicle"**.
+- Na dole wybierz **"Cofnij powiązanie"**.
 
-  ![](screeny/5.png)
+   <img src="screeny/5.png" width="55%" height="55%">
 
-- Kliknij **"Unbind"** – aplikacja poprosi o e-mail przypisany do konta.
+- Kliknij **"Cofnij powiązanie"** – aplikacja poprosi o e-mail przypisany do konta.
 
-  ![](screeny/6.png)
+   <img src="screeny/6.png" width="55%" height="55%">
+
+   <img src="screeny/7.png" width="55%" height="55%">
 
 ---
 
@@ -298,12 +300,12 @@ Po otrzymaniu plików kliknij trzy kropki i wybierz **"Download"**
 1. W aplikacji wybierz zakładkę **"FLASH"**
 2. Kliknij **"LOAD FROM FILE"**
 
-   ![](screeny/10.png)
+   <img src="screeny/10.png" width="55%" height="55%">
 
 3. Znajdź pobrany plik w pamięci telefonu i wybierz go
 4. Kliknij **"START FLASH"**
 
-   ![](screeny/11.png)
+   <img src="screeny/11.png" width="55%" height="55%">
 
 > ⚠️ **Uwaga:** Nie oddalaj się od hulajnogi i jej nie wyłączaj – możesz ją uceglić! W takim wypadku pomoże tylko programator ST-LINK lub wymiana.
 ZNACZENIE Uceglić – doprowadzić urządzenie (np. hulajnogę) do stanu, w którym nie reaguje na włączenie, nie uruchamia się, nie da się go normalnie naprawić ani przywrócić bez specjalistycznego sprzętu (np. ST-LINK, UART itp.).																																																												 
@@ -579,7 +581,7 @@ Dla pewności warto jeszcze raz powtórzyć proces flashowania.
 > Po wszystkim ustaw ustawienia SHFW inaczej nie pojeździsz bo nic nie jest skonfigurowane
 
 ![](screeny/25.png)  
-![](screeny/26.png)
+<img src="screeny/26.png" width="55%" height="55%">
 
 ---
 
