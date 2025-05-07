@@ -542,18 +542,21 @@ Tabele jaką znalazłem z oryginalnymi wartościami według oznaczeń
 <a name="jak-zmienic-region"></a>
 ## 🔁 Jak zmienić region?
 
-1. Otwórz aplikację **ScooterHacking Utility**  [Link](https://utility.cfw.sh)
+1. Otwórz aplikację **ScooterHacking Utility**  [Link Do Aplikacji](https://utility.cfw.sh)
 2. Przejdź do zakładki:  
    `TOOLS > CHANGE REGION`  
 
-   ![](screeny/20.png)
+   <img src="screeny/20.png" style="max-width: 100%; width: 400px; height: auto;">
 
 3. Wybierz gotowy region lub użyj opcji „CUSTOM”  
 
-   ![](screeny/21.png)
+<img src="screeny/21b.png" style="max-width: 100%; width: 400px; height: auto;">
 
-4. Wybierz region z listy lub wpisz pełny, poprawny numer seryjny (zgodnie z tabelą wyżej)  
-5. Zatwierdź – hulajnoga uruchomi się ponownie
+
+   <img src="screeny/21.png" style="max-width: 100%; width: 400px; height: auto;">
+
+4. Wybierz gotowy region z listy lub wpisz pełny, poprawny numer seryjny: [**Zgodnie z tabelą wyżej**](#lista-prefixow-numerow-seryjnych)
+5. Zatwierdź zmianę – hulajnoga uruchomi się ponownie
 
 > ⚠️ **Uwaga:** Nie wpisuj przypadkowych numerów – użyj poprawnych kodów dla swojego modelu !
 > - Jeśli po zmianie regionu dalej masz problem spróbuj innego regionu lub wgraj customfirmware SHFW ewentualnie po prostu przywróć oryginalny
@@ -566,9 +569,9 @@ Tabele jaką znalazłem z oryginalnymi wartościami według oznaczeń
 
 <img src="screeny/22.png" style="max-width: 100%; width: 400px; height: auto;">
 
-![](screeny/23.png)  
+<img src="screeny/23.png" style="max-width: 100%; width: 400px; height: auto;">  
 
-![](screeny/24.png)
+<img src="screeny/24.png" style="max-width: 100%; width: 400px; height: auto;">
 
 >W przypadku modeli F20,F25,F30,F40 -Jest problemos.
 >Musisz po wgraniu shfw w wersji 0.3.6 użyj starej wersji aplikacji SHU 2.5 do konfiguracji inaczej źle będą wskakiwać ustawienia
@@ -884,7 +887,7 @@ Note: F- and D-Series stay on 0.3.6. We are currently working on finishing 3.10.
 <a name="ustawianie-shfw"></a>
 ## ⚙️ Ustawianie SHFW
 
-> Jeśli tego nie zrobisz, hulajnoga **nie będzie jeździć**, ponieważ nie ma domyślnych ustawień!
+> Jeśli wprowadzisz ustawień, hulajnoga **nie będzie jeździć**, ponieważ nie ma domyślnych ustawień!
 
 > **Seria F i D** np.F20,F25,F40 w przypadku wgrania wersji **0.3.6 SHFW** użyj starej wersji aplikacji SHU 2.5 do konfiguracji inaczej źle będą wskakiwać ustawienia
 
@@ -962,7 +965,7 @@ Jak działa? Kontroler silnika zmienia kąt przesunięcia fazowego prądu (tzw. 
 - Initial field current: 0A
 - Variable field current: 600 mA/km/h
 
-**Dla największych prędkości (może powodować problemy):**
+**Dla największych prędkości (może powodować problemy-nie zalecany):**
 - Prędkość (Start speed: 20 km/h)
 - Initial field current: 0A
 - Variable field current: 2000 mA/km/h
@@ -1003,6 +1006,10 @@ W zakładce hamulce zostawiamy najlepiej `AUTO`
  - Warto w tej zakładce ustawić autobraking na 6A-8A
 
 Da nam to automatyczne hamowanie podobne do oryginału
+
+<p align="center">
+  <img src="screeny/hamulce1.png" style="max-width: 100%; width: 400px; height: auto;">
+</p>
 
 ---
 
@@ -1085,7 +1092,7 @@ Funkcja **Cruise Control (Tempomat)** oferuje cztery tryby działania:
 - **Pojedyńcze wciśnięcie manetki gazu (Single tap)** – tempomat aktywuje się po jednokrotnym naciśnięciu manetki gazu  (trzeba wyczuć czasem do połowy wciskam żeby łapało)
 - **Podwójne wciśnięcie manetki gazu (Double tap)** – tempomat aktywuje się po dwukrotnym szybkim naciśnięciu manetki gazu  (trzeba wyczuć czasem do połowy wciskam żeby łapało)(tą opcję polecam)
 
----
+
 
 ### 🔄 Dodatkowa funkcja - Zmiana prędkości tempomatu za pomocą manetki(Opcja Increase/decrease CC speed with throttle:):
 
@@ -1246,6 +1253,10 @@ Znany problem topiących się kabli oryginalnych bullet connectors w G30 można 
 
    <p align="center">
      <img src="screeny/loadzrepo3.png" style="max-width: 100%; width: 400px; height: auto;">
+   </p>
+
+   <p align="center">
+     <img src="screeny/loadzrepo4.png" style="max-width: 100%; width: 400px; height: auto;">
    </p>
 
 
