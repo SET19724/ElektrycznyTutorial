@@ -87,7 +87,7 @@ Jeśli **pomogłem Ci w czymś ważnym**, możesz się odwdzięczyć symboliczni
 - Ninebot  F25  
 - Ninebot  F30  
 - Ninebot  F40  ✅
-- Ninebot  E22  
+- Ninebot  E22  ✅
 - Ninebot  E25  
 - Ninebot  E45  
 
@@ -1163,16 +1163,24 @@ Tutaj możesz ustawić, po jakim czasie hulajnoga ma się automatycznie wyłącz
 <a name="kable"></a>
 ## 🔌 Bullet connectors w Ninebot G30 – znany problem i rekomendowana wymiana
 
-W hulajnodze Ninebot G30 oryginalne łączniki typu “bullet” (wpinane kable zasilające silnik) często okazują się **niewystarczające** do bezpiecznego przesyłu prądu, szczególnie po modyfikacjach firmware czy podniesieniu parametrów.  
- - Były stosowane w pierwszej generacji
+W hulajnodze Ninebot G30 oryginalne łączniki typu “bullet” (wpinane kable zasilające silnik) często okazują się **niewystarczające** do bezpiecznego przesyłu prądu, szczególnie po wgraniu customfirmware (**np.SHFW**) czy podniesieniu parametrów modyfikacjami.  
+ > Były stosowane w pierwszej generacji
 
 ### 🛑 Co się dzieje?
-- **Przegrzewanie się styków** przy większym obciążeniu  
+- **Przegrzewanie się wtyczek kablowych** przy większym obciążeniu  
 - **Topienie izolacji** lub samego metalu konektora  
 - Ryzyko **przerwy w zasilaniu** lub uszkodzenia przewodów  
 
-Ten problem jest **powszechnie zgłaszany** przez użytkowników G30, zwłaszcza tych, którzy wgrywają custom firmware i zwiększają amperaż silnika.
- - Ale dotyczy też zwykłych użytkowników
+### 🛑 Jak to sprawdzić?
+- **Otwórz hulajnogę** lub **Sprawdź w aplikacji ScooterHackingUtility typ procesora w zakładce `INFO`**
+- **TYP:ST32** - **! Masz właśnie stary typ kablii o których mowa !**
+- **TYP:AT32** - **Wszystko okej kable są przykręcane do kontrolera**
+
+<img src="screeny/rodzajprocka.png" style="max-width: 100%; width: 400px; height: auto;">
+
+
+## Ten problem jest **powszechnie zgłaszany** przez użytkowników G30, zwłaszcza tych, którzy wgrywają custom firmware i zwiększają amperaż silnika .Ale dotyczy też zwykłych użytkowników.
+
 
  > ⚠️ **Uwaga:** W przypadku funkcji Acceleration boost nie zaleca się zwiększać jej powyżej 30% jeśli masz stary typ łączników
 
