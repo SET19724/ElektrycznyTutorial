@@ -1,10 +1,10 @@
 # 🔧 Odblokowanie hulajnogi Ninebot +MiniWIKI – wersja BETA
-**Aktualizacja:** 06.05.2025
+**Aktualizacja:** 10.05.2025
 // Może zawierać błedy jeśli widzisz błąd daj znać najlepiej na discord ;)
 
 ---
 
-🌐 **Wersje językowe (automatyczne tłumaczenia przez Google Translate):**
+🌐 **Wersje językowe (CHOOSE YOUR LANGUAGE) (automatyczne tłumaczenia przez Google Translate):**
 
 - 🇵🇱 Polski (Oryginał)
 - EN [English](https://translate.google.com/translate?sl=pl&tl=en&u=https://github.com/SET19724/ElektrycznyTutorial)
@@ -82,7 +82,7 @@ Jeśli **pomogłem Ci w czymś ważnym**, możesz się odwdzięczyć symboliczni
 
 - Ninebot Max G2  ✅
 - Ninebot Max G30  ✅
-- Ninebot  F2  ✅
+- Ninebot  F2,F2 PLUS,F2 PRO  ✅
 - Ninebot  F20  ✅
 - Ninebot  F25  
 - Ninebot  F30  
@@ -305,6 +305,10 @@ Po otrzymaniu plików kliknij trzy kropki i wybierz **"Download"**
 
 
 3. Znajdź pobrany plik w pamięci telefonu i wybierz go
+> ⚠️ **Uwaga:** Wybierz plik z oznaczeniem `.zip`. Nie rozpakowuj archiwum.
+
+<center><img src="screeny/download.png" style="max-width: 100%; width: 400px; height: auto;"></center>
+
 4. Kliknij **"START FLASH"**
 
 
@@ -321,8 +325,8 @@ ZNACZENIE Uceglić – doprowadzić urządzenie (np. hulajnogę) do stanu, w kt�
 >  
 > - Sprawdź, czy **Twój MCU ID (UID)** jest poprawny i **zgadza się z hulajnogą**.  
 > - Upewnij się, że hulajnoga **nie była wcześniej odblokowywana ani programowana ST-LINKiem** (np. przez poprzedniego właściciela).  
-> - Metoda działa **tylko na oryginalnym kontrolerze** – jeśli masz podróbkę lub zamiennik z chin, proces się nie powiedzie.
-> - W przypadku błędnego UID - wygeneruj nowe pliki na używając dobrego UID
+> - Metoda działa **tylko na oryginalnym kontrolerze** – jeśli masz podróbkę lub zamiennik z Chin, proces się nie powiedzie.
+> - W przypadku błędnego UID - wygeneruj nowe pliki używając dobrego UID
 
 
 
@@ -542,55 +546,33 @@ Tabele jaką znalazłem z oryginalnymi wartościami według oznaczeń
 <a name="jak-zmienic-region"></a>
 ## 🔁 Jak zmienić region?
 
-1. Otwórz aplikację **ScooterHacking Utility**  [Link Do Aplikacji](https://utility.cfw.sh)
-2. Przejdź do zakładki:  
-   `TOOLS > CHANGE REGION`  
+
+### 1. Otwórz aplikację **ScooterHacking Utility**  [Link Do Aplikacji](https://utility.cfw.sh).
+
+### 2. Przejdź do zakładki `TOOLS` a następnie wybierz `CHANGE REGION`
+
 
    <img src="screeny/20.png" style="max-width: 100%; width: 400px; height: auto;">
 
-3. Wybierz gotowy region lub użyj opcji „CUSTOM”  
+   ### 4. Przeczytaj ostrzeżenie
+
 
 <img src="screeny/21b.png" style="max-width: 100%; width: 400px; height: auto;">
+
+### 5. Wybierz gotowy region z listy np.`US` lub użyj opcji `CUSTOM`
+
+> ⚠️ **Uwaga:** JEŚLI WYBIERASZ **CUSTOM** wpisz pełny, poprawny numer seryjny: [**Zgodnie z tabelą wyżej**](#lista-prefixow-numerow-seryjnych) )
+
+> ⚠️ **Uwaga:** Nie wpisuj przypadkowych numerów – użyj poprawnych kodów dla swojego modelu !
+> - Jeśli po zmianie regionu dalej masz problem spróbuj innego regionu lub wgraj customfirmware SHFW ewentualnie po prostu przywróć oryginalny firmware opcją `LOAD FROM REPO`
 
 
    <img src="screeny/21.png" style="max-width: 100%; width: 400px; height: auto;">
 
-4. Wybierz gotowy region z listy lub wpisz pełny, poprawny numer seryjny: [**Zgodnie z tabelą wyżej**](#lista-prefixow-numerow-seryjnych)
-5. Zatwierdź zmianę – hulajnoga uruchomi się ponownie
 
-> ⚠️ **Uwaga:** Nie wpisuj przypadkowych numerów – użyj poprawnych kodów dla swojego modelu !
-> - Jeśli po zmianie regionu dalej masz problem spróbuj innego regionu lub wgraj customfirmware SHFW ewentualnie po prostu przywróć oryginalny
-
----
-
-<a name="jak-wgrac-shfw-custom-firmware"></a>
-## 🚀 Jak wgrać SHFW (Custom Firmware)
+### 6. Zatwierdź zmianę – hulajnoga uruchomi się ponownie
 
 
-<img src="screeny/22.png" style="max-width: 100%; width: 400px; height: auto;">
-
-<img src="screeny/23.png" style="max-width: 100%; width: 400px; height: auto;">  
-
-<img src="screeny/24.png" style="max-width: 100%; width: 400px; height: auto;">
-
->W przypadku modeli F20,F25,F30,F40 -Jest problemos.
->Musisz po wgraniu shfw w wersji 0.3.6 użyj starej wersji aplikacji SHU 2.5 do konfiguracji inaczej źle będą wskakiwać ustawienia
-
-Często pojawia się błąd **"Flashing failed"** — **nie panikuj!**  
-SHFW najprawdopodobniej zostało poprawnie wgrane. Najlepiej w takim przypadku **wyłącz i włącz hulajnogę**.
-
-Jeśli na ekranie pojawiają się cyfry, to oznacza poziom naładowania baterii.  
-
->Przy 100% baterii powinno wyświetlać się `A0`.
-
-Po poprawnym wgraniu pojawi się wersja SHFW — jak na screenie poniżej.  
-Dla pewności warto jeszcze raz powtórzyć proces flashowania.
-
-> Po wszystkim ustaw ustawienia SHFW inaczej nie pojeździsz bo nic nie jest skonfigurowane
-
-![](screeny/25.png)  
-
-<img src="screeny/26.png" style="max-width: 100%; width: 400px; height: auto;">
 
 ---
 
@@ -883,6 +865,43 @@ Note: F- and D-Series stay on 0.3.6. We are currently working on finishing 3.10.
 
 
 ---
+<a name="jak-wgrac-shfw-custom-firmware"></a>
+## 🚀 Jak wgrać SHFW (Custom Firmware)
+
+### 1. Użyj aplikacji ScooterHackingUtility przejdź do zakładki `FLASH` i wybierz opcję ``INSTALL/UPDATE SHFW``.
+
+<img src="screeny/22.png" style="max-width: 100%; width: 400px; height: auto;">
+
+### 2. Wybierz najnowszą wersję z listy w tym przypadku ``3.10.1``.
+
+<img src="screeny/23.png" style="max-width: 100%; width: 400px; height: auto;">  
+
+### 3. Naciśnij ``START FLASH`` by rozpocząć wgrywanie.
+
+<img src="screeny/24.png" style="max-width: 100%; width: 400px; height: auto;">
+
+>W przypadku modeli F20,F25,F30,F40 -Jest problemos.
+>Musisz po wgraniu SHFW w wersji 0.3.6 użyj starej wersji aplikacji SHU 2.5 do konfiguracji inaczej źle będą wskakiwać ustawienia
+
+Często pojawia się błąd **"Flashing failed"** — **nie panikuj!**  
+SHFW najprawdopodobniej zostało poprawnie wgrane. Najlepiej w takim przypadku **wyłącz i włącz hulajnogę**.
+A następnie jeszcze raz spróbuj wgrać SHFW najczęściej za drugim razem wyskakuje **FLASH COMPLETE**
+
+![](screeny/25.png)
+
+Jeśli na ekranie pojawiają się cyfry, to oznacza poziom naładowania baterii.  
+
+>Przy 100% baterii powinno wyświetlać się `A0`.
+
+
+### 4. Po poprawnym wgraniu pojawi się wersja SHFW w zakładce ``INFO`` — jak na screenie poniżej.
+
+
+<img src="screeny/26.png" style="max-width: 100%; width: 400px; height: auto;">
+
+### 5. Po wszystkim ustaw ustawienia SHFW ! inaczej nie pojeździsz bo nic nie jest skonfigurowane
+
+---
 
 <a name="ustawianie-shfw"></a>
 ## ⚙️ Ustawianie SHFW
@@ -933,7 +952,7 @@ Ustawiacie sobie po kolei 3 tryby czyli ECO,DRIVE,SPORT
   - Krzywa: **Pełna kwadratowa (Quadratic na max w prawo = 1.0)**
 - Pozostałe tryby: ***niższe ustawienia (Ja zalecam 10A ECO,16 DRIVE,25A SPORT)***
 - Ograniczenie prędkości: **wyłączone (0 km/h)**(Przy innych trybach niż sport warto ustawić preferowaną wartość)
-- Acceleration boost: **100%** (Tutaj zalecam stopniowo zwiększać aż się przyzwyczaicie na start np.30%)(Daje wyższe prędkości kosztem szybszego rozładowania baterii)
+- Acceleration boost: **100%** (Tutaj zalecam stopniowo zwiększać aż się przyzwyczaicie na start np.30%)(Daje większe przyśpieszenie)
 - Brake boost: **50%**
 - Włącz **Overmodulation** dla SPORT/DRIVE(dla obu lub tylko jednego) (Daje wyższe prędkości kosztem szybszego rozładowania baterii)
 
@@ -960,7 +979,7 @@ Jak działa? Kontroler silnika zmienia kąt przesunięcia fazowego prądu (tzw. 
 - Initial field current: 0A
 - Variable field current: 1200 mA/km/h
 
-**Dla wyższej efektywności (niższe zużycie baterii):**
+**Dla niższego zużycia baterii:**
 - Prędkość (Start speed: 20 km/h)
 - Initial field current: 0A
 - Variable field current: 600 mA/km/h
@@ -975,10 +994,10 @@ Jak działa? Kontroler silnika zmienia kąt przesunięcia fazowego prądu (tzw. 
 <img src="screeny/fieldnormal.jpg" style="max-width: 100%; width: 400px; height: auto;">
 
 >**Czyli zastosowano tutaj ustawienia z profilu normalnego:**
-- Prędkość(Start speed: 20 km/h
+- Prędkość(Start speed): 20 km/h
 - Initial field current: 0A
 - Variable field current: 1200 mA/km/h
-> - **Powinien być kompatybilny również z modelami G2,F2**
+> - **Profil powinien być kompatybilny również z modelami G2,F2**
 
 >## Małe objaśnienie pola magnetycznego (Field Weakening) w hulajnogach elektrycznych
 >
@@ -1537,7 +1556,7 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 
 
 <a name="rozwiazaniastlink"></a>
-## Rozwiązywanie problemów (w budowie)
+## Znane problemy z stlink i ich rozwiązania (w budowie)
 
 
 
@@ -1545,10 +1564,11 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 ---
 
 <a name="errorkody"></a>
-# 📋 Kody błędów hulajnogi(W BUDOWIE DO WERYFIKACJI)
+# 📋 Kody błędów hulajnogi
 
 | Kod | Opis błędu | Co zrobić |
 |-----|------------|-----------|
+| A0 | To nie błąd a oznaczenie poziomu baterii który wynosi 100% | Wszystko jest dobrze |
 | 10 | Brak połączenia między wyświetlaczem a sterownikiem | Sprawdź kabel idący od wyświetlacza do kontrolera |
 | 11–13 | Uszkodzenie odczytu faz silnika (A, B, C) | Sprawdź przewody silnika, ewentualnie wymień sterownik lub silnik |
 | 14 | Problem z manetką gazu (czujnik Halla) | Sprawdź lub wymień manetkę |
@@ -1594,7 +1614,11 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 
 <a name="FAQ"></a>
 ## FAQ(W BUDOWIE)
- - Montaż/Serwis
+
+## SHFW
+- Jak ustawić KERS przy SHFW ? - Suwak od KERS nie działa przy SHFW jest ale nic nie zmienia
+
+## Montaż/Serwis
 - Producent zaleca przy dokręcaniu śrub od kół użyć siły 65 ± 2Nm a także zastosować klej do gwintów Tonsan 1262(zamiennik to czerwony locktite)
 
 
