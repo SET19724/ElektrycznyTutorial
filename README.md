@@ -1,5 +1,5 @@
 # 🔧 Odblokowanie hulajnogi Ninebot +MiniWIKI – wersja BETA
-**Aktualizacja:** 10.05.2025
+**Aktualizacja:** 15.05.2025
 // Może zawierać błedy jeśli widzisz błąd daj znać najlepiej na discord ;)
 
 ---
@@ -83,6 +83,7 @@ Jeśli **pomogłem Ci w czymś ważnym**, możesz się odwdzięczyć symboliczni
 - Ninebot Max G2  ✅
 - Ninebot Max G30  ✅
 - Ninebot  F2,F2 PLUS,F2 PRO  ✅
+> ⚠️ **Uwaga:** Jeśli w aplikacji widzisz **f2_DRV_UNKNOWN** twój kontroler jest oparty o chip **GD32** obecnie bot nie obsługuje tego typu
 - Ninebot  F20  ✅
 - Ninebot  F25  
 - Ninebot  F30  
@@ -92,7 +93,6 @@ Jeśli **pomogłem Ci w czymś ważnym**, możesz się odwdzięczyć symboliczni
 - Ninebot  E45  
 
 > ⚠️ **Uwaga:** Jeśli widzisz obok strzałkę ✅ to według użytkowników udało im się odblokować dany model
-
 
 
 ---
@@ -424,6 +424,10 @@ N4GSD1939C0123
 - `NAGK` → ograniczony do 22 km/h, bez tempomatu  
 - `NAGS` → ograniczony do 32 km/h, z tempomatem ← zalecana zmiana
 
+#### F25/F25E(Do sprawdzenia) :
+- `N5GW` → ograniczony
+- `N5GC` → Większa prędkość ograniczenia i tempomat ← zalecana zmiana
+
 #### F30 :
 - `N5GC` → ograniczony
 - `N5GQ` → Większa prędkość ograniczenia i tempomat ← zalecana zmiana na F30E
@@ -554,23 +558,23 @@ Tabele jaką znalazłem z oryginalnymi wartościami według oznaczeń
 
    <img src="screeny/20.png" style="max-width: 100%; width: 400px; height: auto;">
 
-   ### 4. Przeczytaj ostrzeżenie
+   ### 3. Przeczytaj ostrzeżenie
 
 
 <img src="screeny/21b.png" style="max-width: 100%; width: 400px; height: auto;">
 
-### 5. Wybierz gotowy region z listy np.`US` lub użyj opcji `CUSTOM`
+### 4. Wybierz gotowy region z listy np.`US` lub użyj opcji `CUSTOM`
 
 > ⚠️ **Uwaga:** JEŚLI WYBIERASZ **CUSTOM** wpisz pełny, poprawny numer seryjny: [**Zgodnie z tabelą wyżej**](#lista-prefixow-numerow-seryjnych) )
 
 > ⚠️ **Uwaga:** Nie wpisuj przypadkowych numerów – użyj poprawnych kodów dla swojego modelu !
-> - Jeśli po zmianie regionu dalej masz problem spróbuj innego regionu lub wgraj customfirmware SHFW ewentualnie po prostu przywróć oryginalny firmware opcją `LOAD FROM REPO`
+> - Jeśli po zmianie regionu dalej masz problem spróbuj innego regionu lub wgraj customfirmware SHFW ewentualnie po prostu przywróć oryginalny firmware opcją `LOAD FROM REPO` **Jak przywrócić firmware TUTAJ**](#powrotdostock)
 
 
    <img src="screeny/21.png" style="max-width: 100%; width: 400px; height: auto;">
 
 
-### 6. Zatwierdź zmianę – hulajnoga uruchomi się ponownie
+### 5. Zatwierdź zmianę – hulajnoga uruchomi się ponownie
 
 
 
@@ -588,7 +592,7 @@ Tabele jaką znalazłem z oryginalnymi wartościami według oznaczeń
 | Segway Max (nowe silniki)         | v0.3.0 (base 187)                    |
 | Xiaomi GD32                        | v0.3.0 (base 247)                    |
 | EsX (Max G30LE)                    | v0.3.2 (base 255)                    |
-| F-Series (F20, F25, F30, F40)      | v0.3.6 – Brak nowszej wersji. **Użyj starszej aplikacji SHU 2.5 do konfirguracji ustawień** [Link](https://cdn.discordapp.com/attachments/828606571373527040/1281327305867788381/ScooterHackingUtility-2.5.apk?ex=6809e0cb&is=68088f4b&hm=3ebdbc31a1d2e2e48978c632ad8d0e007dab5f027cd0d98c4c8cf905bb91bc31&) |
+| F-Series (F20, F25, F30, F40)      | v0.3.6 – Brak nowszej wersji. **Użyj starszej aplikacji SHU 2.5 do konfirguracji ustawień** [(Link do pobrania)](https://cdn.discordapp.com/attachments/828606571373527040/1281327305867788381/ScooterHackingUtility-2.5.apk?ex=6809e0cb&is=68088f4b&hm=3ebdbc31a1d2e2e48978c632ad8d0e007dab5f027cd0d98c4c8cf905bb91bc31&) [(Zapasowy Link)](https://gofile.io/d/SQzpsb) |
 | D-Series                           | v0.3.6 (eksperymentalnie)           |
 | G2                                 | v3.9.0                               |
 | F-Series (F2/F2+/F2 Pro)           | v3.10.0                              |
@@ -881,7 +885,7 @@ Note: F- and D-Series stay on 0.3.6. We are currently working on finishing 3.10.
 <img src="screeny/24.png" style="max-width: 100%; width: 400px; height: auto;">
 
 >W przypadku modeli F20,F25,F30,F40 -Jest problemos.
->Musisz po wgraniu SHFW w wersji 0.3.6 użyj starej wersji aplikacji SHU 2.5 do konfiguracji inaczej źle będą wskakiwać ustawienia
+>Musisz po wgraniu SHFW w wersji 0.3.6 użyj starej wersji aplikacji SHU 2.5 [(Link do pobrania)](https://cdn.discordapp.com/attachments/828606571373527040/1281327305867788381/ScooterHackingUtility-2.5.apk?ex=6809e0cb&is=68088f4b&hm=3ebdbc31a1d2e2e48978c632ad8d0e007dab5f027cd0d98c4c8cf905bb91bc31&) [(Zapasowy Link)](https://gofile.io/d/SQzpsb) do konfiguracji inaczej źle będą wskakiwać ustawienia
 
 Często pojawia się błąd **"Flashing failed"** — **nie panikuj!**  
 SHFW najprawdopodobniej zostało poprawnie wgrane. Najlepiej w takim przypadku **wyłącz i włącz hulajnogę**.
@@ -908,7 +912,7 @@ Jeśli na ekranie pojawiają się cyfry, to oznacza poziom naładowania baterii.
 
 > Jeśli wprowadzisz ustawień, hulajnoga **nie będzie jeździć**, ponieważ nie ma domyślnych ustawień!
 
-> **Seria F i D** np.F20,F25,F40 w przypadku wgrania wersji **0.3.6 SHFW** użyj starej wersji aplikacji SHU 2.5 do konfiguracji inaczej źle będą wskakiwać ustawienia
+> **Seria F i D** np.F20,F25,F40 w przypadku wgrania wersji **0.3.6 SHFW** użyj starej wersji aplikacji SHU 2.5 [(Link do pobrania)](https://cdn.discordapp.com/attachments/828606571373527040/1281327305867788381/ScooterHackingUtility-2.5.apk?ex=6809e0cb&is=68088f4b&hm=3ebdbc31a1d2e2e48978c632ad8d0e007dab5f027cd0d98c4c8cf905bb91bc31&) [(Zapasowy Link)](https://gofile.io/d/SQzpsb) do konfiguracji inaczej źle będą wskakiwać ustawienia
 
 Przejdź do zakładki **"CONFIG"**:
 
@@ -1102,7 +1106,7 @@ Niektóre nowe G30 z nowszym BMS mają ograniczenie prądu baterii do **28A**
 
 ## 🛠️ Ustawienia tempomatu (Cruise Control)
 
-![](screeny/32.png)
+<img src="screeny/32.png" style="max-width: 100%; width: 400px; height: auto;">
 
 Funkcja **Cruise Control (Tempomat)** oferuje cztery tryby działania:
 
