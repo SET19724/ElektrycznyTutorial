@@ -1,5 +1,5 @@
 # 🔧 Odblokowanie hulajnogi Ninebot +MiniWIKI – wersja BETA
-**Aktualizacja:** 15.05.2025
+**Aktualizacja:** 18.05.2025
 // Może zawierać błedy jeśli widzisz błąd daj znać najlepiej na discord ;)
 
 ---
@@ -83,7 +83,7 @@ Jeśli **pomogłem Ci w czymś ważnym**, możesz się odwdzięczyć symboliczni
 - Ninebot Max G2  ✅
 - Ninebot Max G30  ✅
 - Ninebot  F2,F2 PLUS,F2 PRO  ✅
-> ⚠️ **Uwaga:** Jeśli w aplikacji widzisz **f2_DRV_UNKNOWN** twój kontroler jest oparty o chip **GD32** obecnie bot nie obsługuje tego typu
+> ⚠️ **Uwaga:** Jeśli w aplikacji ScooterHackingUtility(SHU) zakładka `INFO` widzisz **f2_DRV_UNKNOWN** masz nowszy kontroler jest oparty o chip **GD32 obecnie bot nie obsługuje tego typu**
 - Ninebot  F20  ✅
 - Ninebot  F25  
 - Ninebot  F30  
@@ -251,6 +251,35 @@ Różni się tylko interfejs
 
 - Otwórz Telegram i znajdź bota **@downgrade_ninebot**
 - Lub użyj linku  👉 [https://t.me/downgrade_ninebot](https://t.me/downgrade_ninebot)
+
+
+<details>
+<summary>⚠️ Uwaga: Od 18.05.2025 Obowiązują limity dostępu do bota — kliknij, aby rozwinąć</summary>
+
+🔒 **Jeśli widzisz ten komunikat, oznacza to, że aktualny limit wygenerowań plików został wykorzystany .**
+
+<img src="screeny/botlimit.png" alt="Limit bota" style="max-width: 100%; width: 400px; height: auto; margin: 10px 0;">
+
+🛠 **Co możesz zrobić:**
+
+1. Skopiuj otrzymany link wyglądający jak poniżej:
+```
+https://t.me/downgrade_ninebot?start=ref_xxxxxxxxxxxxxxxxxxxxxx
+```
+
+2. Wyślij go znajomemu, który:
+   - **Korzystał z bota co najmniej 7 dni wcześniej**
+   - **Nie zatwierdzał nikogo przez ostatnie 3 dni i nie generował plików**
+
+3. Tylko taka osoba może zatwierdzić Twoje konto.
+
+⏳ Alternatywnie poczekaj na reset kolejki (co godzinę lub codziennie o północy czasu UTC)  
+i spróbuj ponownie użyć komendy `/start`.
+
+</details>
+
+
+
 
 #### Krok po kroku:
  - **Przebieg w skrócie:**
@@ -937,8 +966,10 @@ Rozwiń sekcję **Throttle** — tu ustawisz prędkość i ilość amperów dla 
 ---
 
 <a name="zalecane-ustawienia"></a>
-## ✅ Zalecane ustawienia wg poradnika od lekrsu
+## ✅ Zalecane ustawienia oparte o dane z poradnika od lekrsu ale zmodyfikowane oryginał:
   https://github.com/lekrsu/shfw-walkthrough
+
+> Zalecam sprawdzić link powyżej i zapoznać się z aktualnymi danymi
 
 Dla modeli: **G30, G2, F2**  
 Aby osiągnąć maksymalną wydajność:
@@ -956,7 +987,7 @@ Ustawiacie sobie po kolei 3 tryby czyli ECO,DRIVE,SPORT
   - Krzywa: **Pełna kwadratowa (Quadratic na max w prawo = 1.0)**
 - Pozostałe tryby: ***niższe ustawienia (Ja zalecam 10A ECO,16 DRIVE,25A SPORT)***
 - Ograniczenie prędkości: **wyłączone (0 km/h)**(Przy innych trybach niż sport warto ustawić preferowaną wartość)
-- Acceleration boost: **100%** (Tutaj zalecam stopniowo zwiększać aż się przyzwyczaicie na start np.30%)(Daje większe przyśpieszenie)
+- Acceleration boost: **80%** (Tutaj zalecam stopniowo zwiększać aż się przyzwyczaicie na start np.30%)(Daje większe przyśpieszenie początkowe)
 - Brake boost: **50%**
 - Włącz **Overmodulation** dla SPORT/DRIVE(dla obu lub tylko jednego) (Daje wyższe prędkości kosztem szybszego rozładowania baterii)
 
@@ -991,7 +1022,7 @@ Jak działa? Kontroler silnika zmienia kąt przesunięcia fazowego prądu (tzw. 
 **Dla największych prędkości (może powodować problemy-nie zalecany):**
 - Prędkość (Start speed: 20 km/h)
 - Initial field current: 0A
-- Variable field current: 2000 mA/km/h
+- Variable field current: 1500-2000 mA/km/h
 
 **Przykład ustawienia normalnego w aplikacji dla G30 MAX - Działający w trybach dla Sport i Drive**
 
