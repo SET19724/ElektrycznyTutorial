@@ -10,6 +10,9 @@
 - EN [English](https://translate.google.com/translate?sl=pl&tl=en&u=https://github.com/SET19724/ElektrycznyTutorial)
 - 🇪🇸 [Español](https://translate.google.com/translate?sl=pl&tl=es&u=https://github.com/SET19724/ElektrycznyTutorial)
 - 🇩🇪 [Deutsch](https://translate.google.com/translate?sl=pl&tl=de&u=https://github.com/SET19724/ElektrycznyTutorial)
+- 🇨🇳 [中文 (Chiński – Mandaryński)](https://translate.google.com/translate?sl=pl&tl=zh-CN&u=https://github.com/SET19724/ElektrycznyTutorial)
+- 🇮🇳 [हिन्दी (Hindi)](https://translate.google.com/translate?sl=pl&tl=hi&u=https://github.com/SET19724/ElektrycznyTutorial)
+- 🇫🇷 [Français](https://translate.google.com/translate?sl=pl&tl=fr&u=https://github.com/SET19724/ElektrycznyTutorial)
 
 > ⚠️ Wszystkie tłumaczenia generowane przez sztuczną inteligencję.  
 > 🧠 Jeśli coś brzmi dziwnie, to wina robota, nie autora - ***chociaż może być to jednak wina autora. ;)***  
@@ -85,14 +88,14 @@ Jeśli **pomogłem Ci w czymś ważnym**, możesz się odwdzięczyć symboliczni
 - Ninebot  F2,F2 PLUS,F2 PRO  ✅
 > ⚠️ **Uwaga:** Jeśli w aplikacji ScooterHackingUtility(SHU) zakładka `INFO` widzisz **f2_DRV_UNKNOWN** masz nowszy kontroler jest oparty o chip **GD32 obecnie bot nie obsługuje tego typu**
 - Ninebot  F20  ✅
-- Ninebot  F25  
-- Ninebot  F30  
+- Ninebot  F25  ✅
+- Ninebot  F30  ✅
 - Ninebot  F40  ✅
 - Ninebot  E22  ✅
 - Ninebot  E25  
 - Ninebot  E45  
 
-> ⚠️ **Uwaga:** Jeśli widzisz obok strzałkę ✅ to według użytkowników udało im się odblokować dany model
+> ⚠️ **Uwaga:** Jeśli widzisz obok strzałkę ✅ to według użytkowników udało im się odblokować dany model. Jeśli nie ma strzałki też powinno działać ale nie mam potwierdzenia
 
 
 ---
@@ -131,7 +134,7 @@ Jeśli **pomogłem Ci w czymś ważnym**, możesz się odwdzięczyć symboliczni
 
 - 🔧 [Typy kontrolerów DRV/ESC](#kontrolery)
 - 🔧 [Zalecana wymiana na: łączniki MR60 lub MT60](#kable)
-- 🔧 [Kody błędów W BUDOWIE](#errorkody)
+- 🔧 [Kody błędów](#errorkody)
 - 🔧 [Jak wrócić do oryginalnego oprogramowania](#powrotstock)
 
 ### ℹ️ Inne
@@ -146,8 +149,8 @@ Jeśli **pomogłem Ci w czymś ważnym**, możesz się odwdzięczyć symboliczni
 
 ## ❓ Czy potrzebuję programatora ST-LINK?
 **Nie!** Jest to najnowsza metoda, która nie wymaga użycia ST-LINKa.
-> Sposób jednak lub działa nie możesz odpiąć konta z jakiegoś powodu ?
-- [Alternatywa czyli odblokowanie przez ST-LINK - stara metoda sekcja obecnie](#stlink)
+> Sposób jednak w twoim przypadku nie działa lub nie możesz odpiąć konta z jakiegoś powodu ? - Sprawdź link poniżej
+- [Alternatywa czyli odblokowanie przez ST-LINK - stara metoda](#stlink)
 
 ---
 
@@ -621,8 +624,8 @@ Tabele jaką znalazłem z oryginalnymi wartościami według oznaczeń
 | Segway Max (nowe silniki)         | v0.3.0 (base 187)                    |
 | Xiaomi GD32                        | v0.3.0 (base 247)                    |
 | EsX (Max G30LE)                    | v0.3.2 (base 255)                    |
-| F-Series (F20, F25, F30, F40)      | v0.3.6 – Brak nowszej wersji. **Użyj starszej aplikacji SHU 2.5 do konfirguracji ustawień** [(Link do pobrania)](https://cdn.discordapp.com/attachments/828606571373527040/1281327305867788381/ScooterHackingUtility-2.5.apk?ex=6809e0cb&is=68088f4b&hm=3ebdbc31a1d2e2e48978c632ad8d0e007dab5f027cd0d98c4c8cf905bb91bc31&) [(Zapasowy Link)](https://gofile.io/d/SQzpsb) |
-| D-Series                           | v0.3.6 (eksperymentalnie)           |
+| F-Series (F20, F25, F30, F40)      | v0.3.6 – Brak nowszej wersji. **Użyj starszej aplikacji SHU 2.5 do konfirguracji ustawień** [(Link do pobrania)](https://cdn.discordapp.com/attachments/828606571373527040/1281327305867788381/ScooterHackingUtility-2.5.apk?ex=6809e0cb&is=68088f4b&hm=3ebdbc31a1d2e2e48978c632ad8d0e007dab5f027cd0d98c4c8cf905bb91bc31&) [(Zapasowy Link)](https://gofile.io/d/SQzpsb) . Alternatywa  [IOS,ANDROID]  [(Luna konfigurator w przeglądarce)](https://luna.cfw.sh/) |
+| D-Series                           | v0.3.6 (eksperymentalnie)  – Brak nowszej wersji. **Użyj starszej aplikacji SHU 2.5 do konfirguracji ustawień** [(Link do pobrania)](https://cdn.discordapp.com/attachments/828606571373527040/1281327305867788381/ScooterHackingUtility-2.5.apk?ex=6809e0cb&is=68088f4b&hm=3ebdbc31a1d2e2e48978c632ad8d0e007dab5f027cd0d98c4c8cf905bb91bc31&) [(Zapasowy Link)](https://gofile.io/d/SQzpsb) . Alternatywa  [IOS,ANDROID]  [(Luna konfigurator w przeglądarce)](https://luna.cfw.sh/)           |
 | G2                                 | v3.9.0                               |
 | F-Series (F2/F2+/F2 Pro)           | v3.10.0                              |
 
@@ -913,8 +916,8 @@ Note: F- and D-Series stay on 0.3.6. We are currently working on finishing 3.10.
 
 <img src="screeny/24.png" style="max-width: 100%; width: 400px; height: auto;">
 
->W przypadku modeli F20,F25,F30,F40 -Jest problemos.
->Musisz po wgraniu SHFW w wersji 0.3.6 użyj starej wersji aplikacji SHU 2.5 [(Link do pobrania)](https://cdn.discordapp.com/attachments/828606571373527040/1281327305867788381/ScooterHackingUtility-2.5.apk?ex=6809e0cb&is=68088f4b&hm=3ebdbc31a1d2e2e48978c632ad8d0e007dab5f027cd0d98c4c8cf905bb91bc31&) [(Zapasowy Link)](https://gofile.io/d/SQzpsb) do konfiguracji inaczej źle będą wskakiwać ustawienia
+>W przypadku **Seria F i D** modele F20,F25,F30,F40,D18,D28 itd. -Jest problemos.
+>Musisz w późniejszych etapach po wgraniu SHFW w wersji 0.3.6 użyć starej wersji aplikacji SHU 2.5 do konfiguracji ustawień inaczej źle będą wskakiwać parametry które ustawiasz [(Link do pobrania)](https://cdn.discordapp.com/attachments/828606571373527040/1281327305867788381/ScooterHackingUtility-2.5.apk?ex=6809e0cb&is=68088f4b&hm=3ebdbc31a1d2e2e48978c632ad8d0e007dab5f027cd0d98c4c8cf905bb91bc31&) [(Zapasowy Link)](https://gofile.io/d/SQzpsb)  | Alternatywa  [IOS,ANDROID]  [(Luna konfigurator w przeglądarce)](https://luna.cfw.sh/)
 
 Często pojawia się błąd **"Flashing failed"** — **nie panikuj!**  
 SHFW najprawdopodobniej zostało poprawnie wgrane. Najlepiej w takim przypadku **wyłącz i włącz hulajnogę**.
@@ -941,7 +944,7 @@ Jeśli na ekranie pojawiają się cyfry, to oznacza poziom naładowania baterii.
 
 > Jeśli wprowadzisz ustawień, hulajnoga **nie będzie jeździć**, ponieważ nie ma domyślnych ustawień!
 
-> **Seria F i D** np.F20,F25,F40 w przypadku wgrania wersji **0.3.6 SHFW** użyj starej wersji aplikacji SHU 2.5 [(Link do pobrania)](https://cdn.discordapp.com/attachments/828606571373527040/1281327305867788381/ScooterHackingUtility-2.5.apk?ex=6809e0cb&is=68088f4b&hm=3ebdbc31a1d2e2e48978c632ad8d0e007dab5f027cd0d98c4c8cf905bb91bc31&) [(Zapasowy Link)](https://gofile.io/d/SQzpsb) do konfiguracji inaczej źle będą wskakiwać ustawienia
+> **Seria F i D** np.F20,F25,F40,D18,D28 w przypadku wgrania wersji **0.3.6 SHFW** użyj starej wersji aplikacji SHU 2.5 [(Link do pobrania)](https://cdn.discordapp.com/attachments/828606571373527040/1281327305867788381/ScooterHackingUtility-2.5.apk?ex=6809e0cb&is=68088f4b&hm=3ebdbc31a1d2e2e48978c632ad8d0e007dab5f027cd0d98c4c8cf905bb91bc31&) [(Zapasowy Link)](https://gofile.io/d/SQzpsb) do konfiguracji inaczej źle będą wskakiwać ustawienia | Alternatywa  [IOS,ANDROID]  [(Luna konfigurator w przeglądarce)](https://luna.cfw.sh/)
 
 Przejdź do zakładki **"CONFIG"**:
 
@@ -966,7 +969,7 @@ Rozwiń sekcję **Throttle** — tu ustawisz prędkość i ilość amperów dla 
 ---
 
 <a name="zalecane-ustawienia"></a>
-## ✅ Zalecane ustawienia oparte o dane z poradnika od lekrsu ale zmodyfikowane oryginał:
+## ✅ Zalecane ustawienia oparte o dane z poradnika od lekrsu ale zmodyfikowane:
   https://github.com/lekrsu/shfw-walkthrough
 
 > Zalecam sprawdzić link powyżej i zapoznać się z aktualnymi danymi
@@ -1370,7 +1373,7 @@ Najprościej po wersji DRV (w aplikacji również widać typ procesora) lub fizy
 ![](screeny/modelereflasher.png)  
 
 > ## Wersja aplikacji Reflasher 1.4.2
-> - W przypadku modelu F2 wybierz G2 z listy
+> - W przypadku modelu F2 PRO wybierz G2 z listy
 >
 > **ReFlasher obsługuje następujące modele i płyty:**
 >- Ninebot ESx/E/F/D/G30 - wszystkie BLE(dashboard/licznik), all STM32 & AT32 DRV płyty
@@ -1603,7 +1606,7 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 
 | Kod | Opis błędu | Co zrobić |
 |-----|------------|-----------|
-| A0 | To nie błąd a oznaczenie poziomu baterii który wynosi 100% | Wszystko jest dobrze |
+| A0 | To nie błąd jeśli posiadasz SHFW jest to oznaczenie poziomu baterii który wynosi 100% | Wszystko jest dobrze |
 | 10 | Brak połączenia między wyświetlaczem a sterownikiem | Sprawdź kabel idący od wyświetlacza do kontrolera |
 | 11–13 | Uszkodzenie odczytu faz silnika (A, B, C) | Sprawdź przewody silnika, ewentualnie wymień sterownik lub silnik |
 | 14 | Problem z manetką gazu (czujnik Halla) | Sprawdź lub wymień manetkę |
@@ -1652,6 +1655,7 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 
 ## SHFW
 - Jak ustawić KERS przy SHFW ? - Suwak od KERS nie działa przy SHFW jest ale nic nie zmienia
+- Nie mogę zmienić trybu z S(Sport) na inny ? - W G2 często trzeba włączyć i wyłączyć funkcję tylko tryb sportowy znajdziesz ją: Zakładka `Modes` > `only sport mode`
 
 ## Montaż/Serwis
 - Producent zaleca przy dokręcaniu śrub od kół użyć siły 65 ± 2Nm a także zastosować klej do gwintów Tonsan 1262(zamiennik to czerwony locktite)
