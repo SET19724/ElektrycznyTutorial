@@ -1,5 +1,5 @@
 # 🔧 Odblokowanie hulajnogi Ninebot +MiniWIKI – wersja BETA
-**Aktualizacja:** 18.05.2025
+**Aktualizacja:** 25.05.2025
 // Może zawierać błedy jeśli widzisz błąd daj znać najlepiej na discord ;)
 
 ---
@@ -338,6 +338,7 @@ Po otrzymaniu plików kliknij trzy kropki i wybierz **"Download"**
 
 3. Znajdź pobrany plik w pamięci telefonu i wybierz go
 > ⚠️ **Uwaga:** Wybierz plik z oznaczeniem `.zip`. Nie rozpakowuj archiwum.
+> ⚠️ **Uwaga:** Jeśli używasz metody bot Wally wgrywasz dwa pliki jeden po drugim
 
 <center><img src="screeny/download.png" style="max-width: 100%; width: 400px; height: auto;"></center>
 
@@ -349,7 +350,7 @@ Po otrzymaniu plików kliknij trzy kropki i wybierz **"Download"**
 > ⚠️ **Uwaga:** Nie oddalaj się od hulajnogi i jej nie wyłączaj – możesz ją uceglić! W takim wypadku pomoże tylko programator ST-LINK lub wymiana.
 ZNACZENIE Uceglić – doprowadzić urządzenie (np. hulajnogę) do stanu, w którym nie reaguje na włączenie, nie uruchamia się, nie da się go normalnie naprawić ani przywrócić bez specjalistycznego sprzętu (np. ST-LINK, UART itp.).																																																												 
 
-![](screeny/12.png)
+<img src="screeny/12.png" style="max-width: 100%; width: 400px; height: auto;">
 
 **Zaczekaj aż proces wgrywania się zakończy nie ruszaj nic**
 
@@ -383,6 +384,10 @@ Masz dwie opcje:
   - Dużo opcji daje alternatywne oprogramowanie od https://scooterhacking.org
   - W skrócie możecie ustawić każdy tryb mocy pod siebie i osiągnąć wyższe prędkości 30+km/h i więcej po modyfikacji kontrolera + baterii(zależnie od modelu)
   - Personalizacja zachowania świateł,wyłączenia hulajnogi,start bez odepchania,regulacja mocy hamowania elektronicznego silnikiem,poziom baterii podany w liczbie a nie samych paskach i wiele więcej
+> 🛑 **WAŻNE OSTRZEŻENIE!**  
+> Jeśli planujesz wgrywać SHFW w modelu G30 z silnikiem 1 generacji lub zwiększać moc:  
+> ➤ [Koniecznie przeczytaj SEKCJĘ O KABLACH w G30](#kable)  
+> Może dojść do przegrzania i uszkodzeń kabli  
 
 
 - 🌍 [Zmień numer seryjny by:](#zmiana-regionu--poprzez-numer-seryjny)
@@ -916,8 +921,25 @@ Note: F- and D-Series stay on 0.3.6. We are currently working on finishing 3.10.
 
 <img src="screeny/24.png" style="max-width: 100%; width: 400px; height: auto;">
 
->W przypadku **Seria F i D** modele F20,F25,F30,F40,D18,D28 itd. -Jest problemos.
->Musisz w późniejszych etapach po wgraniu SHFW w wersji 0.3.6 użyć starej wersji aplikacji SHU 2.5 do konfiguracji ustawień inaczej źle będą wskakiwać parametry które ustawiasz [(Link do pobrania)](https://cdn.discordapp.com/attachments/828606571373527040/1281327305867788381/ScooterHackingUtility-2.5.apk?ex=6809e0cb&is=68088f4b&hm=3ebdbc31a1d2e2e48978c632ad8d0e007dab5f027cd0d98c4c8cf905bb91bc31&) [(Zapasowy Link)](https://gofile.io/d/SQzpsb)  | Alternatywa  [IOS,ANDROID]  [(Luna konfigurator w przeglądarce)](https://luna.cfw.sh/)
+<img src="screeny/shfwinstall.png" style="max-width: 100%; width: 400px; height: auto;">
+
+<img src="screeny/shfwdone.png" style="max-width: 100%; width: 400px; height: auto;">
+
+
+> W przypadku **Serii F i D** modele (F20, F25, F30, F40, D18, D28 itd.) – jest problemos.  
+> Po wgraniu **SHFW** jedynie w wersji **0.3.6** lub niższej. Musisz ustawić ustawienia używając Luna lub starej wersji aplikacjii, inaczej nie będą poprawnie wprowadzane.
+>
+>Masz dwie opcje:
+>
+>- ✅ **Najprościej:** użyj [Luna (konfigurator w przeglądarce)](https://luna.cfw.sh/)  
+>  Działa na **Android i iOS**, bez instalacji – po prostu otwórz stronę w przeglądarce i połącz się z hulajnogą.
+>
+>- 🔧 **Alternatywa stara wersja aplikacjii ScooterHackingUtility 2.5 (Android):** użyj starej wersji aplikacji SHU 2.5  
+>  [(Link do pobrania)](https://cdn.discordapp.com/attachments/828606571373527040/1281327305867788381/ScooterHackingUtility->2.5.apk?ex=6809e0cb&is=68088f4b&hm=3ebdbc31a1d2e2e48978c632ad8d0e007dab5f027cd0d98c4c8cf905bb91bc31&)  
+>  [(Zapasowy link)](https://gofile.io/d/SQzpsb)
+
+
+
 
 Często pojawia się błąd **"Flashing failed"** — **nie panikuj!**  
 SHFW najprawdopodobniej zostało poprawnie wgrane. Najlepiej w takim przypadku **wyłącz i włącz hulajnogę**.
@@ -944,7 +966,17 @@ Jeśli na ekranie pojawiają się cyfry, to oznacza poziom naładowania baterii.
 
 > Jeśli wprowadzisz ustawień, hulajnoga **nie będzie jeździć**, ponieważ nie ma domyślnych ustawień!
 
-> **Seria F i D** np.F20,F25,F40,D18,D28 w przypadku wgrania wersji **0.3.6 SHFW** użyj starej wersji aplikacji SHU 2.5 [(Link do pobrania)](https://cdn.discordapp.com/attachments/828606571373527040/1281327305867788381/ScooterHackingUtility-2.5.apk?ex=6809e0cb&is=68088f4b&hm=3ebdbc31a1d2e2e48978c632ad8d0e007dab5f027cd0d98c4c8cf905bb91bc31&) [(Zapasowy Link)](https://gofile.io/d/SQzpsb) do konfiguracji inaczej źle będą wskakiwać ustawienia | Alternatywa  [IOS,ANDROID]  [(Luna konfigurator w przeglądarce)](https://luna.cfw.sh/)
+> W przypadku **Serii F i D** modele (F20, F25, F30, F40, D18, D28 itd.) – jest problemos.  
+> Po wgraniu **SHFW** jedynie w wersji **0.3.6** lub niższej. Musisz ustawić ustawienia używając Luna lub starej wersji aplikacjii, inaczej nie będą poprawnie wprowadzane.
+>
+>Masz dwie opcje:
+>
+>- ✅ **Najprościej:** użyj [Luna (konfigurator w przeglądarce)](https://luna.cfw.sh/)  
+>  Działa na **Android i iOS**, bez instalacji – po prostu otwórz stronę w przeglądarce i połącz się z hulajnogą.
+>
+>- 🔧 **Alternatywa stara wersja aplikacjii ScooterHackingUtility 2.5 (Android):** użyj starej wersji aplikacji SHU 2.5  
+>  [(Link do pobrania)](https://cdn.discordapp.com/attachments/828606571373527040/1281327305867788381/ScooterHackingUtility->2.5.apk?ex=6809e0cb&is=68088f4b&hm=3ebdbc31a1d2e2e48978c632ad8d0e007dab5f027cd0d98c4c8cf905bb91bc31&)  
+>  [(Zapasowy link)](https://gofile.io/d/SQzpsb)
 
 Przejdź do zakładki **"CONFIG"**:
 
@@ -1022,10 +1054,10 @@ Jak działa? Kontroler silnika zmienia kąt przesunięcia fazowego prądu (tzw. 
 - Initial field current: 0A
 - Variable field current: 600 mA/km/h
 
-**Dla największych prędkości (może powodować problemy-nie zalecany):**
+**Dla większych prędkości :**
 - Prędkość (Start speed: 20 km/h)
 - Initial field current: 0A
-- Variable field current: 1500-2000 mA/km/h
+- Variable field current: 1500 mA/km/h
 
 **Przykład ustawienia normalnego w aplikacji dla G30 MAX - Działający w trybach dla Sport i Drive**
 
