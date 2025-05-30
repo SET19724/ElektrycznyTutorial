@@ -1,5 +1,5 @@
 # 🔧 Odblokowanie hulajnogi Ninebot +MiniWIKI – wersja BETA
-**Aktualizacja:** 25.05.2025
+**Aktualizacja:** 30.05.2025
 // Może zawierać błedy jeśli widzisz błąd daj znać najlepiej na discord ;)
 
 ---
@@ -85,7 +85,7 @@ Jeśli **pomogłem Ci w czymś ważnym**, możesz się odwdzięczyć symboliczni
 
 - Ninebot Max G2  ✅
 - Ninebot Max G30  ✅
-- Ninebot  F2,F2 PLUS,F2 PRO  ✅
+- Ninebot  F2,F2 PLUS,F2 PRO,F2 PRO II  ✅
 > ⚠️ **Uwaga:** Jeśli w aplikacji ScooterHackingUtility(SHU) zakładka `INFO` widzisz **f2_DRV_UNKNOWN** masz nowszy kontroler jest oparty o chip **GD32 obecnie bot nie obsługuje tego typu**
 - Ninebot  F20  ✅
 - Ninebot  F25  ✅
@@ -167,7 +167,7 @@ Obecnie **nie ma ograniczeń** dotyczących wersji firmware.
 
 ## 🎉 Dołącz do Discorda!
 
-Zapraszam na **kanał Discord poświęcony hulajnogom Ninebot**!  
+Zapraszam na **kanał Discord poświęcony hulajnogom**!  
 Fajnie było by stworzyć aktywną, **polską społeczność**, która wspiera się wzajemnie w tematach:
 
 - 🔧 Modyfikacje i naprawy  
@@ -270,17 +270,41 @@ Różni się tylko interfejs
 https://t.me/downgrade_ninebot?start=ref_xxxxxxxxxxxxxxxxxxxxxx
 ```
 
+
 2. Wyślij go znajomemu, który:
-   - **Korzystał z bota co najmniej 7 dni wcześniej**
-   - **Nie zatwierdzał nikogo przez ostatnie 3 dni i nie generował plików**
+- **Korzystał z bota co najmniej 7 dni wcześniej**
+- **Nie zatwierdzał nikogo przez ostatnie 3 dni i nie generował plików**
 
 3. Tylko taka osoba może zatwierdzić Twoje konto.
 
-⏳ Alternatywnie poczekaj na reset kolejki (co godzinę lub codziennie o północy czasu UTC)  
-i spróbuj ponownie użyć komendy `/start`.
+⏳ **Alternatywa:**
+- Poczekaj na **reset kolejki (co godzinę i o północy UTC)**  
+- Spróbuj ponownie użyć komendy `/start` po resecie kolejki
+- Skorzystaj z pomocy na Discordzie
+
+
+
+### 🔗 Pomoc na Discordzie
+
+Możesz również poprosić o pomoc na jednym z poniższych serwerów Discord:
+
+#### 🛴 [NaHulajnogach Discord](https://discord.gg/a6VHhKEk8V)
+- 📤 **Link udostępnij tylko w kanale:**  
+  [`#linki-zaproszenia`](https://discord.gg/a6VHhKEk8V)
+
+#### 🛠 [ScooterHacking Discord](https://discord.gg/wps4BeZFBx)
+- 📤 **Link udostępnij tylko w kanale:**  
+  [`softwarehelp > ninebot-scooter-unlock`](https://discord.gg/ep7ZyeHFJc)
+
+📌 **WAŻNE ZASADY:**
+
++ **Linki udostępniamy tylko w wyznaczonych kanałach (#linki-zaproszenia / #ninebot-scooter-unlock)**
++ **Pytania zadajemy wyłącznie na kanałach odpowiednich dla danego modelu kanały podane wyżej są tylko do linków**
+- Nie mieszamy tematów! To ułatwia pomoc i porządek na serwerze.
+- Zapoznaj się z zasadami panującymi na danym serwerze!.
+
 
 </details>
-
 
 
 
@@ -338,7 +362,7 @@ Po otrzymaniu plików kliknij trzy kropki i wybierz **"Download"**
 
 3. Znajdź pobrany plik w pamięci telefonu i wybierz go
 > ⚠️ **Uwaga:** Wybierz plik z oznaczeniem `.zip`. Nie rozpakowuj archiwum.
-> ⚠️ **Uwaga:** Jeśli używasz metody bot Wally wgrywasz dwa pliki jeden po drugim
+> ⚠️ **Uwaga:** Jeśli używasz metody bot Wally/9bot wgrywasz dwa pliki jeden po drugim
 
 <center><img src="screeny/download.png" style="max-width: 100%; width: 400px; height: auto;"></center>
 
@@ -460,6 +484,10 @@ N4GSD1939C0123
 #### F2 :
 - `NAGK` → ograniczony do 22 km/h, bez tempomatu  
 - `NAGS` → ograniczony do 32 km/h, z tempomatem ← zalecana zmiana
+
+#### F2 II (GEN2)(Do sprawdzenia) :
+- `NAHE` → ograniczony do ?? km/h, tempomat ??  
+- `????` → ograniczony do ?? km/h, tempomat ?? ← zalecana zmiana
 
 #### F25/F25E(Do sprawdzenia) :
 - `N5GW` → ograniczony
@@ -1023,7 +1051,7 @@ Ustawiacie sobie po kolei 3 tryby czyli ECO,DRIVE,SPORT
 - Pozostałe tryby: ***niższe ustawienia (Ja zalecam 10A ECO,16 DRIVE,25A SPORT)***
 - Ograniczenie prędkości: **wyłączone (0 km/h)**(Przy innych trybach niż sport warto ustawić preferowaną wartość)
 - Acceleration boost: **80%** (Tutaj zalecam stopniowo zwiększać aż się przyzwyczaicie na start np.30%)(Daje większe przyśpieszenie początkowe)
-- Brake boost: **50%**
+- Brake boost: **50%** (Tutaj zalecam stopniowo zwiększać aż się przyzwyczaicie na start np.20%)
 - Włącz **Overmodulation** dla SPORT/DRIVE(dla obu lub tylko jednego) (Daje wyższe prędkości kosztem szybszego rozładowania baterii)
 
 ---
@@ -1110,7 +1138,7 @@ Domyślny rozmiar kół w modelach g30 Max to **10"**, ale ustaw:
 - **G2 i F2** → `9.7"`
 
  > ⚠️ **Uwaga:** Oryginalnie hulajnoga zawyża prędkość po tej zmianie odczyty na ekranie są zgodne z odczytem według GPS
- > Co do G30 mam pewność w innych modelach warto sprawdzić samemu (jeśli sprawdziłeś podziel się wynikami na discord)
+ > Co do G30 mam pewność w innych modelach warto sprawdzić samemu (jeśli sprawdziłeś podziel się wynikami na discord NaHulajnogach)
 
 
 
