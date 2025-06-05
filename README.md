@@ -1,5 +1,5 @@
 # 🔧 Odblokowanie hulajnogi Ninebot +MiniWIKI – wersja BETA
-**Aktualizacja:** 30.05.2025
+**Aktualizacja:** 05.06.2025
 // Może zawierać błedy jeśli widzisz błąd daj znać najlepiej na discord ;)
 
 ---
@@ -232,6 +232,7 @@ Różni się tylko interfejs
 ---
 
 ### 2. Odepnij hulajnogę od konta w oficjalnej aplikacji
+   > ⚠️ **Uwaga:** Wiele osób pisze że odblokowali hulajnogę również bez wykonania tego kroku ale lepiej go wykonać aby uniknąć problemów z wygenerowaniem pliku ;)
 
 - Przejdź do **Ustawienia**.
 
@@ -305,6 +306,8 @@ Możesz również poprosić o pomoc na jednym z poniższych serwerów Discord:
 
 
 </details>
+
+---
 
 
 
@@ -487,6 +490,7 @@ N4GSD1939C0123
 
 #### F2 II (GEN2)(Do sprawdzenia) :
 - `NAHE` → ograniczony do ?? km/h, tempomat ??  
+- `NAHA` → ograniczony do 25 km/h, tempomat bez tempomatu   
 - `????` → ograniczony do ?? km/h, tempomat ?? ← zalecana zmiana
 
 #### F25/F25E(Do sprawdzenia) :
@@ -657,8 +661,8 @@ Tabele jaką znalazłem z oryginalnymi wartościami według oznaczeń
 | Segway Max (nowe silniki)         | v0.3.0 (base 187)                    |
 | Xiaomi GD32                        | v0.3.0 (base 247)                    |
 | EsX (Max G30LE)                    | v0.3.2 (base 255)                    |
-| F-Series (F20, F25, F30, F40)      | v0.3.6 – Brak nowszej wersji. **Użyj starszej aplikacji SHU 2.5 do konfirguracji ustawień** [(Link do pobrania)](https://cdn.discordapp.com/attachments/828606571373527040/1281327305867788381/ScooterHackingUtility-2.5.apk?ex=6809e0cb&is=68088f4b&hm=3ebdbc31a1d2e2e48978c632ad8d0e007dab5f027cd0d98c4c8cf905bb91bc31&) [(Zapasowy Link)](https://gofile.io/d/SQzpsb) . Alternatywa  [IOS,ANDROID]  [(Luna konfigurator w przeglądarce)](https://luna.cfw.sh/) |
-| D-Series                           | v0.3.6 (eksperymentalnie)  – Brak nowszej wersji. **Użyj starszej aplikacji SHU 2.5 do konfirguracji ustawień** [(Link do pobrania)](https://cdn.discordapp.com/attachments/828606571373527040/1281327305867788381/ScooterHackingUtility-2.5.apk?ex=6809e0cb&is=68088f4b&hm=3ebdbc31a1d2e2e48978c632ad8d0e007dab5f027cd0d98c4c8cf905bb91bc31&) [(Zapasowy Link)](https://gofile.io/d/SQzpsb) . Alternatywa  [IOS,ANDROID]  [(Luna konfigurator w przeglądarce)](https://luna.cfw.sh/)           |
+| F-Series (F20, F25, F30, F40)      | v0.3.6 – Brak nowszej wersji. **Użyj starszej aplikacji SHU 2.5 do konfirguracji ustawień** [(Link do pobrania)](https://utility.cfw.sh/distrib/ScooterHackingUtility-2.5.apk) [(Zapasowy Link)](https://gofile.io/d/SQzpsb) . Alternatywa  [IOS,ANDROID]  [(Luna konfigurator w przeglądarce)](https://luna.cfw.sh/) |
+| D-Series                           | v0.3.6 (eksperymentalnie)  – Brak nowszej wersji. **Użyj starszej aplikacji SHU 2.5 do konfirguracji ustawień** [(Link do pobrania)](https://utility.cfw.sh/distrib/ScooterHackingUtility-2.5.apk) [(Zapasowy Link)](https://gofile.io/d/SQzpsb) . Alternatywa  [IOS,ANDROID]  [(Luna konfigurator w przeglądarce)](https://luna.cfw.sh/)           |
 | G2                                 | v3.9.0                               |
 | F-Series (F2/F2+/F2 Pro)           | v3.10.0                              |
 
@@ -963,7 +967,7 @@ Note: F- and D-Series stay on 0.3.6. We are currently working on finishing 3.10.
 >  Działa na **Android i iOS**, bez instalacji – po prostu otwórz stronę w przeglądarce i połącz się z hulajnogą.
 >
 >- 🔧 **Alternatywa stara wersja aplikacjii ScooterHackingUtility 2.5 (Android):** użyj starej wersji aplikacji SHU 2.5  
->  [(Link do pobrania)](https://cdn.discordapp.com/attachments/828606571373527040/1281327305867788381/ScooterHackingUtility->2.5.apk?ex=6809e0cb&is=68088f4b&hm=3ebdbc31a1d2e2e48978c632ad8d0e007dab5f027cd0d98c4c8cf905bb91bc31&)  
+>  [(Link do pobrania)](https://utility.cfw.sh/distrib/ScooterHackingUtility-2.5.apk)  
 >  [(Zapasowy link)](https://gofile.io/d/SQzpsb)
 
 
@@ -1003,7 +1007,7 @@ Jeśli na ekranie pojawiają się cyfry, to oznacza poziom naładowania baterii.
 >  Działa na **Android i iOS**, bez instalacji – po prostu otwórz stronę w przeglądarce i połącz się z hulajnogą.
 >
 >- 🔧 **Alternatywa stara wersja aplikacjii ScooterHackingUtility 2.5 (Android):** użyj starej wersji aplikacji SHU 2.5  
->  [(Link do pobrania)](https://cdn.discordapp.com/attachments/828606571373527040/1281327305867788381/ScooterHackingUtility->2.5.apk?ex=6809e0cb&is=68088f4b&hm=3ebdbc31a1d2e2e48978c632ad8d0e007dab5f027cd0d98c4c8cf905bb91bc31&)  
+>  [(Link do pobrania)](https://utility.cfw.sh/distrib/ScooterHackingUtility-2.5.apk)  
 >  [(Zapasowy link)](https://gofile.io/d/SQzpsb)
 
 Przejdź do zakładki **"CONFIG"**:
@@ -1137,7 +1141,7 @@ Domyślny rozmiar kół w modelach g30 Max to **10"**, ale ustaw:
 - **G30** → `9.3"`
 - **G2 i F2** → `9.7"`
 
- > ⚠️ **Uwaga:** Oryginalnie hulajnoga zawyża prędkość po tej zmianie odczyty na ekranie są zgodne z odczytem według GPS
+ > ⚠️ **Uwaga:** Oryginalnie hulajnoga zawyża prędkość po tej zmianie odczyty na ekranie są zgodne z odczytem według GPS (może 1km/h max różnicy)
  > Co do G30 mam pewność w innych modelach warto sprawdzić samemu (jeśli sprawdziłeś podziel się wynikami na discord NaHulajnogach)
 
 
