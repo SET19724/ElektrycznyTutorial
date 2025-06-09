@@ -74,7 +74,7 @@ Jeśli **pomogłem Ci w czymś ważnym**, możesz się odwdzięczyć symboliczni
 <img src="screeny/memewsparcie.png" alt="funny support meme" width="400"/>  
 
 
-> **Serio. Dzięki! 🥹**
+
 
 
 
@@ -133,7 +133,7 @@ Jeśli **pomogłem Ci w czymś ważnym**, możesz się odwdzięczyć symboliczni
 ### 🔧 Techniczne informacje
 
 - 🔧 [Typy kontrolerów DRV/ESC](#kontrolery)
-- 🔧 [Zalecana wymiana na: łączniki MR60 lub MT60](#kable)
+- 🔧 [Model G30 Topiące się złączki - Zalecana wymiana na: łączniki MR60 lub MT60](#kable)
 - 🔧 [Kody błędów](#errorkody)
 - 🔧 [Jak wrócić do oryginalnego oprogramowania](#powrotstock)
 
@@ -1346,7 +1346,7 @@ Aby uniknąć przegrzewania i zapewnić bezpieczny, stały przepływ prądu, war
 Znany problem topiących się kabli oryginalnych bullet connectors w G30 można łatwo rozwiązać, montując solidne łączniki MR60 lub MT60, które wytrzymują większy prąd nawet po podkręceniu parametrów.
 
  - Niektórzy łączyli te kable również na WAGO tutaj opinie są podzielone
- - **Nie zaleca się zwiększać obciążeń przy SHFW szczególnie parametru Acceleration Boost powyżej 30%**
+
 
 ---
 <a name="powrotdostock"></a>
@@ -1487,7 +1487,7 @@ Zanim zaczniesz, upewnij się, że masz odpowiednie oprogramowanie na komputerze
 <summary>ROZWIŃ: Nie możesz skorzystać z komputera/źle działa na komputerze ?</summary>
 
 >Nie możesz skorzystać z komputera/źle działa na komputerze ?
-> - Możesz użyć alternatywy dla programu Reflasher w [wersji na przeglądarke](https://flash.bastelpichi.de/help.html)
+> - Możesz użyć alternatywy dla programu Reflasher czyli WebFlasher od BastelPichi w [wersji na przeglądarke](https://flash.bastelpichi.de/help.html)
 > - **W przypadku wgrywania firmware telefonem musisz użyć przejściówki OTG np. Z USB-C do USB**
 > -
 >
