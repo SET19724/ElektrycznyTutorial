@@ -1,5 +1,5 @@
 # 🔧 Odblokowanie hulajnogi Ninebot +MiniWIKI – wersja BETA
-**Aktualizacja:** 05.06.2025
+**Aktualizacja:** 15.06.2025
 // Może zawierać błedy jeśli widzisz błąd daj znać najlepiej na discord ;)
 
 ---
@@ -50,7 +50,8 @@ Jeśli **pomogłem Ci w czymś ważnym**, możesz się odwdzięczyć symboliczni
 - **Pomaga kolejnym osobom**, którym może się to przydać 🙌  
 - **Dajesz mi znak, że to działa i warto** 👏
 
-
+###  **Metody Wsparcia:**
+### ☕︎ **Wsparcie przez BuyMeCoffee:**
 
 [![Kup mi kawę](https://img.shields.io/badge/Kup%20mi%20kawę-%E2%98%95%EF%B8%8F-orange?style=for-the-badge&logo=buy-me-a-coffee)](https://buymeacoffee.com/nekkogamma)
 
@@ -149,7 +150,7 @@ Jeśli **pomogłem Ci w czymś ważnym**, możesz się odwdzięczyć symboliczni
 
 ## ❓ Czy potrzebuję programatora ST-LINK?
 **Nie!** Jest to najnowsza metoda, która nie wymaga użycia ST-LINKa.
-> Sposób jednak w twoim przypadku nie działa lub nie możesz odpiąć konta z jakiegoś powodu ? - Sprawdź link poniżej
+> Sposób jednak w twoim przypadku nie działa lub nie możesz odpiąć konta z jakiegoś powodu ? - Sprawdź alternatywę poniżej
 - [Alternatywa czyli odblokowanie przez ST-LINK - stara metoda](#stlink)
 
 ---
@@ -158,7 +159,6 @@ Jeśli **pomogłem Ci w czymś ważnym**, możesz się odwdzięczyć symboliczni
 ## 🔓 Obsługiwane wersje firmware
 
 Obecnie **nie ma ograniczeń** dotyczących wersji firmware.  
-- Nawet jeśli masz wersję **1.8.11**, metoda powinna zadziałać bez problemu. modele G30,G2
 
 ---
 
@@ -257,57 +257,9 @@ Różni się tylko interfejs
 - Lub użyj linku  👉 [https://t.me/downgrade_ninebot](https://t.me/downgrade_ninebot)
 
 
-<details>
-<summary>⚠️ Uwaga: Od 18.05.2025 Obowiązują limity dostępu do bota — kliknij, aby rozwinąć</summary>
-
-🔒 **Jeśli widzisz ten komunikat, oznacza to, że aktualny limit wygenerowań plików został wykorzystany .**
-
-<img src="screeny/botlimit.png" alt="Limit bota" style="max-width: 100%; width: 400px; height: auto; margin: 10px 0;">
-
-🛠 **Co możesz zrobić:**
-
-1. Skopiuj otrzymany link wyglądający jak poniżej:
-```
-https://t.me/downgrade_ninebot?start=ref_xxxxxxxxxxxxxxxxxxxxxx
-```
-
-
-2. Wyślij go znajomemu, który:
-- **Korzystał z bota co najmniej 7 dni wcześniej**
-- **Nie zatwierdzał nikogo przez ostatnie 3 dni i nie generował plików**
-
-3. Tylko taka osoba może zatwierdzić Twoje konto.
-
-⏳ **Alternatywa:**
-- Poczekaj na **reset kolejki (co godzinę i o północy UTC)**  
-- Spróbuj ponownie użyć komendy `/start` po resecie kolejki
-- Skorzystaj z pomocy na Discordzie
 
 
 
-### 🔗 Pomoc na Discordzie
-
-Możesz również poprosić o pomoc na jednym z poniższych serwerów Discord:
-
-#### 🛴 [NaHulajnogach Discord](https://discord.gg/a6VHhKEk8V)
-- 📤 **Link udostępnij tylko w kanale:**  
-  [`#linki-zaproszenia`](https://discord.gg/a6VHhKEk8V)
-
-#### 🛠 [ScooterHacking Discord](https://discord.gg/wps4BeZFBx)
-- 📤 **Link udostępnij tylko w kanale:**  
-  [`softwarehelp > ninebot-scooter-unlock`](https://discord.gg/ep7ZyeHFJc)
-
-📌 **WAŻNE ZASADY:**
-
-+ **Linki udostępniamy tylko w wyznaczonych kanałach (#linki-zaproszenia / #ninebot-scooter-unlock)**
-+ **Pytania zadajemy wyłącznie na kanałach odpowiednich dla danego modelu kanały podane wyżej są tylko do linków**
-- Nie mieszamy tematów! To ułatwia pomoc i porządek na serwerze.
-- Zapoznaj się z zasadami panującymi na danym serwerze!.
-
-
-</details>
-
----
 
 
 
@@ -352,6 +304,59 @@ Pobieramy przygotowany plik pod naszą hulajnogę naciskając na 3kropki
 ![](screeny/9.png)
 
 Po otrzymaniu plików kliknij trzy kropki i wybierz **"Download"**
+
+
+### ⚠️ Bot posiada limity od 18.05.2025 ⚠️
+
+
+
+🔒 **Jeśli widzisz ten komunikat, oznacza to, że aktualny limit wygenerowań plików został wykorzystany .**
+
+<img src="screeny/botlimit.png" alt="Limit bota" style="max-width: 100%; width: 400px; height: auto; margin: 10px 0;">
+
+🛠 **Co możesz zrobić:**
+
+1. Skopiuj otrzymany link wyglądający jak poniżej:
+```
+https://t.me/downgrade_ninebot?start=ref_xxxxxxxxxxxxxxxxxxxxxx
+```
+
+
+2. Wyślij go znajomemu, który:
+- **Korzystał z bota co najmniej 7 dni wcześniej**
+- **Nie zatwierdzał nikogo przez ostatnie 3 dni i nie generował plików**
+
+3. Tylko taka osoba może zatwierdzić Twoje konto.
+
+⏳ **Alternatywa:**
+- Poczekaj na **reset kolejki (co godzinę i o północy UTC)**  
+- Spróbuj ponownie użyć komendy `/start` po resecie kolejki
+- Skorzystaj z pomocy na Discordzie
+
+
+
+### 🔗 Pomoc na Discordzie
+
+Możesz również poprosić o pomoc na jednym z poniższych serwerów Discord:
+
+#### 🛴 [NaHulajnogach Discord](https://discord.gg/a6VHhKEk8V)
+- 📤 **Sprawdź przypiętą wiadomość na kanale i udostępnij swój link tylko w kanale:**    
+  [`#linki-zaproszenia`](https://discord.gg/a6VHhKEk8V)
+
+#### 🛠 [ScooterHacking Discord](https://discord.gg/wps4BeZFBx)
+- 📤 **Sprawdź przypiętą wiadomość na kanale i udostępnij swój link tylko w kanale:**  
+  [`softwarehelp > ninebot-scooter-unlock`](https://discord.gg/ep7ZyeHFJc)
+
+📌 **WAŻNE ZASADY:**
+
++ **Linki udostępniamy tylko w wyznaczonych kanałach (#linki-zaproszenia / #ninebot-scooter-unlock)**
++ **Pytania zadajemy wyłącznie na kanałach odpowiednich dla danego modelu kanały podane wyżej są tylko do linków**
+- Nie mieszamy tematów! To ułatwia pomoc i porządek na serwerze.
+- Nie piszemy na wszystkich kanałach na raz.
+- Zapoznaj się z zasadami panującymi na danym serwerze!.
+
+
+
 
 ---
 
