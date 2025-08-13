@@ -136,7 +136,7 @@ Jeśli **pomogłem Ci w czymś ważnym**, możesz się odwdzięczyć symboliczni
 - 🔧 [Typy kontrolerów DRV/ESC](#kontrolery)
 - 🔧 [Model G30 Topiące się złączki - Zalecana wymiana na: łączniki MR60 lub MT60](#kable)
 - 🔧 [Kody błędów](#errorkody)
-- 🔧 [Jak wrócić do oryginalnego oprogramowania](#powrotstock)
+- 🔧 [Jak wrócić do oryginalnego oprogramowania](#powrotdostock)
 
 ### ℹ️ Inne
 
