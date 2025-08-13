@@ -1354,7 +1354,9 @@ Znany problem topiących się kabli oryginalnych bullet connectors w G30 można 
 
 
 ---
+
 <a name="powrotdostock"></a>
+
 ## 🛠️ Jak wrócić do fabrycznego oprogramowania
 
 
