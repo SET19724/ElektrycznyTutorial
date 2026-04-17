@@ -1,6 +1,7 @@
 ////////////////////////////////////////////////////
 INFO INFO !!
 Od 16.04.2026 bot jest offline nie wiadomo kiedy wróci jeśli czytasz ten poradnik patrz na metodę użycia programatora st-link to jedyny sposób na tą chwilę
+⚙️ [[Alternatywa] Proces odblokowania programatorem ST-Link](#stlink)
 <img src="screeny/16.04.2026botoffline.jpg" alt="funny support meme" width="400"/> INFO INFO!
 ///////////////////////////////////////////////////
 
@@ -1465,14 +1466,17 @@ Programator ST-Link to urządzenie wykorzystywane do programowania i debugowania
 
 ## Co zakupić?
 - **Programator ST-Link - zazwyczaj sprzedawany z kablami dupont żeńsko-żeńskie**
+- Link do zakupu: https://s.click.aliexpress.com/e/_c2vA3cqt
 
 ![](screeny/programator.png)
 
 - **Warto dokupić - Kable do podłączenia dupont wire damsko>męskie**
+- Link do zakupu: https://s.click.aliexpress.com/e/_c4EoL8g9
 
 ![](screeny/przewody.png)
 
 - **Warto dokupić - kostkę z pinami**
+- Link do zakupu: https://s.click.aliexpress.com/e/_c3JD2aOv
 
 ![](screeny/pinheader.png)
 
@@ -1553,7 +1557,7 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 
 <details>
 
-**<summary>ROZWIŃ G30 CZARNY KONTROLER TYP: AT32</summary>**
+<summary>ROZWIŃ G30 CZARNY KONTROLER TYP: AT32</summary>
 
 ![](screeny/schematy/DRV/g30przykladstlink.png)
 
@@ -1565,7 +1569,7 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 
 <details>
 
-**<summary>ROZWIŃ G30 GEN1 TYP: ST32</summary>**
+<summary>ROZWIŃ G30 GEN1 TYP: ST32</summary>
 
 ![](screeny/schematy/DRV/G30D-DRVzpinami.png)
 ![](screeny/schematy/DRV/G30-DRVzpinami.png)
@@ -1575,7 +1579,7 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 
 <details>
 
-**<summary>ROZWIŃ G2-F2 TYP: AT32</summary>**
+<summary>ROZWIŃ G2-F2 TYP: AT32</summary>
 
 ![](screeny/schematy/DRV/G2-F2-DRVzpinami.png)
 
@@ -1585,7 +1589,7 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 
 <details>
 
-**<summary>ROZWIŃ SERIA F (F20,F40 itd.) D (D18,D28 itd.) </summary>**
+<summary>ROZWIŃ SERIA F (F20,F40 itd.) D (D18,D28 itd.) </summary>
 
 ![](screeny/schematy/DRV/seria-f-d-zpinami.png)
 
@@ -1598,7 +1602,7 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 
 <details>
 
-**<summary>ROZWIŃ SERIE ESX-E</summary>**
+<summary>ROZWIŃ SERIE ESX-E</summary>
 
 ![](screeny/schematy/DRV/ESX_E-DRVzpinami.png)
 
@@ -1609,7 +1613,7 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 
 <details>
 
-**<summary>ROZWIŃ G30 EKRAN/DASHBOARD</summary>**
+<summary>ROZWIŃ G30 EKRAN/DASHBOARD</summary>
 
 ![](screeny/schematy/BLE/G30-BLEzpinami.png)
 
@@ -1619,7 +1623,7 @@ Programator ST-Link ma 10 pinów, musisz użyć tylko kilku które należy podł
 
 <details>
 
-**<summary>ROZWIŃ SERIA F-D EKRAN/DASHBOARD</summary>**
+<summary>ROZWIŃ SERIA F-D EKRAN/DASHBOARD</summary>
 
 ![](screeny/schematy/BLE/F&D-Series-BLEzpinami.png)
 
