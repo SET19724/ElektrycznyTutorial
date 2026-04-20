@@ -1,18 +1,3 @@
-////////////////////////////////////////////////////
-INFO INFO !!
-Od 16.04.2026 bot jest offline nie wiadomo kiedy wróci jeśli czytasz ten poradnik patrz na metodę użycia programatora st-link to jedyny sposób na tą chwilę
-⚙️ [[Alternatywa] Proces odblokowania programatorem ST-Link](#stlink)
-<img src="screeny/16.04.2026botoffline.jpg" alt="funny support meme" width="400"/> INFO INFO!
-///////////////////////////////////////////////////
-
-
-# 🔧 Odblokowanie hulajnogi Ninebot +MiniWIKI – wersja BETA
-**Aktualizacja:** 15.06.2025
-// Może zawierać błedy jeśli widzisz błąd daj znać najlepiej na discord ;)
-
-
----
-
 🌐 **Wersje językowe (CHOOSE YOUR LANGUAGE) (automatyczne tłumaczenia przez Google Translate):**
 
 - 🇵🇱 Polski (Oryginał)
