@@ -1,3 +1,9 @@
+# 🔧 Odblokowanie hulajnogi Ninebot +MiniWIKI – wersja BETA
+**Aktualizacja:** 20.04.2026
+// Może zawierać błedy jeśli widzisz błąd daj znać najlepiej na discord ;)
+
+
+---
 🌐 **Wersje językowe (CHOOSE YOUR LANGUAGE) (automatyczne tłumaczenia przez Google Translate):**
 
 - 🇵🇱 Polski (Oryginał)
