@@ -1143,7 +1143,7 @@ Da nam to automatyczne hamowanie podobne do oryginału
 Znajdziecie to ustawienie w "Motor settings"
 Domyślny rozmiar kół w modelach g30 Max to **10"**, ale ustaw:
 
-- **G30** → `9.3"`
+- **G30** → `9.4"`
 - **G2 i F2** → `9.7"`
 
  > ⚠️ **Uwaga:** Oryginalnie hulajnoga zawyża prędkość po tej zmianie odczyty na ekranie są zgodne z odczytem według GPS (może 1km/h max różnicy)
