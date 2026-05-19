@@ -200,7 +200,7 @@ Metoda odblokowania jest w dużej mierze oparta na materiale z YouTube od użytk
 
 
 ### 1. Pobierz aplikację ScooterHacking Utility
-👉 PLATFORMA ANDROID [https://utility.cfw.sh](https://utility.cfw.sh)
+👉 PLATFORMA ANDROID [https://utility.cfw.sh](https://utility.cfw.sh) lub beta v3 [https://utility-beta.cfw.sh](https://utility-beta.cfw.sh)
 
 ⚠️ **Co jeśli nie mam androida tylko Iphone ?**  
 >Możesz użyć projektu Luna który znajduje sie na https://luna.cfw.sh obecnie poradnik pokazuje tylko jak zrobić to na android ale zasada działania jest taka sama.
@@ -624,7 +624,7 @@ Tabele jaką znalazłem z oryginalnymi wartościami według oznaczeń
 ## 🔁 Jak zmienić region?
 
 
-### 1. Otwórz aplikację **ScooterHacking Utility**  [Link Do Aplikacji](https://utility.cfw.sh).
+### 1. Otwórz aplikację **ScooterHacking Utility**  [Link Do Aplikacji](https://utility.cfw.sh) lub v3 beta [https://utility-beta.cfw.sh](https://utility-beta.cfw.sh).
 
 ### 2. Przejdź do zakładki `TOOLS` a następnie wybierz `CHANGE REGION`
 
