@@ -1,5 +1,5 @@
 # 🔧 Odblokowanie hulajnogi Ninebot +MiniWIKI – wersja BETA
-**Aktualizacja:** 20.04.2026
+**Aktualizacja:** 19.05.2026
 // Może zawierać błedy jeśli widzisz błąd daj znać najlepiej na discord ;)
 
 
@@ -87,7 +87,6 @@ Jeśli **pomogłem Ci w czymś ważnym**, możesz się odwdzięczyć symboliczni
 - Ninebot Max G2  ✅
 - Ninebot Max G30  ✅
 - Ninebot  F2,F2 PLUS,F2 PRO,F2 PRO II  ✅
-> ⚠️ **Uwaga:** Jeśli w aplikacji ScooterHackingUtility(SHU) zakładka `INFO` widzisz **f2_DRV_UNKNOWN** masz nowszy kontroler jest oparty o chip **GD32 obecnie bot nie obsługuje tego typu**
 - Ninebot  F20  ✅
 - Ninebot  F25  ✅
 - Ninebot  F30  ✅
@@ -805,6 +804,57 @@ Notatka: Seria F i D pozostają na wersji 0.3.6. Obecnie pracujemy nad ukończen
 ## v3.10.1
 - Naprawa błędów 40, 41 i 52 dla F2 i F2 Plus
 
+## v3.10.1
+- Naprawa błędów 40, 41 i 52 dla F2 i F2 Plus
+
+## v3.10.1
+- Naprawa błędów 40, 41 i 52 dla F2 i F2 Plus
+
+## v3.10.2
+[+] Dodano nową opcję w panelu: "Prąd fazowy (A)"
+
+[/] Ulepszono działanie hamulca
+[/] Ulepszono obsługę błędów
+[/] Ulepszono progi odcięcia baterii w Ninebot G2 i F2
+Przyspieszenie może być słabsze — zwiększ "Acceleration boost" o 50% w trybie Sport i o 25% w trybie Drive, aby uzyskać wcześniejsze zachowanie. Limit "Acceleration boost" został zwiększony ze 100% do 150% dla Ninebot G2 i F2.
+[/] Naprawiono problem, w którym Brake boost powodował ekstremalnie słabe hamowanie w Ninebot G2 i F2
+[/] Naprawiono przełączanie trybów w Ninebot G2 (zawieszanie się w trybie S)
+[/] Naprawiono nieprawidłowy pozostały zasięg w Ninebot F2
+[/] Naprawiono wykrywanie błędów 14 i 15
+[/] Naprawiono emulację BMS raportującą prąd Iq jako prąd baterii — teraz raportowany jest przybliżony szacunek
+[/] Naprawiono hamowanie zawsze schodzące do 0 km/h niezależnie od ustawienia "Brake minimum speed"
+[/] Naprawiono "Brake + Power button profile trigger" nie działający w niektórych przypadkach
+[/] Naprawiono niespójne działanie "Brake + Throttle profile trigger"
+[/] Naprawiono ustawienie "Always on headlight" nie działające w Ninebot E-series i Ninebot EsX
+[/] Naprawiono brak zapisu ustawień SHFW, przebiegu i innych danych przed aktualizacją firmware
+
+Uwaga: Aktualizacja niedostępna dla użytkowników Ninebot F‑ i D‑series.
+
+## v3.10.3
+[/] Naprawiono dźwięk dezaktywacji tempomatu odtwarzający się przy każdej zmianie trybu
+[/] Naprawiono opcje panelu "Current", "Power" i "Remaining mileage", które wyświetlały stałe "0" w Ninebot G2
+
+Uwaga: Aktualizacja niedostępna dla użytkowników Ninebot F‑ i D‑series.
+
+## v3.11.0(18.05.2026)
+[+] Wsparcie dla mikrokontrolera F2 GD32
+[+] Do 3 własnych wyzwalaczy profili
+[+] Przebudowane opcje tylnego światła
+Pozwala na niezależną konfigurację zachowania podczas jazdy i hamowania w zależności od stanu przedniego światła
+Opcja wygładzenia przejść tylnego światła
+[+] Niezależne wyłączanie każdego trybu jazdy (Eco, Drive i Sport)
+[+] Konfigurowalne spoofowanie wersji
+
+[/] Zoptymalizowano działanie sterowania silnikiem, co skutkuje poprawionym momentem obrotowym i wydajnością
+[/] Ulepszono automatyczne hamowanie po puszczeniu manetki
+[/] Naprawiono opcję "Negative start speed" nie działającą w Ninebot G2/F2
+
+Uwaga: Aktualizacja niedostępna dla użytkowników Ninebot Fxx i Dxx.
+
+## v3.11.1(19.05.2026)
+[/] Naprawiono nieprawidłową migrację ustawień światła hamowania z wersji starszych niż SHFW v3.11.0
+
+Uwaga: Aktualizacja niedostępna dla użytkowników Ninebot Fxx i Dxx.
 
 </details>
 
@@ -937,6 +987,62 @@ Note: F- and D-Series stay on 0.3.6. We are currently working on finishing 3.10.
 
 ## v3.10.1
 - Fixed errors 40, 41, 52 for F2 and F2+
+
+## v3.10.2
+[+] Added new dashboard option "Phase current (A)"
+
+[/] Improved brake behavior
+[/] Improved error handling
+[/] Improved Ninebot G2 and F2 battery cut-offs 
+Acceleration may be weaker, increase "Acceleration boost" by 50% for Sport mode and by 25% for Drive mode to achieve previous behavior. "Acceleration boost" limit has been increased from 100% to 150% for Ninebot G2 and F2,
+[/] Fixed Brake boost causing extremely weak braking on Ninebot G2 and F2
+[/] Fixed mode switching on Ninebot G2 (stuck in S mode)
+[/] Fixed incorrect remaining mileage on Ninebot F2
+[/] Fixed error 14 and 15 detection
+[/] Fixed BMS emulation reporting Iq current as battery current, now reports a rough estimate
+[/] Fixed braking always going down to 0km/h regardless of "Brake minimum speed"
+[/] Fixed "Brake + Power button profile trigger" not working in certain cases
+[/] Fixed inconsistent behavior of "Brake + Throttle profile trigger"
+[/] Fixed "Always on headlight" setting not working on Ninebot E-series and Ninebot EsX
+[/] Fixed SHFW settings, mileage and other data not being saved before firmware update
+
+Note: Update is unavailable for Ninebot F- and D-series users.
+
+
+
+## v3.10.3
+[/] Fixed cruise control deactivation beep sounding on every mode change
+[/] Fixed dashboard options "Current", "Power" and "Remaining mileage" all showing a constant "0" on Ninebot G2
+
+Note: Update is unavailable for Ninebot F- and D-series users.
+
+
+
+
+## v3.11.0
+[+] F2 GD32 microcontroller support
+[+] Up to 3 custom profile triggers
+[+] Remade taillight options
+Allows independent configuration of behavior while driving and braking based on headlight state
+Option to smooth out taillight transitions
+[+] Independently disable each driving mode (Eco, Drive and Sport)
+[+] Customizable version spoofing
+
+[/] Optimized motor control behavior, resulting in improved torque and efficiency
+[/] Improved auto-braking behavior after removing throttle input
+[/] Fixed option "Negative start speed" not working on Ninebot G2/F2
+
+Note: Update is unavailable for Ninebot Fxx and Dxx users.
+
+
+
+
+
+## v3.11.1
+[/] Fixed incorrect migration of brake light settings from versions older than SHFW v3.11.0
+
+Note: Update is unavailable for Ninebot Fxx and Dxx users.
+
 
 
 </details>
