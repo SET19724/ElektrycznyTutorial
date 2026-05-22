@@ -69,8 +69,9 @@ Jeśli **pomogłem Ci w czymś ważnym**, możesz się odwdzięczyć symboliczni
 🔗 **Alternatywnie**:  
 [revolut.me/nekkogamma](https://revolut.me/nekkogamma)
 
-
-
+```
+BITCOIN ADDRESS : bc1pzthhnzcesmg2g8sfc4gfm2c935h02s4rxknkyscjmmwejdffseesz32z3f
+```
 
 <img src="screeny/memewsparcie.png" alt="funny support meme" width="400"/>  
 
