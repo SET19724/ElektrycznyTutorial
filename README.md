@@ -1,6 +1,11 @@
 # 🔧 Odblokowanie hulajnogi Ninebot +MiniWIKI – wersja BETA
-**Aktualizacja:** 19.05.2026
+**Aktualizacja:** 27.05.2026
 // Może zawierać błedy jeśli widzisz błąd daj znać najlepiej na discord ;)
+
+> ⚠️ **INFORMACJA**  
+>  
+>BOT nie działa od 23 maja 2026 jeśli czytasz to wybierz metodę programator ST-LINK obecnie jedyna działająca.
+> ⚠️ **INFORMACJA**  
 
 
 ---
